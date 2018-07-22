@@ -1,4 +1,4 @@
-update=7/19/2018 11:14:13 AM
+update=7/21/2018 1:37:41 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,17 +25,27 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=../../../VentLib/library
+LibDir=
 [eeschema/libraries]
-LibName1=C:/Working/Git/VentLib/library/capacitors
-LibName2=C:/Working/Git/VentLib/library/disc
-LibName3=C:/Working/Git/VentLib/library/ics
-LibName4=C:/Working/Git/VentLib/library/mech
-LibName5=C:/Working/Git/VentLib/library/resistors_us
-LibName6=C:/Working/Git/VentLib/library/various
-LibName7=C:/Working/Git/VentLib/library/resistors
+LibName1=D:/VentLib/library/capacitors
+LibName2=D:/VentLib/library/disc
+LibName3=D:/VentLib/library/ics
+LibName4=D:/VentLib/library/mech
+LibName5=D:/VentLib/library/resistors_us
+LibName6=D:/VentLib/library/various
+LibName7=D:/VentLib/library/resistors
 LibName8=power
 LibName9=device
 LibName10=switches
@@ -68,13 +78,3 @@ LibName36=opto
 LibName37=atmel
 LibName38=contrib
 LibName39=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
