@@ -1,9 +1,3 @@
-software/MDK-ARM/stepper_stm/
-software/Output/
-software/MDK-ARM/stepper_stm.uvguix.alexanderpo
-software/MDK-ARM/stepper_stm.uvguix.demo
-software/MDK-ARM/stepper_stm.uvoptx
-software/MDK-ARM/startup_stm32f051x8.lst
 *.dxf~
 *.ods#
 Output

@@ -1,4 +1,4 @@
-update=7/21/2018 1:37:41 PM
+update=7/23/2018 7:44:57 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,15 +37,15 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../VentLib/library
 [eeschema/libraries]
-LibName1=D:/VentLib/library/capacitors
-LibName2=D:/VentLib/library/disc
-LibName3=D:/VentLib/library/ics
-LibName4=D:/VentLib/library/mech
-LibName5=D:/VentLib/library/resistors_us
-LibName6=D:/VentLib/library/various
-LibName7=D:/VentLib/library/resistors
+LibName1=C:/Working/Git/VentLib/library/capacitors
+LibName2=C:/Working/Git/VentLib/library/disc
+LibName3=C:/Working/Git/VentLib/library/ics
+LibName4=C:/Working/Git/VentLib/library/mech
+LibName5=C:/Working/Git/VentLib/library/resistors_us
+LibName6=C:/Working/Git/VentLib/library/various
+LibName7=C:/Working/Git/VentLib/library/resistors
 LibName8=power
 LibName9=device
 LibName10=switches
