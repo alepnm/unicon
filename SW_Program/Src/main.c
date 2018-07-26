@@ -40,7 +40,7 @@
 #include "stm32f0xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include "eeprom_i2c.h"
+#include "eeprom_iic.h"
 #include "mb.h"
 #include "mbport.h"
 #include "uart.h"

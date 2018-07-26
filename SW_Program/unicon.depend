@@ -3731,10 +3731,10 @@
 
 1527176687 source:c:\working\git\unicon\sw_program\startup\startup_stm32f0xx.s
 
-1532597000 source:c:\working\git\unicon\sw_program\src\main.c
+1532597209 source:c:\working\git\unicon\sw_program\src\main.c
 	"main.h"
 	"stm32f0xx_hal.h"
-	"eeprom_i2c.h"
+	"eeprom_iic.h"
 	"mb.h"
 	"mbport.h"
 	"uart.h"
@@ -3758,6 +3758,11 @@
 	"eeprom_i2c.h"
 
 1527062593 c:\working\git\unicon\sw_program\libs\eeprom_i2c\eeprom_i2c.h
+	<stdint.h>
+	<stdbool.h>
+	"stm32f0xx_hal.h"
+
+1527062593 c:\working\git\unicon\sw_program\libs\eeprom_iic\eeprom_iic.h
 	<stdint.h>
 	<stdbool.h>
 	"stm32f0xx_hal.h"

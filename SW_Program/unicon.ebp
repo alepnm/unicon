@@ -263,10 +263,10 @@
 		<Unit filename="Inc\stm32f0xx_it.h" />
 		<Unit filename="Inc\uart.h" />
 		<Unit filename="Inc\user_mb_app.h" />
-		<Unit filename="libs\eeprom_i2c\eeprom_i2c.c">
+		<Unit filename="libs\eeprom_iic\eeprom_iic.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="libs\eeprom_i2c\eeprom_i2c.h" />
+		<Unit filename="libs\eeprom_iic\eeprom_iic.h" />
 		<Unit filename="Src\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
