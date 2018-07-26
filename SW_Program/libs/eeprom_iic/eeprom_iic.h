@@ -5,6 +5,18 @@
 #include <stdbool.h>
 #include "stm32f0xx_hal.h"
 
+
+#define EE_INIT_BYTE        0x55
+
+#define EEADDR_BASE         0
+#define EEADDR_INIT_BYTE    EEADDR_BASE+3
+#define EEADDR_WTIME        EEADDR_INIT_BYTE+1
+
+
+
+
+
+
 uint8_t     EEP24XX_IsConnected( void );
 uint8_t     EEP24XX_IsBusy( void );
 uint8_t	    EEP24XX_Write( uint16_t addr, void* data, size_t size_of_data );

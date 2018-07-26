@@ -3269,7 +3269,7 @@
 1509027297 c:\working\git\unicon\sw_program\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal.h
 	"stm32f0xx_hal_conf.h"
 
-1532596947 c:\working\git\unicon\sw_program\inc\stm32f0xx_hal_conf.h
+1532614756 c:\working\git\unicon\sw_program\inc\stm32f0xx_hal_conf.h
 	"main.h"
 	"stm32f0xx_hal_rcc.h"
 	"stm32f0xx_hal_gpio.h"
@@ -3298,7 +3298,7 @@
 	"stm32f0xx_hal_usart.h"
 	"stm32f0xx_hal_wwdg.h"
 
-1532597037 c:\working\git\unicon\sw_program\inc\main.h
+1532614756 c:\working\git\unicon\sw_program\inc\main.h
 	"stm32f0xx.h"
 
 1509027294 c:\working\git\unicon\sw_program\drivers\cmsis\device\st\stm32f0xx\include\stm32f0xx.h
@@ -3731,7 +3731,7 @@
 
 1527176687 source:c:\working\git\unicon\sw_program\startup\startup_stm32f0xx.s
 
-1532597209 source:c:\working\git\unicon\sw_program\src\main.c
+1532616011 source:c:\working\git\unicon\sw_program\src\main.c
 	"main.h"
 	"stm32f0xx_hal.h"
 	"eeprom_iic.h"
@@ -3740,15 +3740,15 @@
 	"uart.h"
 	"user_mb_app.h"
 
-1532596947 source:c:\working\git\unicon\sw_program\src\stm32f0xx_hal_msp.c
+1532614756 source:c:\working\git\unicon\sw_program\src\stm32f0xx_hal_msp.c
 	"stm32f0xx_hal.h"
 
-1532596947 source:c:\working\git\unicon\sw_program\src\stm32f0xx_it.c
+1532615885 source:c:\working\git\unicon\sw_program\src\stm32f0xx_it.c
 	"stm32f0xx_hal.h"
 	"stm32f0xx.h"
 	"stm32f0xx_it.h"
 
-1532596947 c:\working\git\unicon\sw_program\inc\stm32f0xx_it.h
+1532614756 c:\working\git\unicon\sw_program\inc\stm32f0xx_it.h
 	"stm32f0xx_hal.h"
 	"main.h"
 
@@ -3762,8 +3762,13 @@
 	<stdbool.h>
 	"stm32f0xx_hal.h"
 
-1527062593 c:\working\git\unicon\sw_program\libs\eeprom_iic\eeprom_iic.h
+1532597886 c:\working\git\unicon\sw_program\libs\eeprom_iic\eeprom_iic.h
 	<stdint.h>
 	<stdbool.h>
 	"stm32f0xx_hal.h"
+
+1532597220 source:c:\working\git\unicon\sw_program\libs\eeprom_iic\eeprom_iic.c
+	<stdlib.h>
+	<string.h>
+	"eeprom_iic.h"
 
