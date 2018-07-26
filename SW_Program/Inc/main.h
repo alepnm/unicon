@@ -41,11 +41,11 @@
   /* Includes ------------------------------------------------------------------*/
 
 /* USER CODE BEGIN Includes */
-
+#include "stm32f0xx.h"
 /* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/
-#define USE_HC598 1
+#define MODBUS_ENABLE 0
 
 #define IO1_Pin GPIO_PIN_0
 #define IO1_GPIO_Port GPIOA
@@ -97,6 +97,8 @@
 #define IO14_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+enum { RESULT_OK = 0, RESULT_ERR, RESULT_BAD_PARAM, RESULT_BUSY } eResult;
+
 #define LED_D2_ON()         HAL_GPIO_WritePin(IO11_GPIO_Port, IO11_Pin, LED_ON)
 #define LED_D2_OFF()        HAL_GPIO_WritePin(IO11_GPIO_Port, IO11_Pin, LED_OFF)
 #define LED_D2_TOGGLE()     HAL_GPIO_TogglePin(IO11_GPIO_Port, IO11_Pin)
@@ -117,6 +119,11 @@
 #define LED_D7_TOGGLE()     HAL_GPIO_TogglePin(IO12_GPIO_Port, IO12_Pin)
 #define GET_LED_D7()        HAL_GPIO_ReadPin(IO12_GPIO_Port, IO12_Pin)
 
+
+typedef struct{
+    __IO uint32_t       CurrentTimestamp;
+    uint32_t            WTime_sec;
+}SysTime_TypeDef;
 
 /* USER CODE END Private defines */
 

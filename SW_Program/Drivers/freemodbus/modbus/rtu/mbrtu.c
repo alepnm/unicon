@@ -67,9 +67,10 @@ typedef enum {
 } eMBSndState;
 
 /* --------  Externs  --------- */
-extern UART_HandleTypeDef* MbPortUART;
-
+extern UART_HandleTypeDef huart1;
 /* ----------------------- Static variables ---------------------------------*/
+static UART_HandleTypeDef* MbPortUART = &huart1;
+
 static volatile eMBSndState eSndState;
 static volatile eMBRcvState eRcvState;
 

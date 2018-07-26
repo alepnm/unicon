@@ -5,7 +5,7 @@
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
-  * USER CODE END. Other portions of this file, whether 
+  * USER CODE END. Other portions of this file, whether
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
@@ -40,7 +40,11 @@
 #include "stm32f0xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "eeprom_i2c.h"
+#include "mb.h"
+#include "mbport.h"
+#include "uart.h"
+#include "user_mb_app.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -58,6 +62,20 @@ TIM_HandleTypeDef htim17;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
+SysTime_TypeDef SysTimers;
+
+volatile uint32_t* Timestamp = &SysTimers.CurrentTimestamp;
+uint32_t* WTime = &SysTimers.WTime_sec;
+
+
+FlagStatus ReadAnalogsFlag = RESET;
+FlagStatus SaveWTime = RESET;
+FlagStatus SystemNeedReInit = RESET;
+FlagStatus SystemNeedReBoot = RESET;
+
+
+
+
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE END PV */
@@ -75,11 +93,12 @@ static void MX_TIM14_Init(void);
 static void MX_ADC_Init(void);
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-                                
+
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-
+static void SysTimeCounterUpdate(void);
+static void SystemReset(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -99,7 +118,11 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+#if( MODBUS_ENABLE==1 )
+    (void)eMBInit( MB_RTU, (UCHAR)0x0A, 0, (ULONG)19200, MB_PAR_NONE );
+    (void)eMBSetSlaveID( 0x01, TRUE, ucSlaveIdBuf, (MB_FUNC_OTHER_REP_SLAVEID_BUF - 4) );
+    (void)eMBEnable();
+#endif
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -126,13 +149,34 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+    while (1) {
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
 
-  }
+        if(ReadAnalogsFlag != RESET) {
+            ReadAnalogsFlag = RESET;
+        }
+
+        if(SaveWTime != RESET) {
+            SaveWTime = RESET;
+        }
+
+        if(SystemNeedReInit != RESET) {
+            SystemNeedReInit = RESET;
+        }
+
+        if(SystemNeedReBoot != RESET) {
+            SystemNeedReBoot = RESET;
+            SystemReset();
+        }
+
+#if( MODBUS_ENABLE == 1 )
+    (void)eMBPoll();
+#endif
+
+
+    }
   /* USER CODE END 3 */
 
 }
@@ -146,7 +190,7 @@ void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
   RCC_PeriphCLKInitTypeDef PeriphClkInit;
 
-    /**Initializes the CPU, AHB and APB busses clocks 
+    /**Initializes the CPU, AHB and APB busses clocks
     */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI14|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
@@ -162,7 +206,7 @@ void SystemClock_Config(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Initializes the CPU, AHB and APB busses clocks 
+    /**Initializes the CPU, AHB and APB busses clocks
     */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
@@ -183,11 +227,11 @@ void SystemClock_Config(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Configure the Systick interrupt time 
+    /**Configure the Systick interrupt time
     */
   HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/8000);
 
-    /**Configure the Systick 
+    /**Configure the Systick
     */
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK_DIV8);
 
@@ -201,7 +245,7 @@ static void MX_ADC_Init(void)
 
   ADC_ChannelConfTypeDef sConfig;
 
-    /**Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) 
+    /**Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
     */
   hadc.Instance = ADC1;
   hadc.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
@@ -222,7 +266,7 @@ static void MX_ADC_Init(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Configure for the selected ADC regular channel to be converted. 
+    /**Configure for the selected ADC regular channel to be converted.
     */
   sConfig.Channel = ADC_CHANNEL_TEMPSENSOR;
   sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
@@ -252,14 +296,14 @@ static void MX_I2C1_Init(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Configure Analogue filter 
+    /**Configure Analogue filter
     */
   if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Configure Digital filter 
+    /**Configure Digital filter
     */
   if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
   {
@@ -432,9 +476,9 @@ static void MX_USART1_UART_Init(void)
 
 }
 
-/** Configure pins as 
-        * Analog 
-        * Input 
+/** Configure pins as
+        * Analog
+        * Input
         * Output
         * EVENT_OUT
         * EXTI
@@ -459,19 +503,19 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SWLATCH_GPIO_Port, SWLATCH_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : IO1_Pin IO2_Pin IO3_Pin IO4_Pin 
+  /*Configure GPIO pins : IO1_Pin IO2_Pin IO3_Pin IO4_Pin
                            IO9_Pin IO20_Pin IO22_Pin */
-  GPIO_InitStruct.Pin = IO1_Pin|IO2_Pin|IO3_Pin|IO4_Pin 
+  GPIO_InitStruct.Pin = IO1_Pin|IO2_Pin|IO3_Pin|IO4_Pin
                           |IO9_Pin|IO20_Pin|IO22_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : IO10_Pin IO11_Pin IO12_Pin IO16_Pin 
-                           IO17_Pin IO18_Pin IO19_Pin IO23_Pin 
+  /*Configure GPIO pins : IO10_Pin IO11_Pin IO12_Pin IO16_Pin
+                           IO17_Pin IO18_Pin IO19_Pin IO23_Pin
                            IO24_Pin IO25_Pin IO14_Pin */
-  GPIO_InitStruct.Pin = IO10_Pin|IO11_Pin|IO12_Pin|IO16_Pin 
-                          |IO17_Pin|IO18_Pin|IO19_Pin|IO23_Pin 
+  GPIO_InitStruct.Pin = IO10_Pin|IO11_Pin|IO12_Pin|IO16_Pin
+                          |IO17_Pin|IO18_Pin|IO19_Pin|IO23_Pin
                           |IO24_Pin|IO25_Pin|IO14_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -508,6 +552,40 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+
+/*  */
+static void SystemReset(void) {
+    NVIC_SystemReset();
+}
+
+
+
+/* SYSTICK callback funkcija */
+void HAL_SYSTICK_Callback(void) {
+    SysTimeCounterUpdate();
+}
+
+/* Sisteminiai taimeriai */
+static void SysTimeCounterUpdate(void) {
+
+    static uint8_t wr_to_eeprom_cnt = 0;
+
+    static uint32_t time = 0u;
+
+    *Timestamp = HAL_GetTick();
+
+    if( time <= *Timestamp ) {
+        time = *Timestamp + 1000u;
+        (*WTime)++;
+
+        /* kas minute EEPROMe saugojam WTIME */
+        if( wr_to_eeprom_cnt++ >= 60 ) {
+            wr_to_eeprom_cnt = 0;
+            SaveWTime = SET;
+        }
+    }
+}
+
 /* USER CODE END 4 */
 
 /**
@@ -518,11 +596,10 @@ static void MX_GPIO_Init(void)
 void _Error_Handler(char * file, int line)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  while(1) 
-  {
-  }
-  /* USER CODE END Error_Handler_Debug */ 
+    /* User can add his own implementation to report the HAL error return state */
+    while(1) {
+    }
+  /* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef USE_FULL_ASSERT
@@ -537,8 +614,8 @@ void _Error_Handler(char * file, int line)
 void assert_failed(uint8_t* file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
-    ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+    /* User can add his own implementation to report the file name and line number,
+      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 
 }
@@ -547,10 +624,10 @@ void assert_failed(uint8_t* file, uint32_t line)
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-*/ 
+*/
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

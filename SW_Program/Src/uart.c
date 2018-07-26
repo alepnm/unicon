@@ -22,7 +22,10 @@ MbPortParams_TypeDef MbPort = {
     .DataBits  = { .pmbus = NULL }
 };
 
-extern UART_HandleTypeDef* MbPortUART;
+/* --------  Externs  --------- */
+extern UART_HandleTypeDef huart1;
+/* ----------------------- Static variables ---------------------------------*/
+static UART_HandleTypeDef* MbPortUART = &huart1;
 
 static const uint32_t baudrates[6u] = {2400u, 4800u, 9600u, 19200u, 38400u, 57600u};
 

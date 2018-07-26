@@ -26,11 +26,11 @@
 #include "mb.h"
 #include "mbport.h"
 
+/* --------------------------  Externs  ------------------------------------ */
+extern TIM_HandleTypeDef htim6;
 
-extern TIM_HandleTypeDef* pModbusTimer;
-extern UART_HandleTypeDef* MbPortUART;
-
-/* Statics */
+/* ----------------------- Static variables ---------------------------------*/
+static TIM_HandleTypeDef* pModbusTimer = &htim6;
 static USHORT usT35TimeOut50us;
 
 /* ----------------------- static functions ---------------------------------*/

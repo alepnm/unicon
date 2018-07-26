@@ -28,7 +28,10 @@
 #include "mbport.h"
 
 
-extern UART_HandleTypeDef* MbPortUART;
+/* --------  Externs  --------- */
+extern UART_HandleTypeDef huart1;
+/* ----------------------- Static variables ---------------------------------*/
+static UART_HandleTypeDef* MbPortUART = &huart1;
 
 void UART_StartReceive(void);
 void UART_StartTransmit(void);

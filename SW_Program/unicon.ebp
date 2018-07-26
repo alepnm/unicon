@@ -97,7 +97,6 @@
 			<Add option="-eb_lib=n" />
 			<Add option="-eb_start_files" />
 			<Add option="-lm" />
-			<Add library="..\..\..\..\Users\alexanderpo\Desktop\static_lib\Output\bin\Debug\static_lib.a" />
 		</Linker>
 		<Unit filename="Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f051x8.h" />
 		<Unit filename="Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h" />
@@ -263,8 +262,11 @@
 		<Unit filename="Inc\stm32f0xx_hal_conf.h" />
 		<Unit filename="Inc\stm32f0xx_it.h" />
 		<Unit filename="Inc\uart.h" />
-		<Unit filename="Inc\unicon_def.h" />
 		<Unit filename="Inc\user_mb_app.h" />
+		<Unit filename="libs\eeprom_i2c\eeprom_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libs\eeprom_i2c\eeprom_i2c.h" />
 		<Unit filename="Src\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
