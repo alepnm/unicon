@@ -263,6 +263,7 @@
 		<Unit filename="Inc\stm32f0xx_hal_conf.h" />
 		<Unit filename="Inc\stm32f0xx_it.h" />
 		<Unit filename="Inc\uart.h" />
+		<Unit filename="Inc\unicon_def.h" />
 		<Unit filename="Inc\user_mb_app.h" />
 		<Unit filename="Src\main.c">
 			<Option compilerVar="CC" />

@@ -5,7 +5,7 @@
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
-  * USER CODE END. Other portions of this file, whether 
+  * USER CODE END. Other portions of this file, whether
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
@@ -97,6 +97,26 @@
 #define IO14_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+#define LED_D2_ON()         HAL_GPIO_WritePin(IO11_GPIO_Port, IO11_Pin, LED_ON)
+#define LED_D2_OFF()        HAL_GPIO_WritePin(IO11_GPIO_Port, IO11_Pin, LED_OFF)
+#define LED_D2_TOGGLE()     HAL_GPIO_TogglePin(IO11_GPIO_Port, IO11_Pin)
+#define GET_LED_D2()        HAL_GPIO_ReadPin(IO11_GPIO_Port, IO11_Pin)
+
+#define LED_D5_ON()         HAL_GPIO_WritePin(IO10_GPIO_Port, IO10_Pin, LED_ON)
+#define LED_D5_OFF()        HAL_GPIO_WritePin(IO10_GPIO_Port, IO10_Pin, LED_OFF)
+#define LED_D5_TOGGLE()     HAL_GPIO_TogglePin(IO10_GPIO_Port, IO10_Pin)
+#define GET_LED_D5()        HAL_GPIO_ReadPin(IO10_GPIO_Port, IO10_Pin)
+
+#define LED_D6_ON()         HAL_GPIO_WritePin(IO16_GPIO_Port, IO16_Pin, LED_ON)
+#define LED_D6_OFF()        HAL_GPIO_WritePin(IO16_GPIO_Port, IO16_Pin, LED_OFF)
+#define LED_D6_TOGGLE()     HAL_GPIO_TogglePin(IO16_GPIO_Port, IO16_Pin)
+#define GET_LED_D6()        HAL_GPIO_ReadPin(IO16_GPIO_Port, IO16_Pin)
+
+#define LED_D7_ON()         HAL_GPIO_WritePin(IO12_GPIO_Port, IO12_Pin, LED_ON)
+#define LED_D7_OFF()        HAL_GPIO_WritePin(IO12_GPIO_Port, IO12_Pin, LED_OFF)
+#define LED_D7_TOGGLE()     HAL_GPIO_TogglePin(IO12_GPIO_Port, IO12_Pin)
+#define GET_LED_D7()        HAL_GPIO_ReadPin(IO12_GPIO_Port, IO12_Pin)
+
 
 /* USER CODE END Private defines */
 
@@ -106,11 +126,11 @@ void _Error_Handler(char *, int);
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-*/ 
+*/
 
 #endif /* __MAIN_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
