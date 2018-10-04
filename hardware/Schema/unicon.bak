@@ -1,11 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:capacitors
-LIBS:disc
-LIBS:ics
-LIBS:mech
-LIBS:resistors_us
-LIBS:various
-LIBS:resistors
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -38,6 +31,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:Diode
+LIBS:Display
 LIBS:unicon-cache
 EELAYER 25 0
 EELAYER END
@@ -235,120 +230,16 @@ Text Label 8550 3600 3    47   ~ 0
 SWCLK
 Text Label 6550 5150 0    47   ~ 0
 ~NRST
-$Comp
-L C_100n_0805_X7R C15
-U 1 1 59855F11
-P 21400 -900
-F 0 "C15" H 21090 -860 59  0000 L CNN
-F 1 "100nF" H 21070 -940 50  0000 L CNN
-F 2 "capacitors:C_0805" H 21438 -1050 50  0001 C CNN
-F 3 "" H 21425 -800 50  0001 C CNN
-F 4 "ZKN065" H 21525 -700 60  0001 C CNN "ventcode"
-F 5 "100n" H 21100 -950 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21725 -500 60  0001 C CNN "Kaina"
-F 7 "0805" H 21825 -400 60  0001 C CNN "Korpusas"
-F 8 "1" H 21925 -300 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 22025 -200 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 22125 -100 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22225 0   60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22325 100 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22400 -900 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21400 -900 60  0001 C CNN "Sheet"
-	1    21400 -900
-	1    0    0    -1  
-$EndComp
-Text Label 20600 -1250 0    50   ~ 0
-PB4
-Text HLabel 23100 -1150 2    60   Output ~ 0
-A0_10
 Text Label 7950 3600 3    60   ~ 0
 B7
 Text Label 8050 3600 3    60   ~ 0
 B6
-$Comp
-L R_10k_0805_1% R25
-U 1 1 5988724F
-P 21950 -750
-F 0 "R25" H 21950 -650 60  0000 C CNN
-F 1 "10k" H 21950 -850 60  0000 C CNN
-F 2 "resistors:R_0805" H 21950 -950 60  0001 C CNN
-F 3 "" H 20350 -250 60  0001 C CNN
-F 4 "ZELRS051" H 22050 -550 60  0001 C CNN "ventcode"
-F 5 "10k" H 21950 -850 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 22200 -950 60  0001 C CNN "Kaina"
-F 7 "0805" H 22150 -950 60  0001 C CNN "Korpusas"
-F 8 "1" H 22150 -950 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 22150 -950 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22650 50  60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22750 150 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22850 250 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22950 350 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21950 -750 60  0001 C CNN "Sheet"
-	1    21950 -750
-	1    0    0    -1  
-$EndComp
 Text Label 7550 3600 3    50   ~ 0
 COM
 Text Label 6550 5250 0    50   ~ 0
 COM
 Text Label 8450 6450 1    50   ~ 0
 COM
-Text Label 20600 -550 0    50   ~ 0
-COM
-$Comp
-L 25AA02E48 U9
-U 1 1 599AC183
-P 27950 9500
-F 0 "U9" H 27600 9800 50  0000 L CNN
-F 1 "25AA02E48" H 27850 9800 50  0000 L CNN
-F 2 "ics:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 28000 9150 50  0001 C CIN
-F 3 "http://pdf1.alldatasheet.com/datasheet-pdf/view/306117/MICROCHIP/25AA02E48.html" H 28000 9150 50  0001 C CNN
-F 4 "ZELM135" H 27900 9150 60  0001 C CNN "ventcode"
-F 5 "-" H 28250 9150 60  0001 C CNN "Nominalas"
-F 6 "0.34" H 27900 9150 60  0001 C CNN "Kaina"
-F 7 "SO-8" H 28350 9150 60  0001 C CNN "Korpusas"
-F 8 "1.1" H 28350 9150 60  0001 C CNN "Aukstis"
-F 9 "25AA02E48" H 28100 9800 60  0001 C CNN "Marke"
-F 10 "Mikroschema" H 27900 9150 60  0001 C CNN "Pavadinimas"
-F 11 "25AA02E48" H 28250 9150 60  0001 C CNN "Gamintojo Kodas"
-F 12 "http://www.futureelectronics.com/en/Search.aspx?dsNav=Ntk:PartNumberSearch|25AA02E48|1|,Ny:True,Nea:True" H 28450 9150 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 28100 9150 47  0001 C CNN "Korpuso tipas"
-F 14 "-" H 27900 9150 60  0001 C CNN "Parametras"
-F 15 "-" H 28050 9150 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 27950 9500 60  0001 C CNN "Sheet"
-	1    27950 9500
-	1    0    0    -1  
-$EndComp
-Text Label 28900 9550 2    50   ~ 0
-PA5
-Text Label 28900 9650 2    50   ~ 0
-PA7
-Text Label 28900 8950 2    50   ~ 0
-PB12
-$Comp
-L C_100n_0805_X7R C26
-U 1 1 599B3590
-P 28450 9850
-F 0 "C26" H 28100 9800 59  0000 L CNN
-F 1 "100nF" H 28060 9900 60  0000 L CNN
-F 2 "capacitors:C_0805" H 28488 9700 50  0001 C CNN
-F 3 "" H 28475 9950 50  0001 C CNN
-F 4 "ZKN065" H 28575 10050 60  0001 C CNN "ventcode"
-F 5 "100n" H 28150 9900 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 28775 10250 60  0001 C CNN "Kaina"
-F 7 "0805" H 28875 10350 60  0001 C CNN "Korpusas"
-F 8 "1" H 28975 10450 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 29075 10550 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 29175 10650 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 29275 10750 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 29375 10850 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 29450 9850 60  0001 C CNN "Korpuso tipas"
-F 14 "100n" H 29575 11050 60  0001 C CNN "Parametras"
-F 15 "-" H 29675 11150 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 28450 9850 60  0001 C CNN "Sheet"
-	1    28450 9850
-	-1   0    0    1   
-$EndComp
 $Comp
 L Crystal_smd_11x5 Y1
 U 1 1 599F7D28
@@ -426,8 +317,6 @@ F 14 "mcu" H 3100 5150 60  0001 C CNN "Sheet"
 $EndComp
 Text Label 3450 4900 2    59   ~ 0
 VDDA
-Text Label 28900 9100 2    50   ~ 0
-3VDC
 Text Label 6550 4550 0    50   ~ 0
 3VDC
 Text Label 7850 3600 3    50   ~ 0
@@ -477,10 +366,6 @@ F 13 "mcu" H 1600 2750 60  0001 C CNN "Sheet"
 $EndComp
 Text Label 4000 2750 2    50   ~ 0
 BT0
-Text Label 27350 7900 2    60   ~ 0
-3VDC
-Text Label 28900 8550 2    50   ~ 0
-PA6
 $Comp
 L R_1M2_0805_1% R9
 U 1 1 59A61B1F
@@ -507,174 +392,6 @@ F 16 "mcu" V 3450 3300 60  0001 C CNN "Sheet"
 $EndComp
 Text Label 9500 5650 2    50   ~ 0
 B12
-$Comp
-L RN_8.2K_5% RN10
-U 1 1 599F3AC3
-P 24100 8150
-F 0 "RN10" H 24000 8250 50  0001 L CNN
-F 1 "8.2K" H 25300 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 24850 8100 50  0001 C CNN
-F 3 "" H 24150 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24100 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24100 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25200 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 25700 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 25650 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 25450 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 24900 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 24750 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 24600 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24100 8150 60  0001 C CNN "Sheet"
-	1    24100 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN10
-U 2 1 599F3BEF
-P 24200 8150
-F 0 "RN10" H 24100 8250 50  0001 L CNN
-F 1 "8.2K" H 25400 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 24950 8100 50  0001 C CNN
-F 3 "" H 24250 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24200 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24200 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25300 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 25800 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 25750 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 25550 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25000 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 24850 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 24700 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24200 8150 60  0001 C CNN "Sheet"
-	2    24200 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN10
-U 3 1 599F3D0B
-P 24300 8150
-F 0 "RN10" H 24200 8250 50  0001 L CNN
-F 1 "8.2K" H 25500 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25050 8100 50  0001 C CNN
-F 3 "" H 24350 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24300 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24300 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25400 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 25900 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 25850 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 25650 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25100 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 24950 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 24800 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24300 8150 60  0001 C CNN "Sheet"
-	3    24300 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN10
-U 4 1 599F3E25
-P 24400 8150
-F 0 "RN10" H 24300 8250 50  0001 L CNN
-F 1 "8.2K" H 25600 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25150 8100 50  0001 C CNN
-F 3 "" H 24450 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24400 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24400 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25500 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 26000 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 25950 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 25750 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25200 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25050 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 24900 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24400 8150 60  0001 C CNN "Sheet"
-	4    24400 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN11
-U 1 1 599F711B
-P 24500 8150
-F 0 "RN11" H 24400 8250 50  0001 L CNN
-F 1 "8.2K" H 25700 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25250 8100 50  0001 C CNN
-F 3 "" H 24550 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24500 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24500 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25600 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 26100 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 26050 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 25850 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25300 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25150 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25000 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24500 8150 60  0001 C CNN "Sheet"
-	1    24500 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN11
-U 2 1 599F77EB
-P 24600 8150
-F 0 "RN11" H 24500 8250 50  0001 L CNN
-F 1 "8.2K" H 25800 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25350 8100 50  0001 C CNN
-F 3 "" H 24650 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24600 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24600 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25700 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 26200 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 26150 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 25950 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25400 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25250 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25100 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24600 8150 60  0001 C CNN "Sheet"
-	2    24600 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN11
-U 3 1 599F78F1
-P 24700 8150
-F 0 "RN11" H 24600 8250 50  0001 L CNN
-F 1 "8.2K" H 25900 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25450 8100 50  0001 C CNN
-F 3 "" H 24750 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24700 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24700 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25800 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 26300 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 26250 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 26050 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25500 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25350 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25200 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24700 8150 60  0001 C CNN "Sheet"
-	3    24700 8150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RN_8.2K_5% RN11
-U 4 1 599F79E5
-P 24800 8150
-F 0 "RN11" H 24700 8250 50  0001 L CNN
-F 1 "8.2K" H 26000 8100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25550 8100 50  0001 C CNN
-F 3 "" H 24850 8350 50  0001 C CNN
-F 4 "ZELRS046" H 24800 7950 60  0001 C CNN "ventcode"
-F 5 "8.2k" H 24800 8050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 25900 8000 60  0001 C CNN "Kaina"
-F 7 "CN1J4A-SO8" H 26400 8200 60  0001 C CNN "Korpusas"
-F 8 "1" H 26350 8000 60  0001 C CNN "Aukstis"
-F 9 "CN" H 26150 8000 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25600 8200 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25450 8000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25300 8000 60  0001 C CNN "Nuoroda"
-F 13 "mcu" H 24800 8150 60  0001 C CNN "Sheet"
-	4    24800 8150
-	0    -1   -1   0   
-$EndComp
 Text Label 9500 5550 2    50   ~ 0
 B13
 $Comp
@@ -773,46 +490,6 @@ F 14 "mcu" V 7150 7900 60  0001 C CNN "Sheet"
 	1    7150 7900
 	0    1    -1   0   
 $EndComp
-Text Label 28900 10100 2    50   ~ 0
-COM
-Text HLabel 23950 8500 0    60   Input ~ 0
-SW1
-Text HLabel 23950 8600 0    60   Input ~ 0
-SW2
-Text HLabel 23950 8700 0    60   Input ~ 0
-SW3
-Text HLabel 23950 8800 0    60   Input ~ 0
-SW4
-Text HLabel 23950 8900 0    60   Input ~ 0
-SW5
-Text HLabel 23950 9000 0    60   Input ~ 0
-SW6
-Text HLabel 23950 9100 0    60   Input ~ 0
-SW7
-Text HLabel 23950 9200 0    60   Input ~ 0
-SW8
-$Comp
-L C_100n_0805_X7R C22
-U 1 1 59EB634C
-P 22850 -850
-F 0 "C22" H 23000 -850 59  0000 L CNN
-F 1 "100nF" H 23010 -930 50  0000 L CNN
-F 2 "capacitors:C_0805" H 22888 -1000 50  0001 C CNN
-F 3 "" H 22875 -750 50  0001 C CNN
-F 4 "ZKN065" H 22975 -650 60  0001 C CNN "ventcode"
-F 5 "100n" H 23100 -950 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 23175 -450 60  0001 C CNN "Kaina"
-F 7 "0805" H 23275 -350 60  0001 C CNN "Korpusas"
-F 8 "1" H 23375 -250 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 23475 -150 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 23575 -50 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 23675 50  60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23775 150 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23850 -850 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 22850 -850 60  0001 C CNN "Sheet"
-	1    22850 -850
-	1    0    0    -1  
-$EndComp
 Text Label 6550 5050 0    50   ~ 0
 OSCOUT
 Text Label 6550 4950 0    50   ~ 0
@@ -821,100 +498,8 @@ Text Label 4000 3000 2    50   ~ 0
 OSCIN
 Text Label 4000 3600 2    50   ~ 0
 OSCOUT
-$Comp
-L R_30k_0805_1% R24
-U 1 1 59E901D9
-P 21950 -1500
-F 0 "R24" H 21800 -1400 60  0000 C CNN
-F 1 "30k" H 22000 -1400 60  0000 C CNN
-F 2 "resistors:R_0805" H 22950 -1450 60  0001 C CNN
-F 3 "" H 20350 -1000 60  0001 C CNN
-F 4 "ventcode" H 21950 -1700 60  0001 C CNN "ventcode"
-F 5 "30k" H 22000 -1400 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 23200 -1550 60  0001 C CNN "Kaina"
-F 7 "0805" H 23900 -1450 60  0001 C CNN "Korpusas"
-F 8 "1" H 23550 -1550 60  0001 C CNN "Aukstis"
-F 9 "-" H 22600 -1600 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22800 -1350 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22600 -1550 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22600 -1650 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23550 -1450 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 22600 -1700 60  0001 C CNN "Parametras"
-F 15 "-" H 22600 -1750 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21950 -1500 60  0001 C CNN "Sheet"
-	1    21950 -1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_200k_0805_1% R18
-U 1 1 59E923F4
-P 21150 -1250
-F 0 "R18" H 21000 -1150 60  0000 C CNN
-F 1 "200k" H 21230 -1150 60  0000 C CNN
-F 2 "resistors:R_0805" H 22150 -1200 60  0001 C CNN
-F 3 "" H 19550 -750 60  0001 C CNN
-F 4 "ventcode" H 21150 -1450 60  0001 C CNN "ventcode"
-F 5 "200k" H 21250 -1150 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 22400 -1300 60  0001 C CNN "Kaina"
-F 7 "0805" H 23100 -1200 60  0001 C CNN "Korpusas"
-F 8 "1" H 22750 -1300 60  0001 C CNN "Aukstis"
-F 9 "-" H 21800 -1350 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22000 -1100 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21800 -1300 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 21800 -1400 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22750 -1200 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 21800 -1450 60  0001 C CNN "Parametras"
-F 15 "-" H 21800 -1500 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21150 -1250 60  0001 C CNN "Sheet"
-	1    21150 -1250
-	1    0    0    -1  
-$EndComp
 Text HLabel 1200 5400 0    60   UnSpc ~ 0
 COM
-$Comp
-L 74HC589A U8
-U 1 1 5A8803FD
-P 26400 9050
-F 0 "U8" H 26400 9100 50  0000 C CNN
-F 1 "74HC589A" H 26400 9000 50  0000 C CNN
-F 2 "ics:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 27900 8800 50  0001 C CNN
-F 3 "" H 26400 9050 50  0001 C CNN
-F 4 "-" H 26400 9000 60  0001 C CNN "ventcode"
-F 5 "-" H 27250 8900 60  0001 C CNN "Nominalas"
-F 6 "0" H 28200 8900 60  0001 C CNN "Kaina"
-F 7 "SO-16" H 27350 8950 60  0001 C CNN "Korpusas"
-F 8 "0" H 28100 8900 60  0001 C CNN "Aukstis"
-F 9 "Mikroschema" H 27450 9050 60  0001 C CNN "Pavadinimas"
-F 10 "MC74HC589A" H 28050 9050 60  0001 C CNN "Gamintojo Kodas"
-F 11 "-" H 27350 8900 60  0001 C CNN "Nuoroda"
-F 12 "SMD" H 27700 8950 60  0001 C CNN "Korpuso tipas"
-F 13 "-" H 27550 8900 60  0001 C CNN "Komentaras"
-F 14 "mcu" H 26400 9050 60  0001 C CNN "Sheet"
-	1    26400 9050
-	1    0    0    -1  
-$EndComp
-Text Label 27000 10100 2    60   ~ 0
-COM
-Text Label 25200 9700 0    60   ~ 0
-PA5
-Text Label 25200 9350 0    60   ~ 0
-PF6
-Text Label 25200 8500 0    60   ~ 0
-P0
-Text Label 25200 8600 0    60   ~ 0
-P1
-Text Label 25200 8700 0    60   ~ 0
-P2
-Text Label 25200 8800 0    60   ~ 0
-P3
-Text Label 25200 8900 0    60   ~ 0
-P4
-Text Label 25200 9000 0    60   ~ 0
-P5
-Text Label 25200 9100 0    60   ~ 0
-P6
-Text Label 25200 9200 0    60   ~ 0
-P7
 $Comp
 L STM32F051C8Tx U3
 U 1 1 5A60E02E
@@ -937,186 +522,6 @@ F 14 "FLASH 64kB / RAM 16kB" H 10950 5450 60  0001 C CNN "Parametras"
 F 15 "-" H 10300 5450 60  0001 C CNN "Komentaras"
 F 16 "mcu" H 8000 5100 60  0001 C CNN "Sheet"
 	1    8000 5100
-	1    0    0    -1  
-$EndComp
-Text Label 20600 -1700 0    60   ~ 0
-12VDC
-Text Label 25200 9800 0    50   ~ 0
-PB13
-$Comp
-L RN_120R_5% RN12
-U 1 1 5A7C03B5
-P 25050 8500
-F 0 "RN12" H 24950 8600 50  0001 L CNN
-F 1 "120R" H 24850 8400 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 8450 50  0001 C CNN
-F 3 "" H 24900 8700 50  0001 C CNN
-F 4 "ZELRS081" H 25050 8400 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 8550 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8350 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 8450 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8350 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8350 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 8550 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8350 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8350 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 8450 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 8500 60  0001 C CNN "Sheet"
-	1    25050 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN12
-U 2 1 5A7C0767
-P 25050 8600
-F 0 "RN12" H 24950 8700 50  0001 L CNN
-F 1 "120R" H 24850 8500 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 8550 50  0001 C CNN
-F 3 "" H 24900 8800 50  0001 C CNN
-F 4 "ZELRS081" H 25050 8500 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 8650 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8450 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 8550 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8450 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8450 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 8650 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8450 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8450 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 8550 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 8600 60  0001 C CNN "Sheet"
-	2    25050 8600
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN12
-U 3 1 5A7C08ED
-P 25050 8700
-F 0 "RN12" H 24950 8800 50  0001 L CNN
-F 1 "120R" H 24850 8600 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 8650 50  0001 C CNN
-F 3 "" H 24900 8900 50  0001 C CNN
-F 4 "ZELRS081" H 25050 8600 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 8750 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8550 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 8650 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8550 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8550 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 8750 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8550 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8550 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 8650 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 8700 60  0001 C CNN "Sheet"
-	3    25050 8700
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN12
-U 4 1 5A7C0A7C
-P 25050 8800
-F 0 "RN12" H 24950 8900 50  0001 L CNN
-F 1 "120R" H 24850 8700 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 8750 50  0001 C CNN
-F 3 "" H 24900 9000 50  0001 C CNN
-F 4 "ZELRS081" H 25050 8700 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 8850 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8650 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 8750 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8650 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8650 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 8850 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8650 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8650 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 8750 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 8800 60  0001 C CNN "Sheet"
-	4    25050 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN13
-U 1 1 5A7C1481
-P 25050 8900
-F 0 "RN13" H 24950 9000 50  0001 L CNN
-F 1 "120R" H 24850 8800 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 8850 50  0001 C CNN
-F 3 "" H 24900 9100 50  0001 C CNN
-F 4 "ZELRS081" H 25050 8800 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 8950 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8750 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 8850 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8750 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8750 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 8950 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8750 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8750 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 8850 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 8900 60  0001 C CNN "Sheet"
-	1    25050 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN13
-U 2 1 5A7C16F5
-P 25050 9000
-F 0 "RN13" H 24950 9100 50  0001 L CNN
-F 1 "120R" H 24850 8900 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 8950 50  0001 C CNN
-F 3 "" H 24900 9200 50  0001 C CNN
-F 4 "ZELRS081" H 25050 8900 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 9050 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8850 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 8950 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8850 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8850 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 9050 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8850 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8850 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 8950 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 9000 60  0001 C CNN "Sheet"
-	2    25050 9000
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN13
-U 3 1 5A7C186C
-P 25050 9100
-F 0 "RN13" H 24950 9200 50  0001 L CNN
-F 1 "120R" H 24850 9000 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 9050 50  0001 C CNN
-F 3 "" H 24900 9300 50  0001 C CNN
-F 4 "ZELRS081" H 25050 9000 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 9150 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 8950 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 9050 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 8950 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 8950 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 9150 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 8950 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 8950 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 9050 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 9100 60  0001 C CNN "Sheet"
-	3    25050 9100
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN_120R_5% RN13
-U 4 1 5A7C19E3
-P 25050 9200
-F 0 "RN13" H 24950 9300 50  0001 L CNN
-F 1 "120R" H 24850 9100 50  0001 L CNN
-F 2 "resistors:RN1206" H 25800 9150 50  0001 C CNN
-F 3 "" H 24900 9400 50  0001 C CNN
-F 4 "ZELRS081" H 25050 9100 60  0001 C CNN "ventcode"
-F 5 "120R" H 26400 9250 60  0001 C CNN "Nominalas"
-F 6 "0.01" H 26200 9050 60  0001 C CNN "Kaina"
-F 7 "1206" H 26350 9150 60  0001 C CNN "Korpusas"
-F 8 "1" H 26000 9050 60  0001 C CNN "Aukstis"
-F 9 "CN1J121" H 26400 9050 60  0001 C CNN "Marke"
-F 10 "Rezitoriu Matrica" H 25850 9250 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 25700 9050 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 25800 9050 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 26650 9150 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 25050 9200 60  0001 C CNN "Sheet"
-	4    25050 9200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1189,203 +594,14 @@ F 14 "mcu" H 2150 3150 60  0001 C CNN "Sheet"
 	1    2150 3150
 	1    0    0    -1  
 $EndComp
-Text Label 25200 9500 0    60   ~ 0
-PA11
 Text HLabel 1250 1650 0    60   Input ~ 0
 12VDC
-$Comp
-L R_4.7k_0805_1% R14
-U 1 1 5B507915
-P 20700 8500
-F 0 "R14" H 20550 8600 60  0000 C CNN
-F 1 "4.7k" H 20760 8600 60  0000 C CNN
-F 2 "resistors:R_0805" H 21650 8500 60  0001 C CNN
-F 3 "" H 19100 9000 60  0001 C CNN
-F 4 "ZELRS053" H 20700 8300 60  0001 C CNN "ventcode"
-F 5 "4.7k" H 20800 8600 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21900 8400 60  0001 C CNN "Kaina"
-F 7 "0805" H 21600 8400 60  0001 C CNN "Korpusas"
-F 8 "1" H 21850 8300 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 21550 8300 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 21600 8700 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21900 8700 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22000 8700 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 20700 8500 60  0001 C CNN "Korpuso tipas"
-F 14 "rs485" H 20700 8500 60  0001 C CNN "Sheet"
-	1    20700 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_4.7k_0805_1% R15
-U 1 1 5B507916
-P 20700 8800
-F 0 "R15" H 20550 8700 60  0000 C CNN
-F 1 "4.7k" H 20770 8700 60  0000 C CNN
-F 2 "resistors:R_0805" H 21650 8800 60  0001 C CNN
-F 3 "" H 19100 9300 60  0001 C CNN
-F 4 "ZELRS053" H 20700 8600 60  0001 C CNN "ventcode"
-F 5 "4.7k" H 20800 8700 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21900 8700 60  0001 C CNN "Kaina"
-F 7 "0805" H 21600 8700 60  0001 C CNN "Korpusas"
-F 8 "1" H 21850 8600 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 21550 8600 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 21600 9000 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21900 9000 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22000 9000 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 20700 8800 60  0001 C CNN "Korpuso tipas"
-F 14 "rs485" H 20700 8800 60  0001 C CNN "Sheet"
-	1    20700 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_47R_0805_1% R12
-U 1 1 5B507917
-P 19900 8200
-F 0 "R12" H 19790 8290 60  0000 C CNN
-F 1 "47R" H 19990 8290 60  0000 C CNN
-F 2 "resistors:R_0805" H 20850 8200 60  0001 C CNN
-F 3 "" H 18300 8700 60  0001 C CNN
-F 4 "ZELRS054" H 19900 8000 60  0001 C CNN "ventcode"
-F 5 "47R" H 19900 8100 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21100 8100 60  0001 C CNN "Kaina"
-F 7 "0805" H 20800 8100 60  0001 C CNN "Korpusas"
-F 8 "1" H 21050 8000 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 20750 8000 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 20800 8400 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21100 8400 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 21200 8400 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 20550 8100 60  0001 C CNN "Korpuso tipas"
-F 14 "rs485" H 19900 8200 60  0001 C CNN "Sheet"
-	1    19900 8200
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_47R_0805_1% R13
-U 1 1 5B507918
-P 19900 9200
-F 0 "R13" H 19810 9300 60  0000 C CNN
-F 1 "47R" H 20010 9300 60  0000 C CNN
-F 2 "resistors:R_0805" H 20850 9200 60  0001 C CNN
-F 3 "" H 18300 9700 60  0001 C CNN
-F 4 "ZELRS054" H 19900 9000 60  0001 C CNN "ventcode"
-F 5 "47R" H 19900 9100 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21100 9100 60  0001 C CNN "Kaina"
-F 7 "0805" H 20800 9100 60  0001 C CNN "Korpusas"
-F 8 "1" H 21050 9000 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 20750 9000 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 20800 9400 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21100 9400 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 21200 9400 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 20550 9100 60  0001 C CNN "Korpuso tipas"
-F 14 "rs485" H 19900 9200 60  0001 C CNN "Sheet"
-	1    19900 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_120R_1206_1% R11
-U 1 1 5B507919
-P 19550 8850
-F 0 "R11" V 19580 8690 60  0000 C CNN
-F 1 "120R" V 19500 8660 60  0000 C CNN
-F 2 "resistors:R_1206" H 20500 8850 60  0001 C CNN
-F 3 "" H 17950 9350 60  0001 C CNN
-F 4 "ZELRS042" H 19550 8650 60  0001 C CNN "ventcode"
-F 5 "120R" H 19550 8750 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 20750 8750 60  0001 C CNN "Kaina"
-F 7 "1206" H 20450 8750 60  0001 C CNN "Korpusas"
-F 8 "1" H 20700 8650 60  0001 C CNN "Aukstis"
-F 9 "-" H 20400 8650 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 20450 9050 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 20750 9050 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 20850 9050 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 19550 8850 60  0001 C CNN "Korpuso tipas"
-F 14 "rs485" V 19550 8850 60  0001 C CNN "Sheet"
-	1    19550 8850
-	0    -1   -1   0   
-$EndComp
-Text HLabel 19250 8400 0    60   Input ~ 0
-TERMA
-Text HLabel 19250 8500 0    60   Input ~ 0
-TERMB
-Text HLabel 19250 8200 0    60   BiDi ~ 0
-RSB
-Text HLabel 19250 9200 0    60   BiDi ~ 0
-RSA
-$Comp
-L C_100n_0805_X7R C19
-U 1 1 5B50791A
-P 22050 9000
-F 0 "C19" H 21780 8960 59  0000 L CNN
-F 1 "100nF" H 21750 9040 50  0000 L CNN
-F 2 "capacitors:C_0805" H 22088 8850 50  0001 C CNN
-F 3 "" H 22075 9100 50  0001 C CNN
-F 4 "ZKN065" H 22175 9200 60  0001 C CNN "ventcode"
-F 5 "100n" H 21750 9050 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 22375 9400 60  0001 C CNN "Kaina"
-F 7 "0805" H 22475 9500 60  0001 C CNN "Korpusas"
-F 8 "1" H 22575 9600 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 22675 9700 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 22775 9800 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22875 9900 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22975 10000 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23050 9000 60  0001 C CNN "Korpuso tipas"
-F 14 "rs485" H 22050 9000 60  0001 C CNN "Sheet"
-	1    22050 9000
-	-1   0    0    1   
-$EndComp
-$Comp
-L ST485B U5
-U 1 1 5B50791B
-P 21450 8650
-F 0 "U5" H 21200 8950 50  0000 L CNN
-F 1 "ST485B" H 21450 8950 50  0000 L CNN
-F 2 "ics:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 22900 8550 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/4b/81/a8/cd/8a/72/47/82/CD00002183.pdf/files/CD00002183.pdf/jcr:content/translations/en.CD00002183.pdf" H 25850 8450 50  0001 C CNN
-F 4 "ZELM063" H 23300 8650 60  0001 C CNN "ventcode"
-F 5 "-" H 24050 8550 60  0001 C CNN "Nominalas"
-F 6 "-" H 24400 8550 60  0001 C CNN "Kaina"
-F 7 "SOIC-8" H 22350 8650 60  0001 C CNN "Korpusas"
-F 8 "1.1" H 24700 8550 60  0001 C CNN "Aukstis"
-F 9 "-" H 23750 8550 60  0001 C CNN "Marke"
-F 10 "Mikroschema" H 22500 8750 60  0001 C CNN "Pavadinimas"
-F 11 "ST485B" H 23100 8750 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 24150 8550 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23450 8750 47  0001 C CNN "Korpuso tipas"
-F 14 "-" H 23850 8550 60  0001 C CNN "Parametras"
-F 15 "-" H 23950 8550 60  0001 C CNN "Komentaras"
-F 16 "rs485" H 21450 8650 60  0001 C CNN "Sheet"
-	1    21450 8650
-	-1   0    0    -1  
-$EndComp
 Text Label 9500 4750 2    60   ~ 0
 SWDIO
 Text Label 9500 4650 2    60   ~ 0
 F6
 Text Label 9500 4950 2    60   ~ 0
 A11
-$Comp
-L ULN2003A U6
-U 1 1 5B516C3B
-P 22000 5450
-F 0 "U6" H 22000 5975 50  0000 C CNN
-F 1 "ULN2003A" H 22000 5900 50  0000 C CNN
-F 2 "ics:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 22050 4800 50  0001 L CNN
-F 3 "" H 22100 5350 50  0001 C CNN
-F 4 "ZELM049" H 22100 6075 60  0001 C CNN "ventcode"
-F 5 "-" H 22200 6175 60  0001 C CNN "Nominalas"
-F 6 "0.08" H 22300 6275 60  0001 C CNN "Kaina"
-F 7 "0805" H 22400 6375 60  0001 C CNN "Korpusas"
-F 8 "1" H 22500 6475 60  0001 C CNN "Aukstis"
-F 9 "ULN2003ADR" H 22600 6575 60  0001 C CNN "Marke"
-F 10 "Mikroschema" H 22700 6675 60  0001 C CNN "Pavadinimas"
-F 11 "ULN2003ADR" H 22800 6775 60  0001 C CNN "Gamintojo Kodas"
-F 12 "http://www.tme.eu/en/details/uln2003adr/drivers-integrated-circuits/texas-instruments/" H 22900 6875 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23000 6975 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 23100 7075 60  0001 C CNN "Parametras"
-F 15 "-" H 23200 7175 60  0001 C CNN "Komentaras"
-	1    22000 5450
-	1    0    0    -1  
-$EndComp
 $Comp
 L USTAB_SIP21106-DT-33 U2
 U 1 1 5B525F67
@@ -1497,70 +713,10 @@ F 8 "DIP" H 7150 2100 60  0001 C CNN "Korpuso tipas"
 	1    6200 1950
 	1    0    0    -1  
 $EndComp
-Text Label 22600 8200 2    60   ~ 0
-5VDC
-Text Label 22600 9200 2    50   ~ 0
-COM
 Text HLabel 1700 2250 0    60   UnSpc ~ 0
 COM
 Text Label 9250 7950 2    60   ~ 0
 COM
-Text Label 21200 6450 0    50   ~ 0
-COM
-Text HLabel 22700 5950 2    60   Input ~ 0
-UB
-Text HLabel 22700 5150 2    60   Output ~ 0
-OC1
-Text HLabel 22700 5250 2    60   Output ~ 0
-OC2
-Text HLabel 22700 5350 2    60   Output ~ 0
-OC3
-Text HLabel 22700 5450 2    60   Output ~ 0
-OC4
-Text HLabel 22700 5550 2    60   Output ~ 0
-OC5
-Text HLabel 22700 5650 2    60   Output ~ 0
-OC6
-Text HLabel 22700 5750 2    60   Output ~ 0
-OC7
-Text Label 21200 5150 0    60   ~ 0
-DO5
-Text Label 21200 5250 0    60   ~ 0
-DO6
-Text Label 21200 5350 0    60   ~ 0
-DO7
-Text Label 21200 5450 0    60   ~ 0
-DO8
-Text Label 21200 5550 0    60   ~ 0
-DO9
-Text Label 21200 5650 0    60   ~ 0
-DO10
-Text Label 21200 5750 0    60   ~ 0
-DO11
-$Comp
-L C_100n_0805_X7R C21
-U 1 1 5B538CC8
-P 22550 6200
-F 0 "C21" H 22300 6150 59  0000 L CNN
-F 1 "100nF" H 22200 6250 50  0000 L CNN
-F 2 "capacitors:C_0805" H 22588 6050 50  0001 C CNN
-F 3 "" H 22575 6300 50  0001 C CNN
-F 4 "ZKN065" H 22675 6400 60  0001 C CNN "ventcode"
-F 5 "100n" H 22800 6250 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 22875 6600 60  0001 C CNN "Kaina"
-F 7 "0805" H 22975 6700 60  0001 C CNN "Korpusas"
-F 8 "1" H 23075 6800 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 23175 6900 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 23275 7000 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 23375 7100 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23475 7200 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23550 6200 60  0001 C CNN "Korpuso tipas"
-F 14 "100n" H 23675 7400 60  0001 C CNN "Parametras"
-F 15 "-" H 23775 7500 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 22550 6200 60  0001 C CNN "Sheet"
-	1    22550 6200
-	-1   0    0    1   
-$EndComp
 Text HLabel 1200 4900 0    60   Output ~ 0
 3VDC
 $Comp
@@ -1601,12 +757,6 @@ F 14 "mcu" H 3650 2000 60  0001 C CNN "Sheet"
 	1    3650 2000
 	1    0    0    -1  
 $EndComp
-Text Label 22600 8500 2    60   ~ 0
-PA10
-Text Label 22600 8700 2    60   ~ 0
-PA12
-Text Label 22600 8800 2    60   ~ 0
-PA9
 Text Label 9500 4850 2    60   ~ 0
 A12
 Text Label 9500 5050 2    60   ~ 0
@@ -2240,372 +1390,6 @@ B4
 Text Label 8150 3600 3    60   ~ 0
 B5
 $Comp
-L C_100n_0805_X7R C16
-U 1 1 5B5871AD
-P 21400 600
-F 0 "C16" H 21090 640 59  0000 L CNN
-F 1 "100nF" H 21070 560 50  0000 L CNN
-F 2 "capacitors:C_0805" H 21438 450 50  0001 C CNN
-F 3 "" H 21425 700 50  0001 C CNN
-F 4 "ZKN065" H 21525 800 60  0001 C CNN "ventcode"
-F 5 "100n" H 21100 550 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21725 1000 60  0001 C CNN "Kaina"
-F 7 "0805" H 21825 1100 60  0001 C CNN "Korpusas"
-F 8 "1" H 21925 1200 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 22025 1300 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 22125 1400 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22225 1500 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22325 1600 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22400 600 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21400 600 60  0001 C CNN "Sheet"
-	1    21400 600 
-	1    0    0    -1  
-$EndComp
-Text Label 20600 250  0    50   ~ 0
-PB5
-Text HLabel 23100 350  2    60   Output ~ 0
-B0_10
-$Comp
-L R_10k_0805_1% R27
-U 1 1 5B5871C0
-P 21950 750
-F 0 "R27" H 21950 850 60  0000 C CNN
-F 1 "10k" H 21950 650 60  0000 C CNN
-F 2 "resistors:R_0805" H 21950 550 60  0001 C CNN
-F 3 "" H 20350 1250 60  0001 C CNN
-F 4 "ZELRS051" H 22050 950 60  0001 C CNN "ventcode"
-F 5 "10k" H 21950 650 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 22200 550 60  0001 C CNN "Kaina"
-F 7 "0805" H 22150 550 60  0001 C CNN "Korpusas"
-F 8 "1" H 22150 550 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 22150 550 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22650 1550 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22750 1650 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22850 1750 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22950 1850 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21950 750 60  0001 C CNN "Sheet"
-	1    21950 750 
-	1    0    0    -1  
-$EndComp
-Text Label 20600 950  0    50   ~ 0
-COM
-$Comp
-L C_100n_0805_X7R C23
-U 1 1 5B5871E5
-P 22850 650
-F 0 "C23" H 23000 650 59  0000 L CNN
-F 1 "100nF" H 23010 570 50  0000 L CNN
-F 2 "capacitors:C_0805" H 22888 500 50  0001 C CNN
-F 3 "" H 22875 750 50  0001 C CNN
-F 4 "ZKN065" H 22975 850 60  0001 C CNN "ventcode"
-F 5 "100n" H 23100 550 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 23175 1050 60  0001 C CNN "Kaina"
-F 7 "0805" H 23275 1150 60  0001 C CNN "Korpusas"
-F 8 "1" H 23375 1250 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 23475 1350 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 23575 1450 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 23675 1550 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23775 1650 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23850 650 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 22850 650 60  0001 C CNN "Sheet"
-	1    22850 650 
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_30k_0805_1% R26
-U 1 1 5B587218
-P 21950 0
-F 0 "R26" H 21800 100 60  0000 C CNN
-F 1 "30k" H 22000 100 60  0000 C CNN
-F 2 "resistors:R_0805" H 22950 50  60  0001 C CNN
-F 3 "" H 20350 500 60  0001 C CNN
-F 4 "ventcode" H 21950 -200 60  0001 C CNN "ventcode"
-F 5 "30k" H 22000 100 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 23200 -50 60  0001 C CNN "Kaina"
-F 7 "0805" H 23900 50  60  0001 C CNN "Korpusas"
-F 8 "1" H 23550 -50 60  0001 C CNN "Aukstis"
-F 9 "-" H 22600 -100 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22800 150 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22600 -50 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22600 -150 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23550 50  60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 22600 -200 60  0001 C CNN "Parametras"
-F 15 "-" H 22600 -250 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21950 0   60  0001 C CNN "Sheet"
-	1    21950 0   
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_200k_0805_1% R19
-U 1 1 5B58722B
-P 21150 250
-F 0 "R19" H 21000 350 60  0000 C CNN
-F 1 "200k" H 21230 350 60  0000 C CNN
-F 2 "resistors:R_0805" H 22150 300 60  0001 C CNN
-F 3 "" H 19550 750 60  0001 C CNN
-F 4 "ventcode" H 21150 50  60  0001 C CNN "ventcode"
-F 5 "200k" H 21250 350 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 22400 200 60  0001 C CNN "Kaina"
-F 7 "0805" H 23100 300 60  0001 C CNN "Korpusas"
-F 8 "1" H 22750 200 60  0001 C CNN "Aukstis"
-F 9 "-" H 21800 150 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22000 400 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21800 200 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 21800 100 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22750 300 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 21800 50  60  0001 C CNN "Parametras"
-F 15 "-" H 21800 0   60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21150 250 60  0001 C CNN "Sheet"
-	1    21150 250 
-	1    0    0    -1  
-$EndComp
-Text Label 20600 -200 0    60   ~ 0
-12VDC
-$Comp
-L C_100n_0805_X7R C17
-U 1 1 5B5886CB
-P 21400 2200
-F 0 "C17" H 21090 2240 59  0000 L CNN
-F 1 "100nF" H 21070 2160 50  0000 L CNN
-F 2 "capacitors:C_0805" H 21438 2050 50  0001 C CNN
-F 3 "" H 21425 2300 50  0001 C CNN
-F 4 "ZKN065" H 21525 2400 60  0001 C CNN "ventcode"
-F 5 "100n" H 21100 2150 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21725 2600 60  0001 C CNN "Kaina"
-F 7 "0805" H 21825 2700 60  0001 C CNN "Korpusas"
-F 8 "1" H 21925 2800 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 22025 2900 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 22125 3000 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22225 3100 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22325 3200 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22400 2200 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21400 2200 60  0001 C CNN "Sheet"
-	1    21400 2200
-	1    0    0    -1  
-$EndComp
-Text Label 20600 1850 0    50   ~ 0
-PB0
-Text HLabel 23100 1950 2    60   Output ~ 0
-C0_10
-$Comp
-L R_10k_0805_1% R29
-U 1 1 5B5886DE
-P 21950 2350
-F 0 "R29" H 21950 2450 60  0000 C CNN
-F 1 "10k" H 21950 2250 60  0000 C CNN
-F 2 "resistors:R_0805" H 21950 2150 60  0001 C CNN
-F 3 "" H 20350 2850 60  0001 C CNN
-F 4 "ZELRS051" H 22050 2550 60  0001 C CNN "ventcode"
-F 5 "10k" H 21950 2250 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 22200 2150 60  0001 C CNN "Kaina"
-F 7 "0805" H 22150 2150 60  0001 C CNN "Korpusas"
-F 8 "1" H 22150 2150 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 22150 2150 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22650 3150 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22750 3250 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22850 3350 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22950 3450 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21950 2350 60  0001 C CNN "Sheet"
-	1    21950 2350
-	1    0    0    -1  
-$EndComp
-Text Label 20600 2550 0    50   ~ 0
-COM
-$Comp
-L C_100n_0805_X7R C24
-U 1 1 5B588703
-P 22850 2250
-F 0 "C24" H 23000 2250 59  0000 L CNN
-F 1 "100nF" H 23010 2170 50  0000 L CNN
-F 2 "capacitors:C_0805" H 22888 2100 50  0001 C CNN
-F 3 "" H 22875 2350 50  0001 C CNN
-F 4 "ZKN065" H 22975 2450 60  0001 C CNN "ventcode"
-F 5 "100n" H 23100 2150 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 23175 2650 60  0001 C CNN "Kaina"
-F 7 "0805" H 23275 2750 60  0001 C CNN "Korpusas"
-F 8 "1" H 23375 2850 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 23475 2950 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 23575 3050 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 23675 3150 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23775 3250 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23850 2250 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 22850 2250 60  0001 C CNN "Sheet"
-	1    22850 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_30k_0805_1% R28
-U 1 1 5B588736
-P 21950 1600
-F 0 "R28" H 21800 1700 60  0000 C CNN
-F 1 "30k" H 22000 1700 60  0000 C CNN
-F 2 "resistors:R_0805" H 22950 1650 60  0001 C CNN
-F 3 "" H 20350 2100 60  0001 C CNN
-F 4 "ventcode" H 21950 1400 60  0001 C CNN "ventcode"
-F 5 "30k" H 22000 1700 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 23200 1550 60  0001 C CNN "Kaina"
-F 7 "0805" H 23900 1650 60  0001 C CNN "Korpusas"
-F 8 "1" H 23550 1550 60  0001 C CNN "Aukstis"
-F 9 "-" H 22600 1500 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22800 1750 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22600 1550 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22600 1450 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23550 1650 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 22600 1400 60  0001 C CNN "Parametras"
-F 15 "-" H 22600 1350 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21950 1600 60  0001 C CNN "Sheet"
-	1    21950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_200k_0805_1% R20
-U 1 1 5B588749
-P 21150 1850
-F 0 "R20" H 21000 1950 60  0000 C CNN
-F 1 "200k" H 21230 1950 60  0000 C CNN
-F 2 "resistors:R_0805" H 22150 1900 60  0001 C CNN
-F 3 "" H 19550 2350 60  0001 C CNN
-F 4 "ventcode" H 21150 1650 60  0001 C CNN "ventcode"
-F 5 "200k" H 21250 1950 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 22400 1800 60  0001 C CNN "Kaina"
-F 7 "0805" H 23100 1900 60  0001 C CNN "Korpusas"
-F 8 "1" H 22750 1800 60  0001 C CNN "Aukstis"
-F 9 "-" H 21800 1750 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22000 2000 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21800 1800 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 21800 1700 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22750 1900 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 21800 1650 60  0001 C CNN "Parametras"
-F 15 "-" H 21800 1600 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21150 1850 60  0001 C CNN "Sheet"
-	1    21150 1850
-	1    0    0    -1  
-$EndComp
-Text Label 20600 1400 0    60   ~ 0
-12VDC
-$Comp
-L C_100n_0805_X7R C18
-U 1 1 5B58875B
-P 21400 3700
-F 0 "C18" H 21090 3740 59  0000 L CNN
-F 1 "100nF" H 21070 3660 50  0000 L CNN
-F 2 "capacitors:C_0805" H 21438 3550 50  0001 C CNN
-F 3 "" H 21425 3800 50  0001 C CNN
-F 4 "ZKN065" H 21525 3900 60  0001 C CNN "ventcode"
-F 5 "100n" H 21100 3650 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 21725 4100 60  0001 C CNN "Kaina"
-F 7 "0805" H 21825 4200 60  0001 C CNN "Korpusas"
-F 8 "1" H 21925 4300 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 22025 4400 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 22125 4500 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22225 4600 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22325 4700 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22400 3700 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21400 3700 60  0001 C CNN "Sheet"
-	1    21400 3700
-	1    0    0    -1  
-$EndComp
-Text Label 20600 3350 0    50   ~ 0
-PB1
-Text HLabel 23100 3450 2    60   Output ~ 0
-D0_10
-$Comp
-L R_10k_0805_1% R31
-U 1 1 5B58876E
-P 21950 3850
-F 0 "R31" H 21950 3950 60  0000 C CNN
-F 1 "10k" H 21950 3750 60  0000 C CNN
-F 2 "resistors:R_0805" H 21950 3650 60  0001 C CNN
-F 3 "" H 20350 4350 60  0001 C CNN
-F 4 "ZELRS051" H 22050 4050 60  0001 C CNN "ventcode"
-F 5 "10k" H 21950 3750 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 22200 3650 60  0001 C CNN "Kaina"
-F 7 "0805" H 22150 3650 60  0001 C CNN "Korpusas"
-F 8 "1" H 22150 3650 60  0001 C CNN "Aukstis"
-F 9 "RK73" H 22150 3650 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22650 4650 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22750 4750 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22850 4850 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22950 4950 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 21950 3850 60  0001 C CNN "Sheet"
-	1    21950 3850
-	1    0    0    -1  
-$EndComp
-Text Label 20600 4050 0    50   ~ 0
-COM
-$Comp
-L C_100n_0805_X7R C25
-U 1 1 5B588793
-P 22850 3750
-F 0 "C25" H 23000 3750 59  0000 L CNN
-F 1 "100nF" H 23010 3670 50  0000 L CNN
-F 2 "capacitors:C_0805" H 22888 3600 50  0001 C CNN
-F 3 "" H 22875 3850 50  0001 C CNN
-F 4 "ZKN065" H 22975 3950 60  0001 C CNN "ventcode"
-F 5 "100n" H 23100 3650 60  0001 C CNN "Nominalas"
-F 6 "0.001" H 23175 4150 60  0001 C CNN "Kaina"
-F 7 "0805" H 23275 4250 60  0001 C CNN "Korpusas"
-F 8 "1" H 23375 4350 60  0001 C CNN "Aukstis"
-F 9 "X7R0805K" H 23475 4450 60  0001 C CNN "Marke"
-F 10 "Kondensatorius" H 23575 4550 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 23675 4650 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23775 4750 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23850 3750 60  0001 C CNN "Korpuso tipas"
-F 14 "mcu" H 22850 3750 60  0001 C CNN "Sheet"
-	1    22850 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_30k_0805_1% R30
-U 1 1 5B5887C6
-P 21950 3100
-F 0 "R30" H 21800 3200 60  0000 C CNN
-F 1 "30k" H 22000 3200 60  0000 C CNN
-F 2 "resistors:R_0805" H 22950 3150 60  0001 C CNN
-F 3 "" H 20350 3600 60  0001 C CNN
-F 4 "ventcode" H 21950 2900 60  0001 C CNN "ventcode"
-F 5 "30k" H 22000 3200 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 23200 3050 60  0001 C CNN "Kaina"
-F 7 "0805" H 23900 3150 60  0001 C CNN "Korpusas"
-F 8 "1" H 23550 3050 60  0001 C CNN "Aukstis"
-F 9 "-" H 22600 3000 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22800 3250 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 22600 3050 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 22600 2950 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23550 3150 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 22600 2900 60  0001 C CNN "Parametras"
-F 15 "-" H 22600 2850 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21950 3100 60  0001 C CNN "Sheet"
-	1    21950 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_200k_0805_1% R21
-U 1 1 5B5887D9
-P 21150 3350
-F 0 "R21" H 21000 3450 60  0000 C CNN
-F 1 "200k" H 21230 3450 60  0000 C CNN
-F 2 "resistors:R_0805" H 22150 3400 60  0001 C CNN
-F 3 "" H 19550 3850 60  0001 C CNN
-F 4 "ventcode" H 21150 3150 60  0001 C CNN "ventcode"
-F 5 "200k" H 21250 3450 59  0001 C CNN "Nominalas"
-F 6 "0.001" H 22400 3300 60  0001 C CNN "Kaina"
-F 7 "0805" H 23100 3400 60  0001 C CNN "Korpusas"
-F 8 "1" H 22750 3300 60  0001 C CNN "Aukstis"
-F 9 "-" H 21800 3250 60  0001 C CNN "Marke"
-F 10 "Rezistorius" H 22000 3500 60  0001 C CNN "Pavadinimas"
-F 11 "-" H 21800 3300 60  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 21800 3200 60  0001 C CNN "Nuoroda"
-F 13 "SMD" H 22750 3400 60  0001 C CNN "Korpuso tipas"
-F 14 "-" H 21800 3150 60  0001 C CNN "Parametras"
-F 15 "-" H 21800 3100 60  0001 C CNN "Komentaras"
-F 16 "mcu" H 21150 3350 60  0001 C CNN "Sheet"
-	1    21150 3350
-	1    0    0    -1  
-$EndComp
-Text Label 20600 2900 0    60   ~ 0
-12VDC
-$Comp
 L CP_100uFx16V C1
 U 1 1 5B593137
 P 2250 1950
@@ -2721,98 +1505,6 @@ F 13 "-" H 4500 1700 60  0001 C CNN "Nuoroda"
 F 14 "-" H 4400 1600 60  0001 C CNN "Parametras"
 F 15 "-" H 4500 1700 60  0001 C CNN "Komentaras"
 	1    2750 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L OP_LM2902M U7
-U 1 1 5B5108AA
-P 22300 -1150
-F 0 "U7" H 22300 -900 50  0000 L CNN
-F 1 "LM2902M" H 22300 -1000 50  0000 L CNN
-F 2 "ics:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 23800 -1200 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/LM2902M-Fairchild-Semiconductor-datasheet-11776802.pdf" H 24850 -1400 50  0001 C CNN
-F 4 "ZELM044" H 22300 -1550 47  0001 C CNN "ventcode"
-F 5 "-" H 23100 -1300 47  0001 C CNN "Nominalas"
-F 6 "0" H 24000 -1300 47  0001 C CNN "Kaina"
-F 7 "SOIC-16" H 24800 -1200 47  0001 C CNN "Korpusas"
-F 8 "2" H 23850 -1300 47  0001 C CNN "Aukstis"
-F 9 "-" H 23200 -1300 47  0001 C CNN "Marke"
-F 10 "Mikroschema" H 23300 -1100 47  0001 C CNN "Pavadinimas"
-F 11 "LM2902M" H 22450 -1350 47  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23300 -1300 47  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23700 -1300 47  0001 C CNN "Korpuso tipas"
-F 14 "-" H 23400 -1300 47  0001 C CNN "Parametras"
-F 15 "-" H 23500 -1300 47  0001 C CNN "Komentaras"
-	1    22300 -1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L OP_LM2902M U7
-U 2 1 5B512377
-P 22300 350
-F 0 "U7" H 22300 600 50  0000 L CNN
-F 1 "LM2902M" H 22300 500 50  0000 L CNN
-F 2 "ics:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 23800 300 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/LM2902M-Fairchild-Semiconductor-datasheet-11776802.pdf" H 24850 100 50  0001 C CNN
-F 4 "ZELM044" H 22300 -50 47  0001 C CNN "ventcode"
-F 5 "-" H 23100 200 47  0001 C CNN "Nominalas"
-F 6 "0" H 24000 200 47  0001 C CNN "Kaina"
-F 7 "SOIC-16" H 24800 300 47  0001 C CNN "Korpusas"
-F 8 "2" H 23850 200 47  0001 C CNN "Aukstis"
-F 9 "-" H 23200 200 47  0001 C CNN "Marke"
-F 10 "Mikroschema" H 23300 400 47  0001 C CNN "Pavadinimas"
-F 11 "LM2902M" H 22450 150 47  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23300 200 47  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23700 200 47  0001 C CNN "Korpuso tipas"
-F 14 "-" H 23400 200 47  0001 C CNN "Parametras"
-F 15 "-" H 23500 200 47  0001 C CNN "Komentaras"
-	2    22300 350 
-	1    0    0    -1  
-$EndComp
-$Comp
-L OP_LM2902M U7
-U 3 1 5B512720
-P 22300 1950
-F 0 "U7" H 22300 2200 50  0000 L CNN
-F 1 "LM2902M" H 22300 2100 50  0000 L CNN
-F 2 "ics:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 23800 1900 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/LM2902M-Fairchild-Semiconductor-datasheet-11776802.pdf" H 24850 1700 50  0001 C CNN
-F 4 "ZELM044" H 22300 1550 47  0001 C CNN "ventcode"
-F 5 "-" H 23100 1800 47  0001 C CNN "Nominalas"
-F 6 "0" H 24000 1800 47  0001 C CNN "Kaina"
-F 7 "SOIC-16" H 24800 1900 47  0001 C CNN "Korpusas"
-F 8 "2" H 23850 1800 47  0001 C CNN "Aukstis"
-F 9 "-" H 23200 1800 47  0001 C CNN "Marke"
-F 10 "Mikroschema" H 23300 2000 47  0001 C CNN "Pavadinimas"
-F 11 "LM2902M" H 22450 1750 47  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23300 1800 47  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23700 1800 47  0001 C CNN "Korpuso tipas"
-F 14 "-" H 23400 1800 47  0001 C CNN "Parametras"
-F 15 "-" H 23500 1800 47  0001 C CNN "Komentaras"
-	3    22300 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L OP_LM2902M U7
-U 4 1 5B513865
-P 22300 3450
-F 0 "U7" H 22300 3700 50  0000 L CNN
-F 1 "LM2902M" H 22300 3600 50  0000 L CNN
-F 2 "ics:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 23800 3400 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/LM2902M-Fairchild-Semiconductor-datasheet-11776802.pdf" H 24850 3200 50  0001 C CNN
-F 4 "ZELM044" H 22300 3050 47  0001 C CNN "ventcode"
-F 5 "-" H 23100 3300 47  0001 C CNN "Nominalas"
-F 6 "0" H 24000 3300 47  0001 C CNN "Kaina"
-F 7 "SOIC-16" H 24800 3400 47  0001 C CNN "Korpusas"
-F 8 "2" H 23850 3300 47  0001 C CNN "Aukstis"
-F 9 "-" H 23200 3300 47  0001 C CNN "Marke"
-F 10 "Mikroschema" H 23300 3500 47  0001 C CNN "Pavadinimas"
-F 11 "LM2902M" H 22450 3250 47  0001 C CNN "Gamintojo Kodas"
-F 12 "-" H 23300 3300 47  0001 C CNN "Nuoroda"
-F 13 "SMD" H 23700 3300 47  0001 C CNN "Korpuso tipas"
-F 14 "-" H 23400 3300 47  0001 C CNN "Parametras"
-F 15 "-" H 23500 3300 47  0001 C CNN "Komentaras"
-	4    22300 3450
 	1    0    0    -1  
 $EndComp
 Text Label 7650 6450 1    60   ~ 0
@@ -3391,37 +2083,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 6150 7850 6450
 Wire Wire Line
-	21300 -1250 22000 -1250
-Wire Wire Line
-	21400 -1250 21400 -1050
-Connection ~ 21400 -1250
-Wire Wire Line
-	21000 -1250 20600 -1250
-Wire Wire Line
-	22000 -1050 21700 -1050
-Wire Wire Line
-	21700 -1500 21700 -750
-Wire Wire Line
-	22700 -1500 22700 -1150
-Wire Wire Line
-	22600 -1150 23100 -1150
-Connection ~ 22700 -1150
-Wire Wire Line
 	9050 4850 9500 4850
-Wire Wire Line
-	22100 -1500 22700 -1500
-Wire Wire Line
-	21800 -1500 21700 -1500
-Connection ~ 21700 -1050
-Wire Wire Line
-	21700 -750 21800 -750
-Wire Wire Line
-	22200 -550 22200 -850
-Wire Wire Line
-	22100 -750 22200 -750
-Connection ~ 22200 -750
-Wire Wire Line
-	21400 -750 21400 -550
 Wire Wire Line
 	7550 4050 7550 3600
 Wire Wire Line
@@ -3436,20 +2098,6 @@ Wire Wire Line
 	2550 5400 2550 5300
 Connection ~ 1900 5400
 Connection ~ 2550 5400
-Wire Wire Line
-	20600 -550 22850 -550
-Connection ~ 21400 -550
-Wire Wire Line
-	27450 9450 27550 9450
-Wire Wire Line
-	28350 9550 28900 9550
-Wire Wire Line
-	28350 9650 28900 9650
-Wire Wire Line
-	27550 9350 27250 9350
-Connection ~ 28450 9350
-Wire Wire Line
-	27450 10100 27450 9650
 Wire Wire Line
 	6950 4950 6550 4950
 Wire Wire Line
@@ -3478,13 +2126,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 5650 9500 5650
 Wire Wire Line
-	22200 -1450 22200 -1700
-Wire Wire Line
-	22200 -1700 20600 -1700
-Wire Wire Line
 	1650 4000 2050 4000
-Wire Wire Line
-	28450 9100 28450 9700
 Wire Wire Line
 	6950 4550 6550 4550
 Wire Wire Line
@@ -3497,73 +2139,6 @@ Connection ~ 2150 3600
 Wire Wire Line
 	2150 3000 2150 2750
 Connection ~ 2150 2750
-Wire Wire Line
-	23950 8600 24900 8600
-Wire Wire Line
-	24100 8000 24100 7900
-Wire Wire Line
-	24100 7900 27350 7900
-Wire Wire Line
-	24800 7900 24800 8000
-Wire Wire Line
-	24200 8000 24200 7900
-Connection ~ 24200 7900
-Wire Wire Line
-	24300 8000 24300 7900
-Connection ~ 24300 7900
-Wire Wire Line
-	24400 8000 24400 7900
-Connection ~ 24400 7900
-Wire Wire Line
-	24500 8000 24500 7900
-Connection ~ 24500 7900
-Wire Wire Line
-	24600 8000 24600 7900
-Connection ~ 24600 7900
-Wire Wire Line
-	24700 8000 24700 7900
-Connection ~ 24700 7900
-Connection ~ 24800 7900
-Wire Wire Line
-	27100 8550 28900 8550
-Wire Wire Line
-	23950 9000 24900 9000
-Wire Wire Line
-	23950 9100 24900 9100
-Wire Wire Line
-	23950 9200 24900 9200
-Wire Wire Line
-	24100 8300 24100 8500
-Connection ~ 24100 8500
-Wire Wire Line
-	24200 8300 24200 8600
-Connection ~ 24200 8600
-Wire Wire Line
-	24300 8300 24300 8700
-Connection ~ 24300 8700
-Wire Wire Line
-	24400 8300 24400 8800
-Connection ~ 24400 8800
-Wire Wire Line
-	24500 8300 24500 8900
-Connection ~ 24500 8900
-Wire Wire Line
-	24600 8300 24600 9000
-Connection ~ 24600 9000
-Wire Wire Line
-	24700 8300 24700 9100
-Connection ~ 24700 9100
-Wire Wire Line
-	24800 8300 24800 9200
-Connection ~ 24800 9200
-Wire Wire Line
-	28450 9450 28350 9450
-Wire Wire Line
-	27550 9550 27350 9550
-Wire Wire Line
-	27350 9550 27350 9100
-Wire Wire Line
-	27350 9100 28900 9100
 Wire Wire Line
 	1850 2750 1850 3000
 Connection ~ 1850 2750
@@ -3595,20 +2170,6 @@ Connection ~ 7350 7650
 Wire Wire Line
 	7800 7950 7950 7950
 Wire Wire Line
-	23950 8700 24900 8700
-Wire Wire Line
-	23950 8800 24900 8800
-Wire Wire Line
-	23950 8900 24900 8900
-Wire Wire Line
-	23950 8500 24900 8500
-Wire Wire Line
-	22850 -1000 22850 -1150
-Connection ~ 22850 -1150
-Wire Wire Line
-	22850 -550 22850 -700
-Connection ~ 22200 -550
-Wire Wire Line
 	2950 4900 3450 4900
 Wire Wire Line
 	3100 4900 3100 5000
@@ -3617,119 +2178,6 @@ Wire Wire Line
 	3100 5400 3100 5300
 Wire Wire Line
 	1200 4900 2650 4900
-Wire Wire Line
-	27450 8550 27450 9450
-Connection ~ 27450 8550
-Wire Wire Line
-	27450 9650 27550 9650
-Connection ~ 27450 10100
-Wire Wire Line
-	26400 10100 28900 10100
-Connection ~ 28450 9450
-Wire Wire Line
-	28450 10000 28450 10100
-Connection ~ 28450 10100
-Connection ~ 28450 9100
-Wire Wire Line
-	28350 9350 28450 9350
-Wire Wire Line
-	26400 10000 26400 10100
-Wire Wire Line
-	25200 9500 25700 9500
-Wire Wire Line
-	25700 9800 25200 9800
-Wire Wire Line
-	25700 9700 25200 9700
-Wire Wire Line
-	25700 8500 25200 8500
-Wire Wire Line
-	25700 8600 25200 8600
-Wire Wire Line
-	25700 8700 25200 8700
-Wire Wire Line
-	25700 8800 25200 8800
-Wire Wire Line
-	25700 8900 25200 8900
-Wire Wire Line
-	25700 9000 25200 9000
-Wire Wire Line
-	25700 9100 25200 9100
-Wire Wire Line
-	25700 9200 25200 9200
-Wire Wire Line
-	25700 9350 25200 9350
-Wire Wire Line
-	26400 8200 26400 7900
-Connection ~ 26400 7900
-Wire Wire Line
-	27250 9350 27250 8950
-Wire Wire Line
-	27250 8950 28900 8950
-Wire Wire Line
-	21850 8600 21950 8600
-Wire Wire Line
-	21950 8600 21950 8700
-Wire Wire Line
-	21850 8700 22600 8700
-Wire Wire Line
-	21850 8500 22600 8500
-Wire Wire Line
-	21850 8800 22600 8800
-Connection ~ 21950 8700
-Wire Wire Line
-	20850 8800 21050 8800
-Wire Wire Line
-	20850 8500 21050 8500
-Wire Wire Line
-	20250 8600 21050 8600
-Wire Wire Line
-	20550 8500 20350 8500
-Wire Wire Line
-	20350 8500 20350 9200
-Wire Wire Line
-	20250 8800 20550 8800
-Wire Wire Line
-	20250 8200 20250 8800
-Connection ~ 20250 8600
-Wire Wire Line
-	20350 9200 20050 9200
-Wire Wire Line
-	20050 8200 20250 8200
-Wire Wire Line
-	19250 8200 19750 8200
-Wire Wire Line
-	19250 9200 19750 9200
-Wire Wire Line
-	19550 9000 19550 9200
-Connection ~ 19550 9200
-Wire Wire Line
-	19550 8700 19550 8500
-Wire Wire Line
-	19550 8500 19250 8500
-Wire Wire Line
-	19250 8400 19550 8400
-Wire Wire Line
-	19550 8400 19550 8200
-Connection ~ 19550 8200
-Wire Wire Line
-	21050 8700 20350 8700
-Connection ~ 20350 8700
-Wire Wire Line
-	21000 8500 21000 8200
-Wire Wire Line
-	21000 8200 22600 8200
-Connection ~ 21000 8500
-Connection ~ 21000 8800
-Wire Wire Line
-	21000 9200 22600 9200
-Wire Wire Line
-	21000 8800 21000 9200
-Wire Wire Line
-	22050 8850 22050 8200
-Connection ~ 22050 8200
-Wire Wire Line
-	22050 9200 22050 9150
-Connection ~ 22050 9200
 Wire Wire Line
 	9050 4950 9500 4950
 Connection ~ 1650 5400
@@ -3785,46 +2233,6 @@ Wire Wire Line
 	8350 7950 9250 7950
 Connection ~ 8850 7950
 Connection ~ 7800 7650
-Wire Wire Line
-	22000 6150 22000 6450
-Wire Wire Line
-	21200 6450 22550 6450
-Wire Wire Line
-	22400 5950 22700 5950
-Wire Wire Line
-	22400 5150 22700 5150
-Wire Wire Line
-	22400 5250 22700 5250
-Wire Wire Line
-	22400 5350 22700 5350
-Wire Wire Line
-	22400 5450 22700 5450
-Wire Wire Line
-	22400 5550 22700 5550
-Wire Wire Line
-	22400 5650 22700 5650
-Wire Wire Line
-	22400 5750 22700 5750
-Wire Wire Line
-	21600 5150 21200 5150
-Wire Wire Line
-	21600 5250 21200 5250
-Wire Wire Line
-	21600 5350 21200 5350
-Wire Wire Line
-	21600 5450 21200 5450
-Wire Wire Line
-	21600 5550 21200 5550
-Wire Wire Line
-	21600 5650 21200 5650
-Wire Wire Line
-	21200 5750 21600 5750
-Wire Wire Line
-	22550 6050 22550 5950
-Connection ~ 22550 5950
-Wire Wire Line
-	22550 6450 22550 6350
-Connection ~ 22000 6450
 Wire Wire Line
 	3400 1850 3400 1650
 Connection ~ 3400 1650
@@ -4031,135 +2439,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 8350 3650 8350
 Wire Wire Line
-	21300 250  22000 250 
-Wire Wire Line
-	21400 250  21400 450 
-Connection ~ 21400 250 
-Wire Wire Line
-	21000 250  20600 250 
-Wire Wire Line
-	22000 450  21700 450 
-Wire Wire Line
-	21700 0    21700 750 
-Wire Wire Line
-	22700 0    22700 350 
-Wire Wire Line
-	22600 350  23100 350 
-Connection ~ 22700 350 
-Wire Wire Line
-	22100 0    22700 0   
-Wire Wire Line
-	21800 0    21700 0   
-Connection ~ 21700 450 
-Wire Wire Line
-	21700 750  21800 750 
-Wire Wire Line
-	22200 950  22200 650 
-Wire Wire Line
-	22100 750  22200 750 
-Connection ~ 22200 750 
-Wire Wire Line
-	21400 750  21400 950 
-Wire Wire Line
-	20600 950  22850 950 
-Connection ~ 21400 950 
-Wire Wire Line
-	22200 50   22200 -200
-Wire Wire Line
-	22200 -200 20600 -200
-Wire Wire Line
-	22850 500  22850 350 
-Connection ~ 22850 350 
-Wire Wire Line
-	22850 950  22850 800 
-Connection ~ 22200 950 
-Wire Wire Line
-	21300 1850 22000 1850
-Wire Wire Line
-	21400 1850 21400 2050
-Connection ~ 21400 1850
-Wire Wire Line
-	21000 1850 20600 1850
-Wire Wire Line
-	22000 2050 21700 2050
-Wire Wire Line
-	21700 1600 21700 2350
-Wire Wire Line
-	22700 1600 22700 1950
-Wire Wire Line
-	22600 1950 23100 1950
-Connection ~ 22700 1950
-Wire Wire Line
-	22100 1600 22700 1600
-Wire Wire Line
-	21800 1600 21700 1600
-Connection ~ 21700 2050
-Wire Wire Line
-	21700 2350 21800 2350
-Wire Wire Line
-	22200 2550 22200 2250
-Wire Wire Line
-	22100 2350 22200 2350
-Connection ~ 22200 2350
-Wire Wire Line
-	21400 2350 21400 2550
-Wire Wire Line
-	20600 2550 22850 2550
-Connection ~ 21400 2550
-Wire Wire Line
-	22200 1650 22200 1400
-Wire Wire Line
-	22200 1400 20600 1400
-Wire Wire Line
-	22850 2100 22850 1950
-Connection ~ 22850 1950
-Wire Wire Line
-	22850 2550 22850 2400
-Connection ~ 22200 2550
-Wire Wire Line
-	21300 3350 22000 3350
-Wire Wire Line
-	21400 3350 21400 3550
-Connection ~ 21400 3350
-Wire Wire Line
-	21000 3350 20600 3350
-Wire Wire Line
-	22000 3550 21700 3550
-Wire Wire Line
-	21700 3100 21700 3850
-Wire Wire Line
-	22700 3100 22700 3450
-Wire Wire Line
-	22600 3450 23100 3450
-Connection ~ 22700 3450
-Wire Wire Line
-	22100 3100 22700 3100
-Wire Wire Line
-	21800 3100 21700 3100
-Connection ~ 21700 3550
-Wire Wire Line
-	21700 3850 21800 3850
-Wire Wire Line
-	22200 4050 22200 3750
-Wire Wire Line
-	22100 3850 22200 3850
-Connection ~ 22200 3850
-Wire Wire Line
-	21400 3850 21400 4050
-Wire Wire Line
-	20600 4050 22850 4050
-Connection ~ 21400 4050
-Wire Wire Line
-	22200 3150 22200 2900
-Wire Wire Line
-	22200 2900 20600 2900
-Wire Wire Line
-	22850 3600 22850 3450
-Connection ~ 22850 3450
-Wire Wire Line
-	22850 4050 22850 3900
-Connection ~ 22200 4050
-Wire Wire Line
 	2750 1950 2750 2250
 Connection ~ 2750 2250
 Wire Wire Line
@@ -4363,7 +2642,7 @@ L Conn_02x10_Odd_Even J3
 U 1 1 5B550C25
 P 2250 6950
 F 0 "J3" H 2300 7450 50  0000 C CNN
-F 1 "SideA" H 2300 6350 50  0000 C CNN
+F 1 "SIDE A" H 2300 6350 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 2250 6950 50  0001 C CNN
 F 3 "" H 2250 6950 50  0001 C CNN
 	1    2250 6950
@@ -4374,7 +2653,7 @@ L Conn_02x10_Odd_Even J4
 U 1 1 5B55A4DE
 P 2250 8150
 F 0 "J4" H 2300 8650 50  0000 C CNN
-F 1 "SideB" H 2300 7550 50  0000 C CNN
+F 1 "SIDE B" H 2300 7550 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 2250 8150 50  0001 C CNN
 F 3 "" H 2250 8150 50  0001 C CNN
 	1    2250 8150
