@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 4
 LIBS:capacitors
 LIBS:disc
 LIBS:ics
@@ -6,6 +6,7 @@ LIBS:mech
 LIBS:resistors_us
 LIBS:various
 LIBS:resistors
+LIBS:LED
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -38,8 +39,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:unicon-cache
-EELAYER 25 0
+LIBS:Diode
+LIBS:Display
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -54,7 +56,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ISP_SWD_Connector J1
+L mech:ISP_SWD_Connector J1
 U 1 1 598415E4
 P 1550 4100
 F 0 "J1" H 1250 4200 50  0000 C CNN
@@ -70,7 +72,7 @@ F 8 "mcu" H 1550 4100 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_100n_0805_X7R C2
+L capacitors:C_100n_0805_X7R C2
 U 1 1 598416E2
 P 1900 5150
 F 0 "C2" H 2000 5150 59  0000 L CNN
@@ -92,7 +94,7 @@ F 14 "mcu" H 1900 5150 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_100n_0805_X7R C4
+L capacitors:C_100n_0805_X7R C4
 U 1 1 598417BD
 P 2550 5150
 F 0 "C4" H 2700 5150 59  0000 L CNN
@@ -114,7 +116,7 @@ F 14 "mcu" H 2550 5150 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_BAS32 D1
+L disc:D_BAS32 D1
 U 1 1 5984182D
 P 2200 4750
 F 0 "D1" H 2050 4700 59  0000 C CNN
@@ -138,7 +140,7 @@ F 16 "mcu" H 2200 4750 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_15k_0805_1% R6
+L resistors_us:R_15k_0805_1% R6
 U 1 1 598418BE
 P 2200 4500
 F 0 "R6" H 2300 4600 60  0000 C CNN
@@ -160,7 +162,7 @@ F 14 "mcu" H 2200 4500 60  0001 C CNN "Sheet"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_47R_0805_1% R3
+L resistors_us:R_47R_0805_1% R3
 U 1 1 598423EA
 P 2200 4000
 F 0 "R3" H 2100 4100 60  0000 C CNN
@@ -182,7 +184,7 @@ F 14 "mcu" H 2200 4000 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_47R_0805_1% R4
+L resistors_us:R_47R_0805_1% R4
 U 1 1 59842488
 P 2200 4200
 F 0 "R4" H 2100 4300 60  0000 C CNN
@@ -204,7 +206,7 @@ F 14 "mcu" H 2200 4200 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_47R_0805_1% R5
+L resistors_us:R_47R_0805_1% R5
 U 1 1 59842508
 P 2950 4600
 F 0 "R5" H 2850 4700 60  0000 C CNN
@@ -350,7 +352,7 @@ F 16 "mcu" H 28450 9850 60  0001 C CNN "Sheet"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Crystal_smd_11x5 Y1
+L disc:Crystal_smd_11x5 Y1
 U 1 1 599F7D28
 P 3100 3300
 F 0 "Y1" V 2950 3200 59  0000 C CNN
@@ -382,7 +384,7 @@ VDDA
 Text Label 8550 6450 1    50   ~ 0
 3VDC
 $Comp
-L R_120R_0805_1% R7
+L resistors_us:R_120R_0805_1% R7
 U 1 1 59A77686
 P 2800 4900
 F 0 "R7" H 2700 4980 60  0000 C CNN
@@ -403,7 +405,7 @@ F 13 "mcu" H 2800 4900 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_100n_0805_X7R C8
+L capacitors:C_100n_0805_X7R C8
 U 1 1 59A7781D
 P 3100 5150
 F 0 "C8" H 3250 5150 59  0000 L CNN
@@ -433,7 +435,7 @@ Text Label 6550 4550 0    50   ~ 0
 Text Label 7850 3600 3    50   ~ 0
 BT0
 $Comp
-L R_10k_0805_1% R2
+L resistors_us:R_10k_0805_1% R2
 U 1 1 59A34982
 P 1850 3150
 F 0 "R2" V 1900 3350 60  0000 C CNN
@@ -455,7 +457,7 @@ F 14 "mcu" V 1850 3150 60  0001 C CNN "Sheet"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_120R_0805_1% R1
+L resistors_us:R_120R_0805_1% R1
 U 1 1 59A3637F
 P 1600 2750
 F 0 "R1" H 1750 2650 60  0000 C CNN
@@ -482,7 +484,7 @@ Text Label 27350 7900 2    60   ~ 0
 Text Label 28900 8550 2    50   ~ 0
 PA6
 $Comp
-L R_1M2_0805_1% R9
+L resistors_us:R_1M2_0805_1% R9
 U 1 1 59A61B1F
 P 3450 3300
 F 0 "R9" V 3400 3450 60  0000 C CNN
@@ -678,7 +680,7 @@ $EndComp
 Text Label 9500 5550 2    50   ~ 0
 B13
 $Comp
-L D_BAT54S D4
+L disc:D_BAT54S D4
 U 1 1 59DB1E85
 P 8550 7650
 F 0 "D4" H 8650 7800 59  0000 L CNN
@@ -702,7 +704,7 @@ F 16 "mcu" H 8550 7650 60  0001 C CNN "Sheet"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_BAT54S D3
+L disc:D_BAT54S D3
 U 1 1 59DB29AF
 P 8150 7950
 F 0 "D3" H 8300 8100 59  0000 L CNN
@@ -730,7 +732,7 @@ B7
 Text Label 9250 8350 2    47   ~ 0
 B6
 $Comp
-L R_4.7k_0805_1% R17
+L resistors_us:R_4.7k_0805_1% R17
 U 1 1 59EC80AB
 P 7350 7900
 F 0 "R17" V 7400 8050 60  0000 C CNN
@@ -752,7 +754,7 @@ F 14 "mcu" V 7350 7900 60  0001 C CNN "Sheet"
 	0    1    -1   0   
 $EndComp
 $Comp
-L R_4.7k_0805_1% R16
+L resistors_us:R_4.7k_0805_1% R16
 U 1 1 59EC8270
 P 7150 7900
 F 0 "R16" V 7200 7650 60  0000 C CNN
@@ -916,7 +918,7 @@ P6
 Text Label 25200 9200 0    60   ~ 0
 P7
 $Comp
-L STM32F051C8Tx U3
+L ics:STM32F051C8Tx U3
 U 1 1 5A60E02E
 P 8000 5100
 F 0 "U3" H 7950 4850 50  0000 L BNN
@@ -1120,7 +1122,7 @@ F 14 "mcu" H 25050 9200 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_15p_0805_X7R C5
+L capacitors:C_15p_0805_X7R C5
 U 1 1 5A878C68
 P 2800 3000
 F 0 "C5" V 2650 2850 50  0000 L CNN
@@ -1144,7 +1146,7 @@ F 16 "mcu" H 2800 3000 60  0001 C CNN "Sheet"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_15p_0805_X7R C6
+L capacitors:C_15p_0805_X7R C6
 U 1 1 5A879435
 P 2800 3600
 F 0 "C6" V 2650 3450 50  0000 L CNN
@@ -1168,7 +1170,7 @@ F 16 "mcu" H 2800 3600 60  0001 C CNN "Sheet"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_100n_0805_X7R C3
+L capacitors:C_100n_0805_X7R C3
 U 1 1 5A8CAA44
 P 2150 3150
 F 0 "C3" H 2300 3200 59  0000 L CNN
@@ -1387,7 +1389,7 @@ F 15 "-" H 23200 7175 60  0001 C CNN "Komentaras"
 	1    0    0    -1  
 $EndComp
 $Comp
-L USTAB_SIP21106-DT-33 U2
+L disc:USTAB_SIP21106-DT-33 U2
 U 1 1 5B525F67
 P 4550 1700
 F 0 "U2" H 4350 1900 50  0000 C CNN
@@ -1410,7 +1412,7 @@ F 15 "Markiravimas N3" H 7400 1500 60  0001 C CNN "Komentaras"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_15k_0805_1% R8
+L resistors_us:R_15k_0805_1% R8
 U 1 1 5B52716B
 P 3900 1800
 F 0 "R8" H 4000 1900 60  0000 C CNN
@@ -1434,7 +1436,7 @@ $EndComp
 Text Label 7950 7650 0    60   ~ 0
 3VDC
 $Comp
-L C_100n_0805_X7R C10
+L capacitors:C_100n_0805_X7R C10
 U 1 1 5B527BC7
 P 5100 2000
 F 0 "C10" H 5250 2000 59  0000 L CNN
@@ -1458,7 +1460,7 @@ $EndComp
 Text Label 6100 2250 2    50   ~ 0
 COM
 $Comp
-L C_100n_0805_X7R C13
+L capacitors:C_100n_0805_X7R C13
 U 1 1 5B528612
 P 5650 1950
 F 0 "C13" H 5800 1950 59  0000 L CNN
@@ -1482,7 +1484,7 @@ $EndComp
 Text Label 6600 1650 2    60   ~ 0
 3VDC
 $Comp
-L CP_100uFx16V C14
+L capacitors:CP_100uFx16V C14
 U 1 1 5B52B807
 P 6200 1950
 F 0 "C14" H 6350 2000 50  0000 L CNN
@@ -1564,7 +1566,7 @@ $EndComp
 Text HLabel 1200 4900 0    60   Output ~ 0
 3VDC
 $Comp
-L CP_100uFx16V C7
+L capacitors:CP_100uFx16V C7
 U 1 1 5B541C71
 P 3400 2000
 F 0 "C7" H 3100 2100 50  0000 L CNN
@@ -1580,7 +1582,7 @@ F 8 "DIP" H 4350 2150 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_100n_0805_X7R C9
+L capacitors:C_100n_0805_X7R C9
 U 1 1 5B541DB5
 P 3650 2000
 F 0 "C9" H 3800 2000 59  0000 L CNN
@@ -1616,7 +1618,7 @@ A9
 Text HLabel 1250 2750 0    60   Input ~ 0
 BOOT0
 $Comp
-L AT24C16_1 U4
+L ics:AT24C16_1 U4
 U 1 1 5B5567EF
 P 7750 8900
 F 0 "U4" H 7500 9150 50  0000 C CNN
@@ -1643,7 +1645,7 @@ COM
 Text Label 9250 8800 2    60   ~ 0
 3VDC
 $Comp
-L C_100n_0805_X7R C20
+L capacitors:C_100n_0805_X7R C20
 U 1 1 5B55A292
 P 8750 9050
 F 0 "C20" H 8900 9050 59  0000 L CNN
@@ -1665,11 +1667,11 @@ F 14 "mcu" H 8750 9050 60  0001 C CNN "Sheet"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED_RED_0805_EL17-21SURC D2
+L disc:LED_RED_0805_EL17-21SURC D2
 U 1 1 5B55DA42
 P 1750 10050
 F 0 "D2" H 1900 9900 59  0000 C CNN
-F 1 "LED1" H 1650 9900 50  0000 C CNN
+F 1 "LED2" H 1650 9900 50  0000 C CNN
 F 2 "disc:LED_0805" H 2600 9900 50  0001 C CNN
 F 3 "" H 1750 10150 50  0001 C CNN
 F 4 "ZELD008" H 1750 9850 60  0001 C CNN "ventcode"
@@ -1690,7 +1692,7 @@ $EndComp
 Text Label 1300 10050 0    60   ~ 0
 COM
 $Comp
-L RN_100R_5% RN1
+L resistors_us:RN_100R_5% RN1
 U 1 1 5B5658F7
 P 3050 6850
 F 0 "RN1" H 2950 6950 50  0001 L CNN
@@ -1711,7 +1713,7 @@ F 13 "SMD" H 4600 6700 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN1
+L resistors_us:RN_100R_5% RN1
 U 2 1 5B565A30
 P 1550 6850
 F 0 "RN1" H 1450 6950 50  0001 L CNN
@@ -1732,7 +1734,7 @@ F 13 "SMD" H 3100 6700 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN1
+L resistors_us:RN_100R_5% RN1
 U 3 1 5B565B51
 P 3050 6750
 F 0 "RN1" H 2950 6850 50  0001 L CNN
@@ -1753,7 +1755,7 @@ F 13 "SMD" H 4600 6600 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN1
+L resistors_us:RN_100R_5% RN1
 U 4 1 5B565C04
 P 1550 6750
 F 0 "RN1" H 2100 6750 50  0001 L CNN
@@ -1774,7 +1776,7 @@ F 13 "SMD" H 3100 6600 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN2
+L resistors_us:RN_100R_5% RN2
 U 1 1 5B56A551
 P 3050 7050
 F 0 "RN2" H 2950 7150 50  0001 L CNN
@@ -1795,7 +1797,7 @@ F 13 "SMD" H 4600 6900 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN2
+L resistors_us:RN_100R_5% RN2
 U 2 1 5B56A561
 P 1550 7050
 F 0 "RN2" H 1450 7150 50  0001 L CNN
@@ -1816,7 +1818,7 @@ F 13 "SMD" H 3100 6900 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN2
+L resistors_us:RN_100R_5% RN2
 U 3 1 5B56A571
 P 3050 6950
 F 0 "RN2" H 2950 7050 50  0001 L CNN
@@ -1837,7 +1839,7 @@ F 13 "SMD" H 4600 6800 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN2
+L resistors_us:RN_100R_5% RN2
 U 4 1 5B56A581
 P 1550 6950
 F 0 "RN2" H 2100 6950 50  0001 L CNN
@@ -1858,7 +1860,7 @@ F 13 "SMD" H 3100 6800 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN3
+L resistors_us:RN_100R_5% RN3
 U 1 1 5B56D946
 P 3050 7250
 F 0 "RN3" H 2950 7350 50  0001 L CNN
@@ -1879,7 +1881,7 @@ F 13 "SMD" H 4600 7100 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN3
+L resistors_us:RN_100R_5% RN3
 U 2 1 5B56D956
 P 1550 7250
 F 0 "RN3" H 1450 7350 50  0001 L CNN
@@ -1900,7 +1902,7 @@ F 13 "SMD" H 3100 7100 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN3
+L resistors_us:RN_100R_5% RN3
 U 3 1 5B56D966
 P 3050 7150
 F 0 "RN3" H 2950 7250 50  0001 L CNN
@@ -1921,7 +1923,7 @@ F 13 "SMD" H 4600 7000 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN3
+L resistors_us:RN_100R_5% RN3
 U 4 1 5B56D976
 P 1550 7150
 F 0 "RN3" H 2100 7150 50  0001 L CNN
@@ -1952,7 +1954,7 @@ A3
 Text Label 7550 6450 1    60   ~ 0
 A4
 $Comp
-L RN_100R_5% RN4
+L resistors_us:RN_100R_5% RN4
 U 1 1 5B572B1D
 P 3050 7450
 F 0 "RN4" H 2950 7550 50  0001 L CNN
@@ -1973,7 +1975,7 @@ F 13 "SMD" H 4600 7300 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN4
+L resistors_us:RN_100R_5% RN4
 U 2 1 5B572B2D
 P 1550 7450
 F 0 "RN4" H 1450 7550 50  0001 L CNN
@@ -1994,7 +1996,7 @@ F 13 "SMD" H 3100 7300 60  0001 C CNN "Korpuso tipas"
 	1    0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN4
+L resistors_us:RN_100R_5% RN4
 U 3 1 5B572B3D
 P 3050 7350
 F 0 "RN4" H 2950 7450 50  0001 L CNN
@@ -2015,7 +2017,7 @@ F 13 "SMD" H 4600 7200 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L RN_100R_5% RN4
+L resistors_us:RN_100R_5% RN4
 U 4 1 5B572B4D
 P 1550 7350
 F 0 "RN4" H 2100 7350 50  0001 L CNN
@@ -2054,7 +2056,7 @@ OSC32_O
 Text Label 8250 6450 1    60   ~ 0
 B10
 $Comp
-L RN_100R_5% RN9
+L resistors_us:RN_100R_5% RN9
 U 4 1 5B5800C9
 P 1600 8650
 F 0 "RN9" H 2150 8650 50  0001 L CNN
@@ -2075,7 +2077,7 @@ F 13 "SMD" H 3150 8500 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN9
+L resistors_us:RN_100R_5% RN9
 U 3 1 5B5800D9
 P 3050 8650
 F 0 "RN9" H 2950 8750 50  0001 L CNN
@@ -2096,7 +2098,7 @@ F 13 "SMD" H 4600 8500 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN9
+L resistors_us:RN_100R_5% RN9
 U 2 1 5B5800E9
 P 1600 8550
 F 0 "RN9" H 1500 8650 50  0001 L CNN
@@ -2117,7 +2119,7 @@ F 13 "SMD" H 3150 8400 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN9
+L resistors_us:RN_100R_5% RN9
 U 1 1 5B5800F9
 P 3050 8550
 F 0 "RN9" H 2950 8650 50  0001 L CNN
@@ -2146,7 +2148,7 @@ B15
 Text Label 9500 5250 2    60   ~ 0
 A8
 $Comp
-L RN_100R_5% RN8
+L resistors_us:RN_100R_5% RN8
 U 4 1 5B582562
 P 1600 8450
 F 0 "RN8" H 2150 8450 50  0001 L CNN
@@ -2167,7 +2169,7 @@ F 13 "SMD" H 3150 8300 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN8
+L resistors_us:RN_100R_5% RN8
 U 3 1 5B582572
 P 3050 8450
 F 0 "RN8" H 2950 8550 50  0001 L CNN
@@ -2188,7 +2190,7 @@ F 13 "SMD" H 4600 8300 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN8
+L resistors_us:RN_100R_5% RN8
 U 2 1 5B582582
 P 1600 8350
 F 0 "RN8" H 1500 8450 50  0001 L CNN
@@ -2209,7 +2211,7 @@ F 13 "SMD" H 3150 8200 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN8
+L resistors_us:RN_100R_5% RN8
 U 1 1 5B582592
 P 3050 8350
 F 0 "RN8" H 2950 8450 50  0001 L CNN
@@ -2606,7 +2608,7 @@ $EndComp
 Text Label 20600 2900 0    60   ~ 0
 12VDC
 $Comp
-L CP_100uFx16V C1
+L capacitors:CP_100uFx16V C1
 U 1 1 5B593137
 P 2250 1950
 F 0 "C1" H 1950 2050 50  0000 L CNN
@@ -2624,7 +2626,7 @@ $EndComp
 Text Label 3800 1650 0    60   ~ 0
 5VDC
 $Comp
-L Crystal_smd_32768_horizontal Y2
+L disc:Crystal_smd_32768_horizontal Y2
 U 1 1 5B597134
 P 5100 3350
 F 0 "Y2" V 5050 3550 50  0000 C CNN
@@ -2647,7 +2649,7 @@ F 15 "-" H 7250 3250 60  0001 C CNN "Komentaras"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_15p_0805_X7R C12
+L capacitors:C_15p_0805_X7R C12
 U 1 1 5B598701
 P 4800 3600
 F 0 "C12" V 4650 3450 50  0000 L CNN
@@ -2671,7 +2673,7 @@ F 16 "mcu" H 4800 3600 60  0001 C CNN "Sheet"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_15p_0805_X7R C11
+L capacitors:C_15p_0805_X7R C11
 U 1 1 5B598876
 P 4800 3100
 F 0 "C11" V 4650 2950 50  0000 L CNN
@@ -2701,7 +2703,7 @@ OSC32_I
 Text Label 5700 3600 2    60   ~ 0
 OSC32_O
 $Comp
-L LM340MP-5.0 U1
+L disc:LM340MP-5.0 U1
 U 1 1 5B509D9F
 P 2750 1700
 F 0 "U1" H 2550 1900 50  0000 C CNN
@@ -2822,7 +2824,7 @@ A6
 Text Label 7850 6450 1    60   ~ 0
 A7
 $Comp
-L RN_100R_5% RN7
+L resistors_us:RN_100R_5% RN7
 U 4 1 5B54BE21
 P 1600 8250
 F 0 "RN7" H 2150 8250 50  0001 L CNN
@@ -2843,7 +2845,7 @@ F 13 "SMD" H 3150 8100 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN7
+L resistors_us:RN_100R_5% RN7
 U 3 1 5B54BE31
 P 3050 8250
 F 0 "RN7" H 2950 8350 50  0001 L CNN
@@ -2864,7 +2866,7 @@ F 13 "SMD" H 4600 8100 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN7
+L resistors_us:RN_100R_5% RN7
 U 2 1 5B54BE41
 P 1600 8150
 F 0 "RN7" H 1500 8250 50  0001 L CNN
@@ -2885,7 +2887,7 @@ F 13 "SMD" H 3150 8000 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN7
+L resistors_us:RN_100R_5% RN7
 U 1 1 5B54BE51
 P 3050 8150
 F 0 "RN7" H 2950 8250 50  0001 L CNN
@@ -2906,7 +2908,7 @@ F 13 "SMD" H 4600 8000 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN6
+L resistors_us:RN_100R_5% RN6
 U 4 1 5B54BE65
 P 1600 8050
 F 0 "RN6" H 2150 8050 50  0001 L CNN
@@ -2927,7 +2929,7 @@ F 13 "SMD" H 3150 7900 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN6
+L resistors_us:RN_100R_5% RN6
 U 3 1 5B54BE75
 P 3050 8050
 F 0 "RN6" H 2950 8150 50  0001 L CNN
@@ -2948,7 +2950,7 @@ F 13 "SMD" H 4600 7900 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN6
+L resistors_us:RN_100R_5% RN6
 U 2 1 5B54BE85
 P 1600 7950
 F 0 "RN6" H 1500 8050 50  0001 L CNN
@@ -2969,7 +2971,7 @@ F 13 "SMD" H 3150 7800 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN6
+L resistors_us:RN_100R_5% RN6
 U 1 1 5B54BE95
 P 3050 7950
 F 0 "RN6" H 2950 8050 50  0001 L CNN
@@ -2990,7 +2992,7 @@ F 13 "SMD" H 4600 7800 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN5
+L resistors_us:RN_100R_5% RN5
 U 4 1 5B54DB3B
 P 1550 6550
 F 0 "RN5" H 1450 6500 50  0001 L CNN
@@ -3011,7 +3013,7 @@ F 13 "SMD" H 3100 6400 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN5
+L resistors_us:RN_100R_5% RN5
 U 3 1 5B54DB4B
 P 3050 6550
 F 0 "RN5" H 2950 6650 50  0001 L CNN
@@ -3032,7 +3034,7 @@ F 13 "SMD" H 4600 6400 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN5
+L resistors_us:RN_100R_5% RN5
 U 2 1 5B54DB5B
 P 1550 6650
 F 0 "RN5" H 1450 6750 50  0001 L CNN
@@ -3053,7 +3055,7 @@ F 13 "SMD" H 3100 6500 60  0001 C CNN "Korpuso tipas"
 	1    0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN5
+L resistors_us:RN_100R_5% RN5
 U 1 1 5B54DB6B
 P 3050 6650
 F 0 "RN5" H 2950 6750 50  0001 L CNN
@@ -3092,11 +3094,11 @@ Text Label 1550 7750 0    50   ~ 0
 Text Label 3050 7750 2    50   ~ 0
 COM
 $Comp
-L LED_RED_0805_EL17-21SURC D5
+L disc:LED_RED_0805_EL17-21SURC D5
 U 1 1 5B561629
 P 1750 10350
 F 0 "D5" H 1900 10200 59  0000 C CNN
-F 1 "LED2" H 1650 10200 50  0000 C CNN
+F 1 "LED5" H 1650 10200 50  0000 C CNN
 F 2 "disc:LED_0805" H 2600 10200 50  0001 C CNN
 F 3 "" H 1750 10450 50  0001 C CNN
 F 4 "ZELD008" H 1750 10150 60  0001 C CNN "ventcode"
@@ -3117,11 +3119,11 @@ $EndComp
 Text Label 1300 10350 0    60   ~ 0
 COM
 $Comp
-L LED_RED_0805_EL17-21SURC D6
+L disc:LED_RED_0805_EL17-21SURC D6
 U 1 1 5B56B9EE
 P 1750 9400
 F 0 "D6" H 1900 9250 59  0000 C CNN
-F 1 "LED1" H 1650 9250 50  0000 C CNN
+F 1 "LED6" H 1650 9250 50  0000 C CNN
 F 2 "disc:LED_0805" H 2600 9250 50  0001 C CNN
 F 3 "" H 1750 9500 50  0001 C CNN
 F 4 "ZELD008" H 1750 9200 60  0001 C CNN "ventcode"
@@ -3142,11 +3144,11 @@ $EndComp
 Text Label 1300 9400 0    60   ~ 0
 COM
 $Comp
-L LED_RED_0805_EL17-21SURC D7
+L disc:LED_RED_0805_EL17-21SURC D7
 U 1 1 5B56BA04
 P 1750 9700
 F 0 "D7" H 1900 9550 59  0000 C CNN
-F 1 "LED2" H 1650 9550 50  0000 C CNN
+F 1 "LED7" H 1650 9550 50  0000 C CNN
 F 2 "disc:LED_0805" H 2600 9550 50  0001 C CNN
 F 3 "" H 1750 9800 50  0001 C CNN
 F 4 "ZELD008" H 1750 9500 60  0001 C CNN "ventcode"
@@ -3167,7 +3169,7 @@ $EndComp
 Text Label 1300 9700 0    60   ~ 0
 COM
 $Comp
-L RN_100R_5% RN14
+L resistors_us:RN_100R_5% RN14
 U 1 1 5B56BB28
 P 2300 9400
 F 0 "RN14" H 2200 9500 50  0001 L CNN
@@ -3188,7 +3190,7 @@ F 13 "SMD" H 3850 9250 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN14
+L resistors_us:RN_100R_5% RN14
 U 2 1 5B56BC3A
 P 2300 9700
 F 0 "RN14" H 2200 9800 50  0001 L CNN
@@ -3209,7 +3211,7 @@ F 13 "SMD" H 3850 9550 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN14
+L resistors_us:RN_100R_5% RN14
 U 3 1 5B56BD4C
 P 2300 10050
 F 0 "RN14" H 2200 10150 50  0001 L CNN
@@ -3230,7 +3232,7 @@ F 13 "SMD" H 3850 9900 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L RN_100R_5% RN14
+L resistors_us:RN_100R_5% RN14
 U 4 1 5B56BE5E
 P 2300 10350
 F 0 "RN14" H 2200 10450 50  0001 L CNN
@@ -3251,7 +3253,7 @@ F 13 "SMD" H 3850 10200 60  0001 C CNN "Korpuso tipas"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_120R_1206_1% R10
+L resistors_us:R_120R_1206_1% R10
 U 1 1 5B51A3CC
 P 2000 1650
 F 0 "R10" H 1900 1750 60  0000 C CNN
@@ -3338,16 +3340,16 @@ A0
 Text Label 3650 6850 2    50   ~ 0
 C13
 Wire Wire Line
-	1550 4500 2050 4500
+	1550 4500 1900 4500
 Wire Wire Line
 	1550 4600 1650 4600
 Wire Wire Line
-	1650 4200 1650 5400
+	1650 4200 1650 4600
 Wire Wire Line
-	1900 4500 1900 5000
+	1900 4500 1900 4750
 Connection ~ 1900 4500
 Wire Wire Line
-	2550 4400 2550 5000
+	2550 4400 2550 4500
 Connection ~ 2550 4400
 Wire Wire Line
 	1550 4200 1650 4200
@@ -3367,7 +3369,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 4200 3450 4200
 Wire Wire Line
-	1550 4400 3450 4400
+	1550 4400 2550 4400
 Wire Wire Line
 	8550 4050 8550 3600
 Wire Wire Line
@@ -3391,7 +3393,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 6150 7850 6450
 Wire Wire Line
-	21300 -1250 22000 -1250
+	21300 -1250 21400 -1250
 Wire Wire Line
 	21400 -1250 21400 -1050
 Connection ~ 21400 -1250
@@ -3400,11 +3402,11 @@ Wire Wire Line
 Wire Wire Line
 	22000 -1050 21700 -1050
 Wire Wire Line
-	21700 -1500 21700 -750
+	21700 -1500 21700 -1050
 Wire Wire Line
 	22700 -1500 22700 -1150
 Wire Wire Line
-	22600 -1150 23100 -1150
+	22600 -1150 22700 -1150
 Connection ~ 22700 -1150
 Wire Wire Line
 	9050 4850 9500 4850
@@ -3416,7 +3418,7 @@ Connection ~ 21700 -1050
 Wire Wire Line
 	21700 -750 21800 -750
 Wire Wire Line
-	22200 -550 22200 -850
+	22200 -550 22200 -750
 Wire Wire Line
 	22100 -750 22200 -750
 Connection ~ 22200 -750
@@ -3429,7 +3431,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 6150 8450 6450
 Wire Wire Line
-	1200 5400 3100 5400
+	1200 5400 1650 5400
 Wire Wire Line
 	1900 5400 1900 5300
 Wire Wire Line
@@ -3437,7 +3439,7 @@ Wire Wire Line
 Connection ~ 1900 5400
 Connection ~ 2550 5400
 Wire Wire Line
-	20600 -550 22850 -550
+	20600 -550 21400 -550
 Connection ~ 21400 -550
 Wire Wire Line
 	27450 9450 27550 9450
@@ -3457,11 +3459,11 @@ Wire Wire Line
 Wire Wire Line
 	3100 3150 3100 3000
 Wire Wire Line
-	2950 3000 4000 3000
+	2950 3000 3100 3000
 Wire Wire Line
 	3100 3450 3100 3600
 Wire Wire Line
-	2950 3600 4000 3600
+	2950 3600 3100 3600
 Connection ~ 3100 3000
 Connection ~ 3100 3600
 Wire Wire Line
@@ -3469,7 +3471,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 3000 2600 3600
 Wire Wire Line
-	1850 3600 2650 3600
+	1850 3600 2150 3600
 Connection ~ 2600 3600
 Wire Wire Line
 	9050 4650 9500 4650
@@ -3484,13 +3486,13 @@ Wire Wire Line
 Wire Wire Line
 	1650 4000 2050 4000
 Wire Wire Line
-	28450 9100 28450 9700
+	28450 9100 28450 9350
 Wire Wire Line
 	6950 4550 6550 4550
 Wire Wire Line
 	7850 4050 7850 3600
 Wire Wire Line
-	1750 2750 4000 2750
+	1750 2750 1850 2750
 Wire Wire Line
 	2150 3300 2150 3600
 Connection ~ 2150 3600
@@ -3498,11 +3500,11 @@ Wire Wire Line
 	2150 3000 2150 2750
 Connection ~ 2150 2750
 Wire Wire Line
-	23950 8600 24900 8600
+	23950 8600 24200 8600
 Wire Wire Line
 	24100 8000 24100 7900
 Wire Wire Line
-	24100 7900 27350 7900
+	24100 7900 24200 7900
 Wire Wire Line
 	24800 7900 24800 8000
 Wire Wire Line
@@ -3525,13 +3527,13 @@ Wire Wire Line
 Connection ~ 24700 7900
 Connection ~ 24800 7900
 Wire Wire Line
-	27100 8550 28900 8550
+	27100 8550 27450 8550
 Wire Wire Line
-	23950 9000 24900 9000
+	23950 9000 24600 9000
 Wire Wire Line
-	23950 9100 24900 9100
+	23950 9100 24700 9100
 Wire Wire Line
-	23950 9200 24900 9200
+	23950 9200 24800 9200
 Wire Wire Line
 	24100 8300 24100 8500
 Connection ~ 24100 8500
@@ -3563,7 +3565,7 @@ Wire Wire Line
 Wire Wire Line
 	27350 9550 27350 9100
 Wire Wire Line
-	27350 9100 28900 9100
+	27350 9100 28450 9100
 Wire Wire Line
 	1850 2750 1850 3000
 Connection ~ 1850 2750
@@ -3572,9 +3574,9 @@ Wire Wire Line
 Wire Wire Line
 	8050 3600 8050 4050
 Wire Wire Line
-	7350 8250 9250 8250
+	7350 8250 8550 8250
 Wire Wire Line
-	7150 8350 9250 8350
+	7150 8350 8150 8350
 Wire Wire Line
 	8150 8350 8150 8100
 Connection ~ 8150 8350
@@ -3582,7 +3584,7 @@ Connection ~ 8550 8250
 Wire Wire Line
 	7800 7650 7800 7950
 Wire Wire Line
-	7150 7650 8350 7650
+	7150 7650 7350 7650
 Wire Wire Line
 	7150 8050 7150 8350
 Wire Wire Line
@@ -3595,13 +3597,13 @@ Connection ~ 7350 7650
 Wire Wire Line
 	7800 7950 7950 7950
 Wire Wire Line
-	23950 8700 24900 8700
+	23950 8700 24300 8700
 Wire Wire Line
-	23950 8800 24900 8800
+	23950 8800 24400 8800
 Wire Wire Line
-	23950 8900 24900 8900
+	23950 8900 24500 8900
 Wire Wire Line
-	23950 8500 24900 8500
+	23950 8500 24100 8500
 Wire Wire Line
 	22850 -1000 22850 -1150
 Connection ~ 22850 -1150
@@ -3609,14 +3611,14 @@ Wire Wire Line
 	22850 -550 22850 -700
 Connection ~ 22200 -550
 Wire Wire Line
-	2950 4900 3450 4900
+	2950 4900 3100 4900
 Wire Wire Line
 	3100 4900 3100 5000
 Connection ~ 3100 4900
 Wire Wire Line
 	3100 5400 3100 5300
 Wire Wire Line
-	1200 4900 2650 4900
+	1200 4900 1900 4900
 Wire Wire Line
 	27450 8550 27450 9450
 Connection ~ 27450 8550
@@ -3624,7 +3626,7 @@ Wire Wire Line
 	27450 9650 27550 9650
 Connection ~ 27450 10100
 Wire Wire Line
-	26400 10100 28900 10100
+	26400 10100 27450 10100
 Connection ~ 28450 9450
 Wire Wire Line
 	28450 10000 28450 10100
@@ -3670,35 +3672,35 @@ Wire Wire Line
 Wire Wire Line
 	21950 8600 21950 8700
 Wire Wire Line
-	21850 8700 22600 8700
+	21850 8700 21950 8700
 Wire Wire Line
 	21850 8500 22600 8500
 Wire Wire Line
 	21850 8800 22600 8800
 Connection ~ 21950 8700
 Wire Wire Line
-	20850 8800 21050 8800
+	20850 8800 21000 8800
 Wire Wire Line
-	20850 8500 21050 8500
+	20850 8500 21000 8500
 Wire Wire Line
 	20250 8600 21050 8600
 Wire Wire Line
 	20550 8500 20350 8500
 Wire Wire Line
-	20350 8500 20350 9200
+	20350 8500 20350 8700
 Wire Wire Line
 	20250 8800 20550 8800
 Wire Wire Line
-	20250 8200 20250 8800
+	20250 8200 20250 8600
 Connection ~ 20250 8600
 Wire Wire Line
 	20350 9200 20050 9200
 Wire Wire Line
 	20050 8200 20250 8200
 Wire Wire Line
-	19250 8200 19750 8200
+	19250 8200 19550 8200
 Wire Wire Line
-	19250 9200 19750 9200
+	19250 9200 19550 9200
 Wire Wire Line
 	19550 9000 19550 9200
 Connection ~ 19550 9200
@@ -3717,11 +3719,11 @@ Connection ~ 20350 8700
 Wire Wire Line
 	21000 8500 21000 8200
 Wire Wire Line
-	21000 8200 22600 8200
+	21000 8200 22050 8200
 Connection ~ 21000 8500
 Connection ~ 21000 8800
 Wire Wire Line
-	21000 9200 22600 9200
+	21000 9200 22050 9200
 Wire Wire Line
 	21000 8800 21000 9200
 Wire Wire Line
@@ -3746,9 +3748,9 @@ Connection ~ 1900 4750
 Wire Wire Line
 	4050 1800 4150 1800
 Wire Wire Line
-	3150 1650 4150 1650
+	3150 1650 3400 1650
 Wire Wire Line
-	3650 1650 3650 1850
+	3650 1650 3650 1800
 Wire Wire Line
 	3650 1800 3750 1800
 Connection ~ 3650 1650
@@ -3759,11 +3761,11 @@ Wire Wire Line
 Wire Wire Line
 	4550 2250 4550 2000
 Wire Wire Line
-	1700 2250 6200 2250
+	1700 2250 2250 2250
 Wire Wire Line
 	5100 2250 5100 2150
 Wire Wire Line
-	4950 1650 6600 1650
+	4950 1650 5650 1650
 Wire Wire Line
 	5650 1800 5650 1650
 Connection ~ 5650 1650
@@ -3782,15 +3784,15 @@ Wire Wire Line
 Wire Wire Line
 	8850 7650 8750 7650
 Wire Wire Line
-	8350 7950 9250 7950
+	8350 7950 8850 7950
 Connection ~ 8850 7950
 Connection ~ 7800 7650
 Wire Wire Line
 	22000 6150 22000 6450
 Wire Wire Line
-	21200 6450 22550 6450
+	21200 6450 22000 6450
 Wire Wire Line
-	22400 5950 22700 5950
+	22400 5950 22550 5950
 Wire Wire Line
 	22400 5150 22700 5150
 Wire Wire Line
@@ -3848,7 +3850,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 8800 7250 8800
 Wire Wire Line
-	7250 8800 7250 9300
+	7250 8800 7250 8900
 Wire Wire Line
 	7250 9100 7350 9100
 Wire Wire Line
@@ -3866,15 +3868,15 @@ Wire Wire Line
 	8550 9100 8150 9100
 Connection ~ 7250 9100
 Wire Wire Line
-	8550 7800 8550 9100
+	8550 7800 8550 8250
 Wire Wire Line
 	8150 8900 8250 8900
 Wire Wire Line
-	8150 8800 9250 8800
+	8150 8800 8750 8800
 Wire Wire Line
 	8250 8900 8250 9300
 Wire Wire Line
-	7250 9300 9250 9300
+	7250 9300 8250 9300
 Connection ~ 8250 9300
 Wire Wire Line
 	8750 8900 8750 8800
@@ -4031,7 +4033,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 8350 3650 8350
 Wire Wire Line
-	21300 250  22000 250 
+	21300 250  21400 250 
 Wire Wire Line
 	21400 250  21400 450 
 Connection ~ 21400 250 
@@ -4040,11 +4042,11 @@ Wire Wire Line
 Wire Wire Line
 	22000 450  21700 450 
 Wire Wire Line
-	21700 0    21700 750 
+	21700 0    21700 450 
 Wire Wire Line
 	22700 0    22700 350 
 Wire Wire Line
-	22600 350  23100 350 
+	22600 350  22700 350 
 Connection ~ 22700 350 
 Wire Wire Line
 	22100 0    22700 0   
@@ -4054,14 +4056,14 @@ Connection ~ 21700 450
 Wire Wire Line
 	21700 750  21800 750 
 Wire Wire Line
-	22200 950  22200 650 
+	22200 950  22200 750 
 Wire Wire Line
 	22100 750  22200 750 
 Connection ~ 22200 750 
 Wire Wire Line
 	21400 750  21400 950 
 Wire Wire Line
-	20600 950  22850 950 
+	20600 950  21400 950 
 Connection ~ 21400 950 
 Wire Wire Line
 	22200 50   22200 -200
@@ -4074,7 +4076,7 @@ Wire Wire Line
 	22850 950  22850 800 
 Connection ~ 22200 950 
 Wire Wire Line
-	21300 1850 22000 1850
+	21300 1850 21400 1850
 Wire Wire Line
 	21400 1850 21400 2050
 Connection ~ 21400 1850
@@ -4083,11 +4085,11 @@ Wire Wire Line
 Wire Wire Line
 	22000 2050 21700 2050
 Wire Wire Line
-	21700 1600 21700 2350
+	21700 1600 21700 2050
 Wire Wire Line
 	22700 1600 22700 1950
 Wire Wire Line
-	22600 1950 23100 1950
+	22600 1950 22700 1950
 Connection ~ 22700 1950
 Wire Wire Line
 	22100 1600 22700 1600
@@ -4097,14 +4099,14 @@ Connection ~ 21700 2050
 Wire Wire Line
 	21700 2350 21800 2350
 Wire Wire Line
-	22200 2550 22200 2250
+	22200 2550 22200 2350
 Wire Wire Line
 	22100 2350 22200 2350
 Connection ~ 22200 2350
 Wire Wire Line
 	21400 2350 21400 2550
 Wire Wire Line
-	20600 2550 22850 2550
+	20600 2550 21400 2550
 Connection ~ 21400 2550
 Wire Wire Line
 	22200 1650 22200 1400
@@ -4117,7 +4119,7 @@ Wire Wire Line
 	22850 2550 22850 2400
 Connection ~ 22200 2550
 Wire Wire Line
-	21300 3350 22000 3350
+	21300 3350 21400 3350
 Wire Wire Line
 	21400 3350 21400 3550
 Connection ~ 21400 3350
@@ -4126,11 +4128,11 @@ Wire Wire Line
 Wire Wire Line
 	22000 3550 21700 3550
 Wire Wire Line
-	21700 3100 21700 3850
+	21700 3100 21700 3550
 Wire Wire Line
 	22700 3100 22700 3450
 Wire Wire Line
-	22600 3450 23100 3450
+	22600 3450 22700 3450
 Connection ~ 22700 3450
 Wire Wire Line
 	22100 3100 22700 3100
@@ -4140,14 +4142,14 @@ Connection ~ 21700 3550
 Wire Wire Line
 	21700 3850 21800 3850
 Wire Wire Line
-	22200 4050 22200 3750
+	22200 4050 22200 3850
 Wire Wire Line
 	22100 3850 22200 3850
 Connection ~ 22200 3850
 Wire Wire Line
 	21400 3850 21400 4050
 Wire Wire Line
-	20600 4050 22850 4050
+	20600 4050 21400 4050
 Connection ~ 21400 4050
 Wire Wire Line
 	22200 3150 22200 2900
@@ -4163,7 +4165,7 @@ Wire Wire Line
 	2750 1950 2750 2250
 Connection ~ 2750 2250
 Wire Wire Line
-	2150 1650 2350 1650
+	2150 1650 2250 1650
 Wire Wire Line
 	2250 1800 2250 1650
 Connection ~ 2250 1650
@@ -4171,15 +4173,15 @@ Wire Wire Line
 	2250 2100 2250 2250
 Connection ~ 2250 2250
 Wire Wire Line
-	4950 3100 5700 3100
+	4950 3100 5100 3100
 Wire Wire Line
 	5100 3100 5100 3200
 Wire Wire Line
-	4950 3600 5700 3600
+	4950 3600 5100 3600
 Wire Wire Line
 	5100 3600 5100 3500
 Wire Wire Line
-	4300 3600 4650 3600
+	4300 3600 4550 3600
 Wire Wire Line
 	4550 3600 4550 3100
 Wire Wire Line
@@ -4274,11 +4276,11 @@ B1
 Text Label 2750 10350 2    50   ~ 0
 B0
 $Comp
-L LED_RED_0805_EL17-21SURC D8
+L disc:LED_RED_0805_EL17-21SURC D8
 U 1 1 5B542623
 P 1750 9100
 F 0 "D8" H 1900 8950 59  0000 C CNN
-F 1 "3V" H 1650 8950 50  0000 C CNN
+F 1 "POWER" H 1650 8950 50  0000 C CNN
 F 2 "disc:LED_0805" H 2600 8950 50  0001 C CNN
 F 3 "" H 1750 9200 50  0001 C CNN
 F 4 "ZELD008" H 1750 8900 60  0001 C CNN "ventcode"
@@ -4301,7 +4303,7 @@ Wire Wire Line
 Text Label 1300 9100 0    60   ~ 0
 COM
 $Comp
-L R_10k_0805_1% R32
+L resistors_us:R_10k_0805_1% R32
 U 1 1 5B54433F
 P 2300 9100
 F 0 "R32" H 2150 9200 60  0000 C CNN
@@ -4333,7 +4335,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 6550 950  6550
 $Comp
-L D_BAS32 D9
+L disc:D_BAS32 D9
 U 1 1 5B54E5F0
 P 1600 1650
 F 0 "D9" H 1650 1550 59  0000 C CNN
@@ -4359,7 +4361,7 @@ $EndComp
 Wire Wire Line
 	1750 1650 1850 1650
 $Comp
-L Conn_02x10_Odd_Even J3
+L Connector_Generic:Conn_02x10_Odd_Even J3
 U 1 1 5B550C25
 P 2250 6950
 F 0 "J3" H 2300 7450 50  0000 C CNN
@@ -4370,7 +4372,7 @@ F 3 "" H 2250 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x10_Odd_Even J4
+L Connector_Generic:Conn_02x10_Odd_Even J4
 U 1 1 5B55A4DE
 P 2250 8150
 F 0 "J4" H 2300 8650 50  0000 C CNN
@@ -4381,7 +4383,7 @@ F 3 "" H 2250 8150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x03_Odd_Even J2
+L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5B55F517
 P 2250 6000
 F 0 "J2" H 2300 6200 50  0000 C CNN
@@ -4396,9 +4398,9 @@ Wire Wire Line
 Wire Wire Line
 	1925 6100 1925 6300
 Wire Wire Line
-	1925 6300 2950 6300
+	1925 6300 2675 6300
 Wire Wire Line
-	2675 6000 2675 6300
+	2675 6000 2675 6100
 Wire Wire Line
 	2675 6000 2550 6000
 Wire Wire Line
@@ -4478,4 +4480,230 @@ Text Label 2800 8550 2    50   ~ 0
 PB14
 Text Label 2800 8650 2    50   ~ 0
 PB12
+Wire Wire Line
+	1900 4500 2050 4500
+Wire Wire Line
+	2550 4400 2700 4400
+Wire Wire Line
+	1650 4600 1650 5400
+Wire Wire Line
+	21400 -1250 22000 -1250
+Wire Wire Line
+	22700 -1150 22850 -1150
+Wire Wire Line
+	21700 -1050 21700 -750
+Wire Wire Line
+	22200 -750 22200 -850
+Wire Wire Line
+	1900 5400 2550 5400
+Wire Wire Line
+	2550 5400 3100 5400
+Wire Wire Line
+	21400 -550 22200 -550
+Wire Wire Line
+	28450 9350 28450 9450
+Wire Wire Line
+	3100 3000 3450 3000
+Wire Wire Line
+	3100 3600 3450 3600
+Wire Wire Line
+	2600 3600 2650 3600
+Wire Wire Line
+	2150 3600 2600 3600
+Wire Wire Line
+	2150 2750 4000 2750
+Wire Wire Line
+	24200 7900 24300 7900
+Wire Wire Line
+	24300 7900 24400 7900
+Wire Wire Line
+	24400 7900 24500 7900
+Wire Wire Line
+	24500 7900 24600 7900
+Wire Wire Line
+	24600 7900 24700 7900
+Wire Wire Line
+	24700 7900 24800 7900
+Wire Wire Line
+	24800 7900 26400 7900
+Wire Wire Line
+	24100 8500 24900 8500
+Wire Wire Line
+	24200 8600 24900 8600
+Wire Wire Line
+	24300 8700 24900 8700
+Wire Wire Line
+	24400 8800 24900 8800
+Wire Wire Line
+	24500 8900 24900 8900
+Wire Wire Line
+	24600 9000 24900 9000
+Wire Wire Line
+	24700 9100 24900 9100
+Wire Wire Line
+	24800 9200 24900 9200
+Wire Wire Line
+	1850 2750 2150 2750
+Wire Wire Line
+	8150 8350 8450 8350
+Wire Wire Line
+	8550 8250 9250 8250
+Wire Wire Line
+	8550 8250 8550 9100
+Wire Wire Line
+	7350 7650 7800 7650
+Wire Wire Line
+	22850 -1150 23100 -1150
+Wire Wire Line
+	22200 -550 22850 -550
+Wire Wire Line
+	3100 4900 3450 4900
+Wire Wire Line
+	27450 8550 28900 8550
+Wire Wire Line
+	27450 10100 28450 10100
+Wire Wire Line
+	28450 9450 28450 9700
+Wire Wire Line
+	28450 10100 28900 10100
+Wire Wire Line
+	28450 9100 28900 9100
+Wire Wire Line
+	26400 7900 27350 7900
+Wire Wire Line
+	21950 8700 22600 8700
+Wire Wire Line
+	20250 8600 20250 8800
+Wire Wire Line
+	19550 9200 19750 9200
+Wire Wire Line
+	19550 8200 19750 8200
+Wire Wire Line
+	20350 8700 20350 9200
+Wire Wire Line
+	21000 8500 21050 8500
+Wire Wire Line
+	21000 8800 21050 8800
+Wire Wire Line
+	22050 8200 22600 8200
+Wire Wire Line
+	22050 9200 22600 9200
+Wire Wire Line
+	1650 5400 1900 5400
+Wire Wire Line
+	1900 4900 1900 5000
+Wire Wire Line
+	1900 4900 2650 4900
+Wire Wire Line
+	2550 4500 2550 4750
+Wire Wire Line
+	2550 4750 2550 5000
+Wire Wire Line
+	1900 4750 1900 4900
+Wire Wire Line
+	3650 1650 4150 1650
+Wire Wire Line
+	5650 1650 6200 1650
+Wire Wire Line
+	5100 2250 5650 2250
+Wire Wire Line
+	6200 1650 6600 1650
+Wire Wire Line
+	5650 2250 6200 2250
+Wire Wire Line
+	4550 2250 5100 2250
+Wire Wire Line
+	8850 7950 9250 7950
+Wire Wire Line
+	7800 7650 8350 7650
+Wire Wire Line
+	22550 5950 22700 5950
+Wire Wire Line
+	22000 6450 22550 6450
+Wire Wire Line
+	3400 1650 3650 1650
+Wire Wire Line
+	3400 2250 3650 2250
+Wire Wire Line
+	3650 1800 3650 1850
+Wire Wire Line
+	3650 2250 4550 2250
+Wire Wire Line
+	3450 3000 4000 3000
+Wire Wire Line
+	3450 3600 4000 3600
+Wire Wire Line
+	7250 9000 7250 9100
+Wire Wire Line
+	7250 8900 7250 9000
+Wire Wire Line
+	8450 8350 9250 8350
+Wire Wire Line
+	7250 9100 7250 9300
+Wire Wire Line
+	8250 9300 8750 9300
+Wire Wire Line
+	8750 8800 9250 8800
+Wire Wire Line
+	8750 9300 9250 9300
+Wire Wire Line
+	21400 250  22000 250 
+Wire Wire Line
+	22700 350  22850 350 
+Wire Wire Line
+	21700 450  21700 750 
+Wire Wire Line
+	22200 750  22200 650 
+Wire Wire Line
+	21400 950  22200 950 
+Wire Wire Line
+	22850 350  23100 350 
+Wire Wire Line
+	22200 950  22850 950 
+Wire Wire Line
+	21400 1850 22000 1850
+Wire Wire Line
+	22700 1950 22850 1950
+Wire Wire Line
+	21700 2050 21700 2350
+Wire Wire Line
+	22200 2350 22200 2250
+Wire Wire Line
+	21400 2550 22200 2550
+Wire Wire Line
+	22850 1950 23100 1950
+Wire Wire Line
+	22200 2550 22850 2550
+Wire Wire Line
+	21400 3350 22000 3350
+Wire Wire Line
+	22700 3450 22850 3450
+Wire Wire Line
+	21700 3550 21700 3850
+Wire Wire Line
+	22200 3850 22200 3750
+Wire Wire Line
+	21400 4050 22200 4050
+Wire Wire Line
+	22850 3450 23100 3450
+Wire Wire Line
+	22200 4050 22850 4050
+Wire Wire Line
+	2750 2250 3400 2250
+Wire Wire Line
+	2250 1650 2350 1650
+Wire Wire Line
+	2250 2250 2750 2250
+Wire Wire Line
+	4550 3600 4650 3600
+Wire Wire Line
+	5100 3100 5700 3100
+Wire Wire Line
+	5100 3600 5700 3600
+Wire Wire Line
+	2675 6100 2675 6300
+Wire Wire Line
+	2675 6300 2950 6300
+Wire Wire Line
+	2700 4400 3450 4400
 $EndSCHEMATC
