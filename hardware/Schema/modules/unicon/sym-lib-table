@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ev1527)(type Legacy)(uri C:/Working/Git/unicon/hardware/Schema/kicad/EV1527/ev1527.lib)(options "")(descr ""))
+  (lib (name unicon)(type Legacy)(uri C:/Working/Git/unicon/hardware/Schema/kicad/UNICON/unicon.lib)(options "")(descr ""))
+  (lib (name chinpw)(type Legacy)(uri ${KIPRJMOD}/kicad/CHINPW/chinpw.lib)(options "")(descr ""))
+)

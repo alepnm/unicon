@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name ev1527)(type KiCad)(uri ${KIPRJMOD}/kicad/EV1527/ev1527.pretty)(options "")(descr ""))
   (lib (name unicon)(type KiCad)(uri ${KIPRJMOD}/kicad/UNICON/unicon.pretty)(options "")(descr ""))
+  (lib (name ev1527)(type KiCad)(uri ${KIPRJMOD}/kicad/EV1527/ev1527.pretty)(options "")(descr ""))
 )

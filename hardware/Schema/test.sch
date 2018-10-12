@@ -1,0 +1,597 @@
+EESchema Schematic File Version 4
+LIBS:test-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L unicon:unicon_v1 M1
+U 1 1 5BC2AC81
+P 3850 2600
+F 0 "M1" H 3850 4065 50  0000 C CNN
+F 1 "unicon_v1" H 3850 3974 50  0000 C CNN
+F 2 "unicon:unicon_v1" H 3850 5700 50  0001 C CNN
+F 3 "" H 3850 5700 50  0001 C CNN
+	1    3850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ev1527:EV1527_Transmitter U1
+U 1 1 5BC2AD6A
+P 9600 1500
+F 0 "U1" H 9600 1937 60  0000 C CNN
+F 1 "EV1527_A" H 9600 1831 60  0000 C CNN
+F 2 "" H 9500 1400 60  0001 C CNN
+F 3 "" H 9600 1500 60  0001 C CNN
+	1    9600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ev1527:EV1527_Transmitter U2
+U 1 1 5BC2AE23
+P 9600 2350
+F 0 "U2" H 9600 2787 60  0000 C CNN
+F 1 "EV1527_B" H 9600 2681 60  0000 C CNN
+F 2 "" H 9500 2250 60  0001 C CNN
+F 3 "" H 9600 2350 60  0001 C CNN
+	1    9600 2350
+	1    0    0    -1  
+$EndComp
+Text Label 6650 4900 0    50   ~ 0
+5VDC
+Wire Wire Line
+	2900 1750 2750 1750
+Wire Wire Line
+	2750 1750 2750 1850
+Wire Wire Line
+	2750 1950 2900 1950
+Wire Wire Line
+	2900 1850 2750 1850
+Connection ~ 2750 1850
+Wire Wire Line
+	2750 1850 2750 1950
+Wire Wire Line
+	2750 1950 2650 1950
+Connection ~ 2750 1950
+$Comp
+L power:GND #PWR0101
+U 1 1 5BC07F3C
+P 2650 1950
+F 0 "#PWR0101" H 2650 1700 50  0001 C CNN
+F 1 "GND" V 2655 1822 50  0000 R CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BC081AB
+P 4900 2050
+F 0 "#PWR0102" H 4900 1800 50  0001 C CNN
+F 1 "GND" V 4905 1922 50  0000 R CNN
+F 2 "" H 4900 2050 50  0001 C CNN
+F 3 "" H 4900 2050 50  0001 C CNN
+	1    4900 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 2050 4800 2050
+Wire Wire Line
+	4800 3150 5200 3150
+Wire Wire Line
+	4800 3250 5200 3250
+Text Label 5200 3150 2    50   ~ 0
+UART_TX
+Text Label 5200 3250 2    50   ~ 0
+UART_RX
+$Comp
+L chinpw:chinpw_5ch M2
+U 1 1 5BC2D5EC
+P 7850 5200
+F 0 "M2" H 7875 5867 50  0000 C CNN
+F 1 "chinpw_5ch" H 7875 5776 50  0000 C CNN
+F 2 "" H 7400 5800 50  0001 C CNN
+F 3 "" H 7400 5800 50  0001 C CNN
+	1    7850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1450 2550 1450
+Text Label 2550 1450 0    50   ~ 0
+12VDC
+Wire Wire Line
+	7000 4800 6650 4800
+Text Label 6650 4800 0    50   ~ 0
+12VDC
+$Comp
+L hmi_nextion:Nextion HMI1
+U 1 1 5BC07E83
+P 9650 3500
+F 0 "HMI1" H 10100 3900 50  0000 C CNN
+F 1 "Nextion" H 9200 3900 50  0000 C CNN
+F 2 "" H 9650 3550 50  0001 C CNN
+F 3 "" H 9650 3550 50  0001 C CNN
+	1    9650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3350 8400 3350
+Wire Wire Line
+	8800 3650 8700 3650
+Wire Wire Line
+	8800 3550 8400 3550
+Wire Wire Line
+	8800 3450 8400 3450
+Text Label 8400 3550 0    50   ~ 0
+UART_TX
+Text Label 8400 3450 0    50   ~ 0
+UART_RX
+$Comp
+L power:GND #PWR0103
+U 1 1 5BC088A0
+P 8700 3650
+F 0 "#PWR0103" H 8700 3400 50  0001 C CNN
+F 1 "GND" V 8705 3522 50  0000 R CNN
+F 2 "" H 8700 3650 50  0001 C CNN
+F 3 "" H 8700 3650 50  0001 C CNN
+	1    8700 3650
+	0    1    -1   0   
+$EndComp
+Text Label 8400 3350 0    50   ~ 0
+5VDC
+Wire Wire Line
+	7000 4900 6650 4900
+$Comp
+L power:GND #PWR0104
+U 1 1 5BC08DDB
+P 6900 5000
+F 0 "#PWR0104" H 6900 4750 50  0001 C CNN
+F 1 "GND" V 6905 4872 50  0000 R CNN
+F 2 "" H 6900 5000 50  0001 C CNN
+F 3 "" H 6900 5000 50  0001 C CNN
+	1    6900 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 5000 7000 5000
+Wire Wire Line
+	7000 5200 6650 5200
+Wire Wire Line
+	7000 5300 6650 5300
+Wire Wire Line
+	7000 5400 6650 5400
+Wire Wire Line
+	7000 5500 6650 5500
+Wire Wire Line
+	7000 5600 6650 5600
+Text Label 6650 5200 0    50   ~ 0
+CH1
+Text Label 6650 5300 0    50   ~ 0
+CH2
+Text Label 6650 5400 0    50   ~ 0
+CH3
+Text Label 6650 5500 0    50   ~ 0
+CH4
+Text Label 6650 5600 0    50   ~ 0
+Ch5
+Wire Wire Line
+	9150 1350 8850 1350
+Wire Wire Line
+	9150 1450 8850 1450
+Wire Wire Line
+	9150 1550 8850 1550
+Wire Wire Line
+	9150 1650 8850 1650
+Wire Wire Line
+	9150 2200 8850 2200
+Wire Wire Line
+	9150 2300 8850 2300
+Wire Wire Line
+	9150 2400 8850 2400
+Wire Wire Line
+	9150 2500 8850 2500
+Text Label 8850 1350 0    50   ~ 0
+EVA1
+Text Label 8850 1450 0    50   ~ 0
+EVA2
+Text Label 8850 1550 0    50   ~ 0
+EVA3
+Text Label 8850 1650 0    50   ~ 0
+EVA4
+Text Label 8850 2200 0    50   ~ 0
+EVB1
+Text Label 8850 2300 0    50   ~ 0
+EVB2
+Text Label 8850 2400 0    50   ~ 0
+EVB3
+Text Label 8850 2500 0    50   ~ 0
+EVB4
+Wire Wire Line
+	10050 1550 10350 1550
+Wire Wire Line
+	10050 1650 10150 1650
+Wire Wire Line
+	10050 2400 10350 2400
+Wire Wire Line
+	10050 2500 10150 2500
+$Comp
+L power:GND #PWR0105
+U 1 1 5BC0E762
+P 10150 1650
+F 0 "#PWR0105" H 10150 1400 50  0001 C CNN
+F 1 "GND" V 10155 1522 50  0000 R CNN
+F 2 "" H 10150 1650 50  0001 C CNN
+F 3 "" H 10150 1650 50  0001 C CNN
+	1    10150 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BC0E7BD
+P 10150 2500
+F 0 "#PWR0106" H 10150 2250 50  0001 C CNN
+F 1 "GND" V 10155 2372 50  0000 R CNN
+F 2 "" H 10150 2500 50  0001 C CNN
+F 3 "" H 10150 2500 50  0001 C CNN
+	1    10150 2500
+	0    -1   -1   0   
+$EndComp
+Text Label 10350 1550 2    50   ~ 0
+5VDC
+Text Label 10350 2400 2    50   ~ 0
+5VDC
+$Comp
+L resistors_us:R_1k_0805_1% R1
+U 1 1 5BC116F5
+P 2550 5300
+F 0 "R1" H 2450 5400 60  0000 C CNN
+F 1 "1k" H 2650 5400 60  0000 C CNN
+F 2 "resistors:R_0805" H 3400 5200 60  0001 C CNN
+F 3 "" H 950 5800 60  0001 C CNN
+F 4 "ZELRS061" H 2550 5100 60  0001 C CNN "ventcode"
+F 5 "1k" H 2550 5420 60  0001 C CNN "Nominalas"
+F 6 "0.001" H 3750 5100 60  0001 C CNN "Kaina"
+F 7 "0805" H 4050 5200 60  0001 C CNN "Korpusas"
+F 8 "1" H 3500 5100 60  0001 C CNN "Aukstis"
+F 9 "RK73" H 4100 5100 60  0001 C CNN "Marke"
+F 10 "Rezistorius" H 3300 5300 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 3050 5100 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 3150 5100 60  0001 C CNN "Nuoroda"
+F 13 "SMD" H 4350 5200 60  0001 C CNN "Korpuso tipas"
+	1    2550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5300 2400 5300
+$Comp
+L resistors_us:R_120R_0805_1% R2
+U 1 1 5BC1204C
+P 2800 5500
+F 0 "R2" V 2853 5433 60  0000 R CNN
+F 1 "120R" V 2747 5433 60  0000 R CNN
+F 2 "resistors:R_0805" H 3600 5450 60  0001 C CNN
+F 3 "" H 1200 6000 60  0001 C CNN
+F 4 "ZELRS055" H 2800 5300 60  0001 C CNN "ventcode"
+F 5 "120R" V 2747 5433 60  0001 R CNN "Nominalas"
+F 6 "0.001" H 3650 5350 60  0001 C CNN "Kaina"
+F 7 "0805" H 4000 5350 60  0001 C CNN "Korpusas"
+F 8 "1" H 4250 5350 60  0001 C CNN "Aukstis"
+F 9 "RK73" H 4500 5350 60  0001 C CNN "Marke"
+F 10 "Rezistorius" H 3450 5550 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 3250 5350 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 3350 5350 60  0001 C CNN "Nuoroda"
+	1    2800 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 5300 2800 5300
+Wire Wire Line
+	2800 5300 2800 5350
+Wire Wire Line
+	2300 5700 2800 5700
+Wire Wire Line
+	2800 5700 2800 5650
+$Comp
+L resistors_us:R_xxx_0805_1% R4
+U 1 1 5BC13DFB
+P 3300 5900
+F 0 "R4" V 3250 5700 60  0000 L CNN
+F 1 "Rx" V 3350 5700 60  0000 L CNN
+F 2 "resistors:R_0805" H 4150 5900 60  0001 C CNN
+F 3 "" H 1700 6400 60  0001 C CNN
+F 4 "ventcode" H 3300 5700 60  0001 C CNN "ventcode"
+F 5 "-" V 3353 5967 59  0001 L CNN "Nominalas"
+F 6 "0.001" H 4400 5800 60  0001 C CNN "Kaina"
+F 7 "0805" H 5000 5900 60  0001 C CNN "Korpusas"
+F 8 "1" H 4700 5800 60  0001 C CNN "Aukstis"
+F 9 "-" H 3800 5750 60  0001 C CNN "Marke"
+F 10 "Rezistorius" H 4000 6000 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 3800 5800 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 3800 5700 60  0001 C CNN "Nuoroda"
+F 13 "SMD" H 4700 5900 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 3800 5650 60  0001 C CNN "Parametras"
+F 15 "-" H 3800 5600 60  0001 C CNN "Komentaras"
+	1    3300 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5BC149A7
+P 3300 6100
+F 0 "#PWR0107" H 3300 5850 50  0001 C CNN
+F 1 "GND" V 3305 5972 50  0000 R CNN
+F 2 "" H 3300 6100 50  0001 C CNN
+F 3 "" H 3300 6100 50  0001 C CNN
+	1    3300 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6100 3300 6050
+Wire Wire Line
+	2800 5700 3300 5700
+Wire Wire Line
+	3300 5700 3300 5750
+Connection ~ 2800 5700
+$Comp
+L resistors_us:R_xxx_0805_1% R3
+U 1 1 5BC17361
+P 3550 5700
+F 0 "R3" H 3400 5800 60  0000 L CNN
+F 1 "Rx" H 3600 5800 60  0000 L CNN
+F 2 "resistors:R_0805" H 4400 5700 60  0001 C CNN
+F 3 "" H 1950 6200 60  0001 C CNN
+F 4 "ventcode" H 3550 5500 60  0001 C CNN "ventcode"
+F 5 "-" V 3603 5767 59  0001 L CNN "Nominalas"
+F 6 "0.001" H 4650 5600 60  0001 C CNN "Kaina"
+F 7 "0805" H 5250 5700 60  0001 C CNN "Korpusas"
+F 8 "1" H 4950 5600 60  0001 C CNN "Aukstis"
+F 9 "-" H 4050 5550 60  0001 C CNN "Marke"
+F 10 "Rezistorius" H 4250 5800 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 4050 5600 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 4050 5500 60  0001 C CNN "Nuoroda"
+F 13 "SMD" H 4950 5700 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 4050 5450 60  0001 C CNN "Parametras"
+F 15 "-" H 4050 5400 60  0001 C CNN "Komentaras"
+	1    3550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5700 3300 5700
+Connection ~ 3300 5700
+Wire Wire Line
+	2800 5300 4000 5300
+Connection ~ 2800 5300
+Wire Wire Line
+	3700 5700 4000 5700
+Text Label 4000 5300 2    50   ~ 0
+AIN
+Text Label 4000 5700 2    50   ~ 0
+VREF
+$Comp
+L capacitors:CP_100uFx16V C1
+U 1 1 5BC1DECF
+P 2800 5900
+F 0 "C1" H 2500 5950 50  0000 L CNN
+F 1 "100uFx16V" H 2250 5850 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.7" H 3650 6150 50  0001 C CNN
+F 3 "" H 2825 6000 50  0001 C CNN
+F 4 "-" H 2850 5650 60  0001 C CNN "ventcode"
+F 5 "0.06" H 3550 5950 60  0001 C CNN "Kaina"
+F 6 "Kondensatorius elektrolitinis" H 3650 6250 60  0001 C CNN "Pavadinimas"
+F 7 "100uFx16V" H 2918 5854 60  0001 L CNN "Nominalas"
+F 8 "DIP" H 3750 6050 60  0001 C CNN "Korpuso tipas"
+	1    2800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5BC1E05B
+P 2800 6100
+F 0 "#PWR0108" H 2800 5850 50  0001 C CNN
+F 1 "GND" V 2805 5972 50  0000 R CNN
+F 2 "" H 2800 6100 50  0001 C CNN
+F 3 "" H 2800 6100 50  0001 C CNN
+	1    2800 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6050 2800 6100
+Wire Wire Line
+	2800 5750 2800 5700
+Wire Wire Line
+	1500 5300 1200 5300
+Wire Wire Line
+	1500 5700 1200 5700
+Wire Wire Line
+	2900 1650 2550 1650
+Text Label 2550 1650 0    50   ~ 0
+3VDC
+Text Label 1200 5300 0    50   ~ 0
+AC1
+Text Label 1200 5700 0    50   ~ 0
+AC2A
+Text Label 10500 4800 2    50   ~ 0
+AC1
+Text Label 10500 4900 2    50   ~ 0
+AC2
+Wire Wire Line
+	4800 3050 5200 3050
+Text Label 5200 3050 2    50   ~ 0
+UART_DE
+$Comp
+L mech:FuseHolder_FSH F1
+U 1 1 5BC345D6
+P 9500 4900
+F 0 "F1" V 9600 4800 50  0000 C CNN
+F 1 "1A" V 9600 4950 50  0000 C CNN
+F 2 "mech:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" H 10950 4750 50  0001 C CNN
+F 3 "" H 9580 4900 50  0001 C CNN
+F 4 "ZEL005" H 9500 4600 60  0001 C CNN "ventcode"
+F 5 "-" V 9370 4900 60  0001 C CNN "Nominalas"
+F 6 "0" H 10800 4850 60  0001 C CNN "Kaina"
+F 7 "-" H 9900 4850 60  0001 C CNN "Korpusas"
+F 8 "13" H 10600 4850 60  0001 C CNN "Aukstis"
+F 9 "-" H 10000 4850 60  0001 C CNN "Marke"
+F 10 "Saugiklio laikiklis" H 10300 4950 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 10100 4850 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 10200 4850 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 11350 4950 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 10300 4850 60  0001 C CNN "Parametras"
+F 15 "-" H 10400 4850 60  0001 C CNN "Komentaras"
+	1    9500 4900
+	0    1    1    0   
+$EndComp
+Text Label 8400 4500 0    50   ~ 0
+AC2A
+Wire Wire Line
+	8750 5200 9350 5200
+$Comp
+L mech:FuseHolder_FSH F2
+U 1 1 5BC49DC8
+P 9800 5100
+F 0 "F2" V 9700 5050 50  0000 C CNN
+F 1 "5A" V 9700 5200 50  0000 C CNN
+F 2 "mech:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" H 11250 4950 50  0001 C CNN
+F 3 "" H 9880 5100 50  0001 C CNN
+F 4 "ZEL005" H 9800 4800 60  0001 C CNN "ventcode"
+F 5 "-" V 9670 5100 60  0001 C CNN "Nominalas"
+F 6 "0" H 11100 5050 60  0001 C CNN "Kaina"
+F 7 "-" H 10200 5050 60  0001 C CNN "Korpusas"
+F 8 "13" H 10900 5050 60  0001 C CNN "Aukstis"
+F 9 "-" H 10300 5050 60  0001 C CNN "Marke"
+F 10 "Saugiklio laikiklis" H 10600 5150 60  0001 C CNN "Pavadinimas"
+F 11 "-" H 10400 5050 60  0001 C CNN "Gamintojo Kodas"
+F 12 "-" H 10500 5050 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 11650 5150 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 10600 5050 60  0001 C CNN "Parametras"
+F 15 "-" H 10700 5050 60  0001 C CNN "Komentaras"
+	1    9800 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 5100 10100 5100
+Wire Wire Line
+	9600 5100 9250 5100
+Wire Wire Line
+	9250 5100 9250 5300
+Wire Wire Line
+	9250 5300 9350 5300
+Connection ~ 9250 5300
+Wire Wire Line
+	9250 5300 9250 5500
+Wire Wire Line
+	9150 5300 9150 5400
+Wire Wire Line
+	9150 5400 9350 5400
+Wire Wire Line
+	8750 5300 9150 5300
+Wire Wire Line
+	9250 5500 9350 5500
+Connection ~ 9250 5500
+Wire Wire Line
+	9250 5500 9250 5700
+Wire Wire Line
+	9050 5400 9050 5600
+Wire Wire Line
+	9050 5600 9350 5600
+Wire Wire Line
+	8750 5400 9050 5400
+Wire Wire Line
+	9250 5700 9350 5700
+Connection ~ 9250 5700
+Wire Wire Line
+	9250 5700 9250 5900
+Wire Wire Line
+	8950 5500 8950 5800
+Wire Wire Line
+	8950 5800 9350 5800
+Wire Wire Line
+	8750 5500 8950 5500
+Wire Wire Line
+	9250 5900 9350 5900
+Connection ~ 9250 5900
+Wire Wire Line
+	9250 5900 9250 6100
+Wire Wire Line
+	8850 5600 8850 6000
+Wire Wire Line
+	8850 6000 9350 6000
+Wire Wire Line
+	8750 5600 8850 5600
+Wire Wire Line
+	9250 6100 9350 6100
+Wire Wire Line
+	10100 5100 10100 4900
+Wire Wire Line
+	10100 4900 10500 4900
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5BC800F1
+P 9550 5600
+F 0 "J1" H 9629 5592 50  0000 L CNN
+F 1 "OUTS" H 9629 5501 50  0000 L CNN
+F 2 "" H 9550 5600 50  0001 C CNN
+F 3 "~" H 9550 5600 50  0001 C CNN
+	1    9550 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4800 10500 4800
+Wire Wire Line
+	9300 4900 9200 4900
+Wire Wire Line
+	9700 4900 10100 4900
+Connection ~ 10100 4900
+Wire Wire Line
+	4800 1950 5200 1950
+Text Label 5200 1950 2    50   ~ 0
+VREF
+$Comp
+L disc:Transformer_TEZ_22x24_6V T1
+U 1 1 5BCA7928
+P 1900 5500
+F 0 "T1" H 1900 5787 50  0000 C CNN
+F 1 "Transformer_TEZ_22x24_6V" H 1900 5787 50  0001 C CNN
+F 2 "disc:Transformer_Breve_TEZ-22x24_6V" H 3300 5600 50  0001 C CNN
+F 3 "" H 1900 5750 50  0001 C CNN
+F 4 "Transformatorius" H 3000 5500 60  0001 C CNN "Pavadinimas"
+F 5 "ventcode" H 3700 5500 60  0001 C CNN "ventcode"
+F 6 "0" H 2700 5400 60  0001 C CNN "Kaina"
+F 7 "DIP" H 3100 5400 60  0001 C CNN "Korpuso tipas"
+F 8 "6V/0.35A" H 1900 5794 60  0001 C CNN "Nominalas"
+F 9 "15 mm" H 3450 5400 60  0001 C CNN "Aukstis"
+	1    1900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH1
+U 1 1 5BCA81A3
+P 8950 4500
+F 0 "TH1" V 8750 4750 50  0000 C CNN
+F 1 "250/120mA" V 8850 4900 50  0000 C CNN
+F 2 "Capacitors_THT:C_Rect_L7.0mm_W4.5mm_P5.00mm" H 9000 4300 50  0001 L CNN
+F 3 "~" H 8950 4500 50  0001 C CNN
+	1    8950 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 4500 9200 4500
+Wire Wire Line
+	9200 4500 9200 4900
+Connection ~ 9200 4900
+Wire Wire Line
+	9200 4900 8750 4900
+Wire Wire Line
+	8800 4500 8400 4500
+$EndSCHEMATC

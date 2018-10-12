@@ -1,0 +1,811 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic:Conn_02x03_Odd_Even
+#
+DEF Connector_Generic:Conn_02x03_Odd_Even J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Connector_Generic:Conn_02x03_Odd_Even" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 300 100 150 L 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 300 0 150 L 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic:Conn_02x10_Odd_Even
+#
+DEF Connector_Generic:Conn_02x10_Odd_Even J 0 40 Y N 1 F N
+F0 "J" 50 500 50 H V C CNN
+F1 "Connector_Generic:Conn_02x10_Odd_Even" 50 -600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 450 150 -550 1 1 10 f
+S 150 -495 100 -505 1 1 6 N
+S 150 -395 100 -405 1 1 6 N
+S 150 -295 100 -305 1 1 6 N
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+S 150 305 100 295 1 1 6 N
+S 150 405 100 395 1 1 6 N
+X Pin_1 1 -200 400 150 R 50 50 1 1 P
+X Pin_10 10 300 0 150 L 50 50 1 1 P
+X Pin_11 11 -200 -100 150 R 50 50 1 1 P
+X Pin_12 12 300 -100 150 L 50 50 1 1 P
+X Pin_13 13 -200 -200 150 R 50 50 1 1 P
+X Pin_14 14 300 -200 150 L 50 50 1 1 P
+X Pin_15 15 -200 -300 150 R 50 50 1 1 P
+X Pin_16 16 300 -300 150 L 50 50 1 1 P
+X Pin_17 17 -200 -400 150 R 50 50 1 1 P
+X Pin_18 18 300 -400 150 L 50 50 1 1 P
+X Pin_19 19 -200 -500 150 R 50 50 1 1 P
+X Pin_2 2 300 400 150 L 50 50 1 1 P
+X Pin_20 20 300 -500 150 L 50 50 1 1 P
+X Pin_3 3 -200 300 150 R 50 50 1 1 P
+X Pin_4 4 300 300 150 L 50 50 1 1 P
+X Pin_5 5 -200 200 150 R 50 50 1 1 P
+X Pin_6 6 300 200 150 L 50 50 1 1 P
+X Pin_7 7 -200 100 150 R 50 50 1 1 P
+X Pin_8 8 300 100 150 L 50 50 1 1 P
+X Pin_9 9 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# capacitors:CP_100uFx16V
+#
+DEF ~capacitors:CP_100uFx16V C 0 0 N N 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "capacitors:CP_100uFx16V" 200 150 50 H I L CNN
+F2 "capacitors:CP_Radial_D6.3mm_P2.50mm" 850 250 50 H I C CNN
+F3 "" 25 100 50 H I C CNN
+F4 "ZKN008" 50 -250 60 H I C CNN "ventcode"
+F5 "0.06" 750 50 60 H I C CNN "Kaina"
+F6 "Kondensatorius elektrolitinis" 850 350 60 H I C CNN "Pavadinimas"
+F7 "100uFx16V" 300 -100 60 H V C CNN "Nominalas"
+F8 "DIP" 950 150 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 -90 40 0 1 0 N
+S -90 20 90 20 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+S 90 40 -90 40 0 1 0 N
+S 90 40 90 20 0 1 0 N
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# capacitors:C_100n_0805_X7R
+#
+DEF ~capacitors:C_100n_0805_X7R C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "capacitors:C_100n_0805_X7R" -200 -100 50 H I L CNN
+F2 "capacitors:C_0805" 38 -150 50 H I C CNN
+F3 "" 25 100 50 H I C CNN
+F4 "ZKN065" 125 200 60 H I C CNN "ventcode"
+F5 "100n" 200 0 60 H V C CNN "Nominalas"
+F6 "0.001" 325 400 60 H I C CNN "Kaina"
+F7 "0805" 425 500 60 H I C CNN "Korpusas"
+F8 "1" 525 600 60 H I C CNN "Aukstis"
+F9 "X7R0805K" 625 700 60 H I C CNN "Marke"
+F10 "Kondensatorius" 725 800 60 H I C CNN "Pavadinimas"
+F11 "-" 825 900 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 925 1000 60 H I C CNN "Nuoroda"
+F13 "SMD" 1000 0 60 H I C CNN "Korpuso tipas"
+F14 "100n" 1125 1200 60 H I C CNN "Parametras"
+F15 "-" 1225 1300 60 H I C CNN "Komentaras"
+$FPLIST
+ C_0805
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# capacitors:C_15p_0805_X7R
+#
+DEF ~capacitors:C_15p_0805_X7R C 0 10 N N 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "capacitors:C_15p_0805_X7R" 1850 100 50 H I L CNN
+F2 "capacitors:C_0805" 850 0 50 H I C CNN
+F3 "" 25 100 50 H I C CNN
+F4 "ZKN097" 50 -250 60 H I C CNN "ventcode"
+F5 "15pF" 200 0 60 H V C CNN "Nominalas"
+F6 "0" 950 -100 60 H I C CNN "Kaina"
+F7 "0805" 1450 0 60 H I C CNN "Korpusas"
+F8 "1" 750 -100 60 H I C CNN "Aukstis"
+F9 "X7R0805K" 1550 100 60 H I C CNN "Marke"
+F10 "Kondensatorius" 850 100 60 H I C CNN "Pavadinimas"
+F11 "-" 550 -150 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 550 -100 60 H I C CNN "Nuoroda"
+F13 "SMD" 1750 0 60 H I C CNN "Korpuso tipas"
+F14 "50V" 2000 0 60 H I C CNN "Parametras"
+F15 "-" 550 -200 60 H I C CNN "Komentaras"
+$FPLIST
+ C_0805
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# disc:Crystal_smd_11x5
+#
+DEF ~disc:Crystal_smd_11x5 Y 0 40 N N 1 F N
+F0 "Y" 0 150 50 H V C CNN
+F1 "disc:Crystal_smd_11x5" 3300 0 50 H I C CNN
+F2 "disc:Crystal_SMD_HC49-SD" 800 100 50 H I C CNN
+F3 "" 0 150 50 H I C CNN
+F4 "ZEL166" 1500 100 60 H I C CNN "ventcode"
+F5 "8Mhz" 50 -200 60 H V C CNN "Nominalas"
+F6 "0.09" 400 0 60 H I C CNN "Kaina"
+F7 "11x5" 650 0 60 H I C CNN "Korpusas"
+F8 "4.5" 1400 0 60 H I C CNN "Aukstis"
+F9 "HC49SDLF" 1050 0 60 H I C CNN "Marke"
+F10 "Kvarcas" 1700 0 60 H I C CNN "Pavadinimas"
+F11 "HC49SDLF" 2150 0 60 H I C CNN "Gamintojo Kodas"
+F12 "http://www.futureelectronics.com/en/technologies/electromechanical/timing-devices/crystals/Pages/7072549-FOXSDLF-080-20-TR.aspx?IM=0" 3700 -100 60 H I C CNN "Nuoroda"
+F13 "SMD" 2500 0 60 H I C CNN "Korpuso tipas"
+F14 "8Mhz" 2750 0 60 H I C CNN "Parametras"
+F15 "-" 2900 0 60 H I C CNN "Komentaras"
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -75 0 N
+P 2 0 1 20 -75 -50 -75 50 N
+P 2 0 1 20 75 -50 75 50 N
+P 2 0 1 0 100 0 75 0 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# disc:Crystal_smd_32768_horizontal
+#
+DEF ~disc:Crystal_smd_32768_horizontal Y 0 40 N N 1 F N
+F0 "Y" 0 150 50 H V C CNN
+F1 "disc:Crystal_smd_32768_horizontal" 850 0 50 H I C CNN
+F2 "disc:Crystal_32768_horizontzl" 850 0 50 H I C CNN
+F3 "http://www.abracon.com/Resonators/AB38T.pdf" 1200 0 50 H I C CNN
+F4 "ZEL041" 750 0 60 H I C CNN "ventcode"
+F5 "32.768khz" 50 -200 60 H V C CNN "Nominalas"
+F6 "0.05" 550 0 60 H I C CNN "Kaina"
+F7 "8x3" 450 0 60 H I C CNN "Korpusas"
+F8 "3" 650 0 60 H I C CNN "Aukstis"
+F9 "R26-32.768-12.5-EXT-NPB" 950 0 60 H I C CNN "Marke"
+F10 "Kvarcas" 500 0 60 H I C CNN "Pavadinimas"
+F11 "R26-32.768-12.5-EXT-NPB" 950 0 60 H I C CNN "Gamintojo Kodas"
+F12 "http://www.futureelectronics.com/en/technologies/electromechanical/timing-devices/crystals/Pages/5415690-R26-32.768-12.5-EXT-NPB.aspx?IM=0" 3750 0 60 H I C CNN "Nuoroda"
+F13 "SMD" 550 0 60 H I C CNN "Korpuso tipas"
+F14 "32.768khz" 950 0 60 H I C CNN "Parametras"
+F15 "-" 2150 -100 60 H I C CNN "Komentaras"
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -75 0 N
+P 2 0 1 20 -75 -50 -75 50 N
+P 2 0 1 20 75 -50 75 50 N
+P 2 0 1 0 100 0 75 0 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# disc:D_BAS32
+#
+DEF ~disc:D_BAS32 D 0 40 N N 1 F N
+F0 "D" 0 100 59 H V C CNN
+F1 "disc:D_BAS32" 1350 0 50 H I C CNN
+F2 "disc:D_MiniMELF" 900 0 50 H I C CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/BAS32L.pdf" 1600 0 50 H I C CNN
+F4 "ZELD003" 0 -200 60 H I C CNN "ventcode"
+F5 "-" 900 0 60 H I C CNN "Nominalas"
+F6 "0.01" 1100 0 60 H I C CNN "Kaina"
+F7 "mini Melf" 750 0 60 H I C CNN "Korpusas"
+F8 "1.5" 600 0 60 H I C CNN "Aukstis"
+F9 "BAS32" 700 0 60 H I C CNN "Marke"
+F10 "Diodas" 550 0 60 H I C CNN "Pavadinimas"
+F11 "BAS32" 0 -100 59 H V C CNN "Gamintojo Kodas"
+F12 "http://www.futureelectronics.com/en/Search.aspx?dsNav=Ntk:ManufacturerPartNumberUpshiftedSearch%7c*bas32*%7c1%7c,Ny:True,Nea:True" 3450 0 60 H I C CNN "Nuoroda"
+F13 "SMD" 600 0 60 H I C CNN "Korpuso tipas"
+F14 "100 V 200 mA Surface Mount High-Speed Switching Diode" 1650 0 60 H I C CNN "Parametras"
+F15 "-" 450 0 60 H I C CNN "Komentaras"
+$FPLIST
+ D*MiniMELF*
+ MiniMELF*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# disc:D_BAT54S
+#
+DEF disc:D_BAT54S D 0 40 Y Y 1 F N
+F0 "D" -150 150 59 H V L CNN
+F1 "disc:D_BAT54S" 50 150 59 H V L CNN
+F2 "disc:SOT-23" -100 -350 50 H I L CNN
+F3 "" -70 0 50 H I C CNN
+F4 "ZELD071" 50 -350 60 H I C CNN "ventcode"
+F5 "-" 100 -350 60 H I C CNN "Nominalas"
+F6 "0.01" -50 -350 60 H I C CNN "Kaina"
+F7 "SOT-23" 0 -350 60 H I C CNN "Korpusas"
+F8 "1.4" -50 -350 60 H I C CNN "Aukstis"
+F9 "BAT54S" -200 -350 60 H I C CNN "Marke"
+F10 "Diodas" 0 -350 60 H I C CNN "Pavadinimas"
+F11 "BAT54S" 50 -350 60 H I C CNN "Gamintojo Kodas"
+F12 "http://www.tme.eu/en/details/bat54s-dio/smd-schottky-diodes/diotec-semiconductor/bat54s/" 100 -350 60 H I C CNN "Nuoroda"
+F13 "SMD" 0 -350 60 H I C CNN "Korpuso tipas"
+F14 "-" -50 -350 60 H I C CNN "Parametras"
+F15 "-" 100 -350 60 H I C CNN "Komentaras"
+$FPLIST
+ SOT*23*
+$ENDFPLIST
+DRAW
+C 0 0 10 0 1 20 N
+S -150 70 150 -70 0 1 0 f
+P 2 0 1 0 -150 0 -50 0 N
+P 2 0 1 0 -75 -50 -75 -40 N
+P 2 0 1 0 -75 0 150 0 N
+P 2 0 1 0 -50 -50 -75 -50 N
+P 2 0 1 0 -50 -50 -50 50 N
+P 2 0 1 0 -50 50 -25 50 N
+P 2 0 1 0 -25 50 -25 40 N
+P 2 0 1 0 90 -50 90 -40 N
+P 2 0 1 0 115 -50 90 -50 N
+P 2 0 1 0 115 50 140 50 N
+P 2 0 1 0 140 50 140 40 N
+P 3 0 1 0 115 -50 115 0 115 50 N
+P 4 0 1 0 -125 50 -125 -50 -50 0 -125 50 N
+P 4 0 1 0 40 50 40 -50 115 0 40 50 N
+X ~ 1 -200 0 59 R 50 50 1 1 P
+X ~ 2 200 0 59 L 50 50 1 1 P
+X ~ 3 0 -150 79 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# disc:LED_RED_0805_EL17-21SURC
+#
+DEF ~disc:LED_RED_0805_EL17-21SURC D 0 40 N N 1 F N
+F0 "D" 0 100 59 H V C CNN
+F1 "disc:LED_RED_0805_EL17-21SURC" 600 -250 50 H I C CNN
+F2 "disc:LED_0805" 850 -150 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+F4 "ZELD008" 0 -200 60 H I C CNN "ventcode"
+F5 "red" 1050 -250 60 H I C CNN "Nominalas"
+F6 "0.03" 450 -150 60 H I C CNN "Kaina"
+F7 "0805" 500 -50 60 H I C CNN "Korpusas"
+F8 "1" 700 -50 60 H I C CNN "Aukstis"
+F9 "EL17-21SURC" 0 -100 60 H V C CNN "Marke"
+F10 "Sviesos Diodas" 1100 -50 60 H I C CNN "Pavadinimas"
+F11 "EL17-21SURC" 700 50 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 1100 50 60 H I C CNN "Nuoroda"
+F13 "SMD" 1250 50 60 H I C CNN "Korpuso tipas"
+F14 "red" 1300 -150 60 H I C CNN "Parametras"
+F15 "-" 1250 -250 60 H I C CNN "Komentaras"
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# disc:LM340MP-5.0
+#
+DEF ~disc:LM340MP-5.0 U 0 40 Y Y 1 F N
+F0 "U" -200 200 50 H V C CNN
+F1 "disc:LM340MP-5.0" 1100 300 50 H I L CNN
+F2 "disc:LM340_SOT-223" 1250 0 50 H I C CIN
+F3 "http://www.ti.com/lit/ds/symlink/lm340.pdf" 500 -350 50 H I C CNN
+F4 "ZELM013" 1150 100 60 H I C CNN "ventcode"
+F5 "-" 1850 100 60 H I C CNN "Nominalas"
+F6 "0.53" 1550 100 60 H I C CNN "Kaina"
+F7 "SMD" 750 100 60 H I C CNN "Korpuso tipas"
+F8 "Itampos stabilizatorius" 1200 200 60 H I C CNN "Pavadinimas"
+F9 "LM340MP-5.0" 1400 400 60 H I C CNN "Gamintojo Kodas"
+F10 "SOT-223" 1950 200 60 H I C CNN "Korpusas"
+F11 "1.7" 1050 0 60 H I C CNN "Aukstis"
+F12 "LM340MP-5.0" 250 200 60 H V C CNN "Marke"
+F13 "-" 1750 0 60 H I C CNN "Nuoroda"
+F14 "-" 1650 -100 60 H I C CNN "Parametras"
+F15 "-" 1750 0 60 H I C CNN "Komentaras"
+$FPLIST
+ SOT*
+$ENDFPLIST
+DRAW
+S -250 150 250 -150 0 1 10 N
+X IN 1 -400 50 150 R 50 50 1 1 I
+X COM 2 0 -250 100 U 50 50 1 1 I
+X OUT 3 400 50 150 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# disc:USTAB_SIP21106-DT-33
+#
+DEF disc:USTAB_SIP21106-DT-33 U 0 40 Y Y 1 F N
+F0 "U" -200 200 50 H V C CNN
+F1 "disc:USTAB_SIP21106-DT-33" -100 200 50 H V L CNN
+F2 "TO_SOT_Packages_SMD:SOT-23-5" 1750 -200 50 H I C CIN
+F3 "https://www.vishay.com/docs/74442/sip21106.pdf" 2100 -100 50 H I C CNN
+F4 "*" 2250 -300 60 H I C CNN "ventcode"
+F5 "3.3V" 1800 -300 60 H I C CNN "Nominalas"
+F6 "0" 1400 -300 60 H I C CNN "Kaina"
+F7 "SMD" 3150 0 60 H I C CNN "Korpuso tipas"
+F8 "Itampos stabilizatorius" 1650 0 60 H I C CNN "Pavadinimas"
+F9 "SIP21106-DT-33-E3" 1600 100 60 H I C CNN "Gamintojo Kodas"
+F10 "TSOT23-5L" 2650 0 60 H I C CNN "Korpusas"
+F11 "1.7" 1200 -300 60 H I C CNN "Aukstis"
+F12 "SIP21106" 1350 200 60 H I C CNN "Marke"
+F13 "-" 1550 -300 60 H I C CNN "Nuoroda"
+F14 "-" 2050 -300 60 H I C CNN "Parametras"
+F15 "Markiravimas N3" 2850 -200 60 H I C CNN "Komentaras"
+$FPLIST
+ SOT*
+$ENDFPLIST
+DRAW
+S -250 150 250 -200 0 1 10 N
+X IN 1 -400 50 150 R 50 50 1 1 I
+X COM 2 0 -300 100 U 50 50 1 1 I
+X EN 3 -400 -100 150 R 50 50 1 1 w
+X BP 4 400 -100 150 L 50 50 1 1 w
+X OUT 5 400 50 150 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# ics:AT24C16_1
+#
+DEF ~ics:AT24C16_1 U 0 30 Y Y 1 F N
+F0 "U" -250 250 50 H V C CNN
+F1 "ics:AT24C16_1" 1500 150 50 H I C CNN
+F2 "ics:SOIC-8_3.9x4.9mm_Pitch1.27mm" 650 50 50 H I L CNN
+F3 "http://datasheet.octopart.com/AT24C16C-SSHM-T-Atmel-datasheet-36835645.pdf" 2300 -150 50 H I C CNN
+F4 "-" 0 -400 60 H I C CNN "ventcode"
+F5 "-" 700 -50 60 H I C CNN "Nominalas"
+F6 "0" 1450 -50 60 H I C CNN "Kaina"
+F7 "SOIC-8" 1900 150 60 H I C CNN "Korpusas"
+F8 "3" 1300 -50 60 H I C CNN "Aukstis"
+F9 "-" 800 -50 60 H I C CNN "Marke"
+F10 "Mikroschema" 950 150 60 H I C CNN "Pavadinimas"
+F11 "AT24C16" 250 250 60 H V C CNN "Gamintojo Kodas"
+F12 "-" 900 -50 60 H I C CNN "Nuoroda"
+F13 "SMD" 2300 50 60 H I C CNN "Korpuso tipas"
+F14 "-" 1000 -50 60 H I C CNN "Parametras"
+F15 "-" 1100 -50 60 H I C CNN "Komentaras"
+$FPLIST
+ SOIC*
+$ENDFPLIST
+DRAW
+S -300 200 300 -300 1 1 0 N
+X GND 4 -400 -200 100 R 50 50 0 0 W
+X VCC 8 400 100 100 L 50 50 0 0 W
+X A0 1 -400 100 100 R 50 50 1 1 I
+X A1 2 -400 0 100 R 50 50 1 1 I
+X A2 3 -400 -100 100 R 50 50 1 1 I
+X SDA 5 400 -200 100 L 50 50 1 1 B
+X SCL 6 400 -100 100 L 50 50 1 1 I
+X WP 7 400 0 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ics:STM32F051C8Tx
+#
+DEF ics:STM32F051C8Tx U 0 40 Y Y 1 F N
+F0 "U" -950 1000 50 H V L BNN
+F1 "ics:STM32F051C8Tx" 300 -350 50 H V R BNN
+F2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" 3450 450 50 H I R TNN
+F3 "www.st.com/resource/en/datasheet/stm32f051t8.pdf" 2750 150 50 H I C CNN
+F4 "ZELM144" 0 -300 60 H I C CNN "ventcode"
+F5 "-" 1800 350 60 H I C CNN "Nominalas"
+F6 "0" 2800 250 60 H I C CNN "Kaina"
+F7 "LQFP-48" 3200 250 60 H I C CNN "Korpusas"
+F8 "1" 3600 250 60 H I C CNN "Aukstis"
+F9 "-" 1950 350 60 H I C CNN "Marke"
+F10 "Mikroschema" 2050 500 60 H I C CNN "Pavadinimas"
+F11 "STM32F051C8Tx" 2800 500 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 2150 350 60 H I C CNN "Nuoroda"
+F13 "SMD" 2500 250 60 H I C CNN "Korpuso tipas"
+F14 "FLASH 64kB, RAM 16kB" 2950 350 60 H I C CNN "Parametras"
+F15 "-" 2300 350 60 H I C CNN "Komentaras"
+$FPLIST
+ *LQFP-48*
+$ENDFPLIST
+DRAW
+C -850 850 50 0 1 10 F
+S -950 -950 950 950 0 1 10 N
+X VBAT 1 -1050 550 100 R 50 50 1 1 W
+X PA0 10 -1050 -350 100 R 50 50 1 1 B
+X PA1 11 -1050 -450 100 R 50 50 1 1 B
+X PA2 12 -1050 -550 100 R 50 50 1 1 B
+X PA3 13 -550 -1050 100 U 50 50 1 1 B
+X PA4 14 -450 -1050 100 U 50 50 1 1 B
+X PA5 15 -350 -1050 100 U 50 50 1 1 B
+X PA6 16 -250 -1050 100 U 50 50 1 1 B
+X PA7 17 -150 -1050 100 U 50 50 1 1 B
+X PB0 18 -50 -1050 100 U 50 50 1 1 B
+X PB1 19 50 -1050 100 U 50 50 1 1 B
+X PC13 2 -1050 450 100 R 50 50 1 1 B
+X PB2 20 150 -1050 100 U 50 50 1 1 B
+X PB10 21 250 -1050 100 U 50 50 1 1 B
+X PB11 22 350 -1050 100 U 50 50 1 1 B
+X VSS 23 450 -1050 100 U 50 50 1 1 W
+X VDD 24 550 -1050 100 U 50 50 1 1 W
+X PB12 25 1050 -550 100 L 50 50 1 1 B
+X PB13 26 1050 -450 100 L 50 50 1 1 B
+X PB14 27 1050 -350 100 L 50 50 1 1 B
+X PB15 28 1050 -250 100 L 50 50 1 1 B
+X PA8 29 1050 -150 100 L 50 50 1 1 B
+X PC14/RCC_OSC32_IN 3 -1050 350 100 R 50 50 1 1 B
+X PA9 30 1050 -50 100 L 50 50 1 1 B
+X PA10 31 1050 50 100 L 50 50 1 1 B
+X PA11 32 1050 150 100 L 50 50 1 1 B
+X PA12 33 1050 250 100 L 50 50 1 1 B
+X PA13 34 1050 350 100 L 50 50 1 1 B
+X PF6 35 1050 450 100 L 50 50 1 1 B
+X PF7 36 1050 550 100 L 50 50 1 1 B
+X PA14 37 550 1050 100 D 50 50 1 1 B
+X PA15 38 450 1050 100 D 50 50 1 1 B
+X PB3 39 350 1050 100 D 50 50 1 1 B
+X PC15/RCC_OSC32_OUT 4 -1050 250 100 R 50 50 1 1 B
+X PB4 40 250 1050 100 D 50 50 1 1 B
+X PB5 41 150 1050 100 D 50 50 1 1 B
+X PB6 42 50 1050 100 D 50 50 1 1 B
+X PB7 43 -50 1050 100 D 50 50 1 1 B
+X BOOT0 44 -150 1050 100 D 50 50 1 1 I
+X PB8 45 -250 1050 100 D 50 50 1 1 B
+X PB9 46 -350 1050 100 D 50 50 1 1 B
+X VSS 47 -450 1050 100 D 50 50 1 1 W
+X VDD 48 -550 1050 100 D 50 50 1 1 W
+X PF0/RCC_OSC_IN 5 -1050 150 100 R 50 50 1 1 B
+X PF1/RCC_OSC_OUT 6 -1050 50 100 R 50 50 1 1 B
+X ~NRST 7 -1050 -50 100 R 50 50 1 1 I
+X VSSA 8 -1050 -150 100 R 50 50 1 1 W
+X VDDA 9 -1050 -250 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# mech:ISP_SWD_Connector
+#
+DEF mech:ISP_SWD_Connector J 0 1 Y Y 1 F N
+F0 "J" -300 100 50 H V C CNN
+F1 "mech:ISP_SWD_Connector" 600 -100 50 H V C CNN
+F2 "mech:ISP_SWD_Connector" 700 -200 50 H I C CNN
+F3 "http://katalog.we-online.com/em/datasheet/69036718xx72.pdf" 1400 -400 50 H I C CNN
+F4 "ZAJ071" 450 0 60 H I C CNN "ventcode"
+F5 "-" 1400 -200 60 H I C CNN "Nominalas"
+F6 "0.12" 350 -300 60 H I C CNN "Kaina"
+F7 "-" 550 -300 60 H I C CNN "Korpusas"
+F8 "4" 200 600 60 H I C CNN "Aukstis"
+F9 "Micro-MaTch TE CONNECTIVITY 215079-6" 300 700 60 H I C CNN "Marke"
+F10 "Jungtis" 400 800 60 H I C CNN "Pavadinimas"
+F11 "215079-6" 500 900 60 H I C CNN "Gamintojo Kodas"
+F12 "https://www.tme.eu/lt/details/amp-7-215079-6/micro-match-jungtys-127-mm/te-connectivity/215079-6/" 600 1000 60 H I C CNN "Nuoroda"
+F13 "DIP" 700 1100 60 H I C CNN "Korpuso tipas"
+F14 "-" 800 1200 60 H I C CNN "Parametras"
+F15 "-" 900 1300 60 H I C CNN "Komentaras"
+DRAW
+S -150 50 -450 -550 0 1 0 N
+P 2 0 1 0 -150 -450 -450 -450 N
+P 2 0 1 0 -150 -350 -450 -350 N
+P 2 0 1 0 -150 -250 -450 -250 N
+P 2 0 1 0 -150 -150 -450 -150 N
+P 2 0 1 0 -150 -50 -450 -50 N
+X SWDIO 1 0 0 150 L 50 50 1 1 P
+X ~ 2 0 -100 150 L 50 50 1 1 P
+X SWCLK 3 0 -200 150 L 50 50 1 1 P
+X ~NRST 4 0 -300 150 L 50 50 1 1 P
+X VCC 5 0 -400 150 L 50 50 1 1 P
+X GND 6 0 -500 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:RN_100R_5%
+#
+DEF resistors_us:RN_100R_5% RN 0 20 Y N 4 F N
+F0 "RN" -100 100 50 H V L CNN
+F1 "resistors_us:RN_100R_5%" -250 -100 50 H V L CNN
+F2 "resistors:RN1206" 700 -50 50 H I C CNN
+F3 "" -150 200 50 H I C CNN
+F4 "ZELR038" 0 -100 60 H I C CNN "ventcode"
+F5 "100R" 1350 -50 60 H I C CNN "Nominalas"
+F6 "0.01" 1150 -150 60 H I C CNN "Kaina"
+F7 "CN1J4A-SO8" 1600 50 60 H I C CNN "Korpusas"
+F8 "1" 950 -150 60 H I C CNN "Aukstis"
+F9 "CN" 1350 -150 60 H I C CNN "Marke"
+F10 "Rezitoriu Matrica" 800 50 60 H I C CNN "Pavadinimas"
+F11 "-" 650 -150 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 750 -150 60 H I C CNN "Nuoroda"
+F13 "SMD" 1550 -150 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ RN1206
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+P 2 2 1 4 -45 -40 -15 40 N
+P 2 2 1 4 75 -40 90 0 N
+P 3 2 1 4 -90 0 -75 40 -45 -40 N
+P 4 2 1 4 -15 40 15 -40 45 40 75 -40 N
+P 2 3 1 4 -45 -40 -15 40 N
+P 2 3 1 4 75 -40 90 0 N
+P 3 3 1 4 -90 0 -75 40 -45 -40 N
+P 4 3 1 4 -15 40 15 -40 45 40 75 -40 N
+P 2 4 1 4 -45 -40 -15 40 N
+P 2 4 1 4 75 -40 90 0 N
+P 3 4 1 4 -90 0 -75 40 -45 -40 N
+P 4 4 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 30 50 1 1 P
+X ~ 2 150 0 59 L 30 50 1 1 P
+X ~ 3 -150 0 59 R 30 50 2 1 P
+X ~ 4 150 0 59 L 30 50 2 1 P
+X ~ 5 -150 0 59 R 30 50 3 1 P
+X ~ 6 150 0 59 L 30 50 3 1 P
+X ~ 7 -150 0 59 R 30 50 4 1 P
+X ~ 8 150 0 59 L 30 50 4 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_10k_0805_1%
+#
+DEF ~resistors_us:R_10k_0805_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_10k_0805_1%" 0 -100 60 H I C CNN
+F2 "resistors:R_0805" 0 -200 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS051" 100 200 60 H I C CNN "ventcode"
+F5 "10k" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.001" 250 -200 60 H I C CNN "Kaina"
+F7 "0805" 200 -200 60 H I C CNN "Korpusas"
+F8 "1" 200 -200 60 H I C CNN "Aukstis"
+F9 "RK73" 200 -200 60 H I C CNN "Marke"
+F10 "Rezistorius" 700 800 60 H I C CNN "Pavadinimas"
+F11 "-" 800 900 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 900 1000 60 H I C CNN "Nuoroda"
+F13 "SMD" 1000 1100 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_120R_0805_1%
+#
+DEF ~resistors_us:R_120R_0805_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_120R_0805_1%" 1400 50 60 H I C CNN
+F2 "resistors:R_0805" 800 -50 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS055" 0 -200 60 H I C CNN "ventcode"
+F5 "120R" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.001" 850 -150 60 H I C CNN "Kaina"
+F7 "0805" 1200 -150 60 H I C CNN "Korpusas"
+F8 "1" 1450 -150 60 H I C CNN "Aukstis"
+F9 "RK73" 1700 -150 60 H I C CNN "Marke"
+F10 "Rezistorius" 650 50 60 H I C CNN "Pavadinimas"
+F11 "-" 450 -150 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 550 -150 60 H I C CNN "Nuoroda"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_120R_1206_1%
+#
+DEF ~resistors_us:R_120R_1206_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_120R_1206_1%" 950 100 60 H I C CNN
+F2 "resistors:R_1206" 950 0 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS042" 0 -200 60 H I C CNN "ventcode"
+F5 "120R" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.001" 1200 -100 60 H I C CNN "Kaina"
+F7 "1206" 900 -100 60 H I C CNN "Korpusas"
+F8 "1" 1150 -200 60 H I C CNN "Aukstis"
+F9 "-" 850 -200 60 H I C CNN "Marke"
+F10 "Rezistorius" 900 200 60 H I C CNN "Pavadinimas"
+F11 "-" 1200 200 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 1300 200 60 H I C CNN "Nuoroda"
+F13 "SMD" 650 -100 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_15k_0805_1%
+#
+DEF ~resistors_us:R_15k_0805_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_15k_0805_1%" 1500 50 60 H I C CNN
+F2 "resistors:R_0805" 850 -50 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS052" 0 -200 60 H I C CNN "ventcode"
+F5 "15k" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.001" 1150 -150 60 H I C CNN "Kaina"
+F7 "0805" 1750 -50 60 H I C CNN "Korpusas"
+F8 "1" 850 -150 60 H I C CNN "Aukstis"
+F9 "RK73" 1500 -150 60 H I C CNN "Marke"
+F10 "Rezistorius" 750 50 60 H I C CNN "Pavadinimas"
+F11 "-" 500 -150 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 650 -150 60 H I C CNN "Nuoroda"
+F13 "SMD" 1450 -50 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_1M2_0805_1%
+#
+DEF ~resistors_us:R_1M2_0805_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_1M2_0805_1%" 1450 100 60 H I C CNN
+F2 "resistors:R_0805" 850 0 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS067" 0 -200 60 H I C CNN "ventcode"
+F5 "1.2M" 0 -100 59 H V C CNN "Nominalas"
+F6 "0.001" 1100 -100 60 H I C CNN "Kaina"
+F7 "0805" 1700 0 60 H I C CNN "Korpusas"
+F8 "1" 1400 -100 60 H I C CNN "Aukstis"
+F9 "-" 500 -150 60 H I C CNN "Marke"
+F10 "Rezistorius" 700 100 60 H I C CNN "Pavadinimas"
+F11 "-" 500 -100 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 500 -200 60 H I C CNN "Nuoroda"
+F13 "SMD" 1400 0 60 H I C CNN "Korpuso tipas"
+F14 "-" 500 -250 60 H I C CNN "Parametras"
+F15 "-" 500 -300 60 H I C CNN "Komentaras"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_4.7k_0805_1%
+#
+DEF ~resistors_us:R_4.7k_0805_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_4.7k_0805_1%" 1500 0 60 H I C CNN
+F2 "resistors:R_0805" 900 -100 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS053" 0 -200 60 H I C CNN "ventcode"
+F5 "4.7k" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.001" 1200 -200 60 H I C CNN "Kaina"
+F7 "0805" 1500 -100 60 H I C CNN "Korpusas"
+F8 "1" 850 -200 60 H I C CNN "Aukstis"
+F9 "RK73" 1650 -200 60 H I C CNN "Marke"
+F10 "Rezistorius" 750 0 60 H I C CNN "Pavadinimas"
+F11 "-" 550 -200 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 650 -200 60 H I C CNN "Nuoroda"
+F13 "SMD" 1850 -100 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# resistors_us:R_47R_0805_1%
+#
+DEF ~resistors_us:R_47R_0805_1% R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "resistors_us:R_47R_0805_1%" 950 100 60 H I C CNN
+F2 "resistors:R_0805" 950 0 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELRS054" 0 -200 60 H I C CNN "ventcode"
+F5 "47R" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.001" 1200 -100 60 H I C CNN "Kaina"
+F7 "0805" 900 -100 60 H I C CNN "Korpusas"
+F8 "1" 1150 -200 60 H I C CNN "Aukstis"
+F9 "RK73" 850 -200 60 H I C CNN "Marke"
+F10 "Rezistorius" 900 200 60 H I C CNN "Pavadinimas"
+F11 "-" 1200 200 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 1300 200 60 H I C CNN "Nuoroda"
+F13 "SMD" 650 -100 60 H I C CNN "Korpuso tipas"
+$FPLIST
+ R_0805
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
