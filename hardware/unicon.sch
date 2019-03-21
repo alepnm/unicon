@@ -6,7 +6,6 @@ LIBS:mech
 LIBS:resistors_us
 LIBS:various
 LIBS:resistors
-LIBS:LED
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -326,7 +325,7 @@ $EndComp
 Text Label 3200 3900 2    59   ~ 0
 VDDA
 Text Label 5200 3700 0    50   ~ 0
-3VDC
+VBAT
 Text Label 6500 2750 3    50   ~ 0
 BT0
 $Comp
@@ -2741,12 +2740,9 @@ Wire Wire Line
 Wire Wire Line
 	1775 5150 2525 5150
 Wire Wire Line
-	2525 4850 2525 4950
-Wire Wire Line
-	2525 4850 2400 4850
+	2800 4850 2400 4850
 Wire Wire Line
 	2400 4950 2525 4950
-Connection ~ 2525 4950
 Connection ~ 2525 5150
 Wire Wire Line
 	2550 3600 2450 3600
@@ -3129,4 +3125,6 @@ Text Label 1700 5500 0    50   ~ 0
 J3.3
 Text Label 2600 5400 2    50   ~ 0
 J3.2
+Text Label 2800 4850 2    50   ~ 0
+VBAT
 $EndSCHEMATC

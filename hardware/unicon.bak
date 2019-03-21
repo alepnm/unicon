@@ -630,6 +630,7 @@ F 12 "SIP21106" H 5650 1050 60  0001 C CNN "Marke"
 F 13 "-" H 5850 550 60  0001 C CNN "Nuoroda"
 F 14 "-" H 6350 550 60  0001 C CNN "Parametras"
 F 15 "Markiravimas N3" H 7150 650 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    4300 850 
 	1    0    0    -1  
 $EndComp
@@ -718,6 +719,7 @@ F 5 "0.06" H 6700 1150 60  0001 C CNN "Kaina"
 F 6 "Kondensatorius elektrolitinis" H 6800 1450 60  0001 C CNN "Pavadinimas"
 F 7 "100uFx16V" H 6350 1050 60  0001 C CNN "Nominalas"
 F 8 "DIP" H 6900 1250 60  0001 C CNN "Korpuso tipas"
+F 9 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    5950 1100
 	1    0    0    -1  
 $EndComp
@@ -740,6 +742,7 @@ F 5 "0.06" H 3900 1200 60  0001 C CNN "Kaina"
 F 6 "Kondensatorius elektrolitinis" H 4000 1500 60  0001 C CNN "Pavadinimas"
 F 7 "100uFx16V" H 3550 1100 60  0001 C CNN "Nominalas"
 F 8 "DIP" H 4100 1300 60  0001 C CNN "Korpuso tipas"
+F 9 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    3150 1150
 	1    0    0    -1  
 $EndComp
@@ -793,6 +796,7 @@ F 12 "-" H 9800 2150 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 11200 2250 60  0001 C CNN "Korpuso tipas"
 F 14 "-" H 9900 2150 60  0001 C CNN "Parametras"
 F 15 "-" H 10000 2150 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    8900 2200
 	1    0    0    -1  
 $EndComp
@@ -842,6 +846,7 @@ F 12 "-" H 7100 7250 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7250 7250 60  0001 C CNN "Korpuso tipas"
 F 14 "red" H 7300 7050 60  0001 C CNN "Parametras"
 F 15 "-" H 7250 6950 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    6000 7200
 	-1   0    0    1   
 $EndComp
@@ -865,6 +870,7 @@ F 10 "Rezitoriu Matrica" H 3700 5750 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5550 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5550 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5550 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 5700
 	-1   0    0    -1  
 $EndComp
@@ -886,6 +892,7 @@ F 10 "Rezitoriu Matrica" H 2200 5750 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5550 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5550 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5550 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1400 5700
 	1    0    0    -1  
 $EndComp
@@ -907,6 +914,7 @@ F 10 "Rezitoriu Matrica" H 3700 5650 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5450 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5450 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5450 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 5600
 	-1   0    0    -1  
 $EndComp
@@ -928,6 +936,7 @@ F 10 "Rezitoriu Matrica" H 2200 5650 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5450 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5450 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5450 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1400 5600
 	1    0    0    -1  
 $EndComp
@@ -949,6 +958,7 @@ F 10 "Rezitoriu Matrica" H 3700 5950 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5750 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5750 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5750 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 5900
 	-1   0    0    -1  
 $EndComp
@@ -970,6 +980,7 @@ F 10 "Rezitoriu Matrica" H 2200 5950 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5750 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5750 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5750 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1400 5900
 	1    0    0    -1  
 $EndComp
@@ -991,6 +1002,7 @@ F 10 "Rezitoriu Matrica" H 3700 5850 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5650 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5650 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5650 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 5800
 	-1   0    0    -1  
 $EndComp
@@ -1012,6 +1024,7 @@ F 10 "Rezitoriu Matrica" H 2200 5850 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5650 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5650 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5650 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1400 5800
 	1    0    0    -1  
 $EndComp
@@ -1033,6 +1046,7 @@ F 10 "Rezitoriu Matrica" H 3700 6150 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5950 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5950 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5950 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 6100
 	-1   0    0    -1  
 $EndComp
@@ -1054,6 +1068,7 @@ F 10 "Rezitoriu Matrica" H 2200 6150 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5950 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5950 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5950 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1400 6100
 	1    0    0    -1  
 $EndComp
@@ -1075,6 +1090,7 @@ F 10 "Rezitoriu Matrica" H 3700 6050 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5850 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5850 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5850 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 6000
 	-1   0    0    -1  
 $EndComp
@@ -1096,6 +1112,7 @@ F 10 "Rezitoriu Matrica" H 2200 6050 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5850 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5850 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5850 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1400 6000
 	1    0    0    -1  
 $EndComp
@@ -1127,6 +1144,7 @@ F 10 "Rezitoriu Matrica" H 3700 6350 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 6150 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 6150 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 6150 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 6300
 	-1   0    0    -1  
 $EndComp
@@ -1148,6 +1166,7 @@ F 10 "Rezitoriu Matrica" H 2200 6350 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 6150 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 6150 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 6150 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1400 6300
 	1    0    0    -1  
 $EndComp
@@ -1169,6 +1188,7 @@ F 10 "Rezitoriu Matrica" H 3700 6250 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 6050 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 6050 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 6050 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 6200
 	-1   0    0    -1  
 $EndComp
@@ -1190,6 +1210,7 @@ F 10 "Rezitoriu Matrica" H 2200 6250 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 6050 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 6050 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 6050 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1400 6200
 	1    0    0    -1  
 $EndComp
@@ -1229,6 +1250,7 @@ F 10 "Rezitoriu Matrica" H 2250 7550 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 7350 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 7350 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 7350 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1450 7500
 	1    0    0    1   
 $EndComp
@@ -1250,6 +1272,7 @@ F 10 "Rezitoriu Matrica" H 3700 7550 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 7350 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 7350 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 7350 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 7500
 	-1   0    0    1   
 $EndComp
@@ -1271,6 +1294,7 @@ F 10 "Rezitoriu Matrica" H 2250 7450 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 7250 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 7250 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 7250 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1450 7400
 	1    0    0    1   
 $EndComp
@@ -1292,6 +1316,7 @@ F 10 "Rezitoriu Matrica" H 3700 7450 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 7250 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 7250 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 7250 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 7400
 	-1   0    0    1   
 $EndComp
@@ -1321,6 +1346,7 @@ F 10 "Rezitoriu Matrica" H 2250 7350 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 7150 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 7150 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 7150 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1450 7300
 	1    0    0    1   
 $EndComp
@@ -1342,6 +1368,7 @@ F 10 "Rezitoriu Matrica" H 3700 7350 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 7150 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 7150 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 7150 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 7300
 	-1   0    0    1   
 $EndComp
@@ -1363,6 +1390,7 @@ F 10 "Rezitoriu Matrica" H 2250 7250 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 7050 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 7050 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 7050 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1450 7200
 	1    0    0    1   
 $EndComp
@@ -1384,6 +1412,7 @@ F 10 "Rezitoriu Matrica" H 3700 7250 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 7050 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 7050 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 7050 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 7200
 	-1   0    0    1   
 $EndComp
@@ -1410,6 +1439,7 @@ F 5 "0.06" H 2750 1150 60  0001 C CNN "Kaina"
 F 6 "Kondensatorius elektrolitinis" H 2850 1450 60  0001 C CNN "Pavadinimas"
 F 7 "100uFx16V" H 2400 1050 60  0001 C CNN "Nominalas"
 F 8 "DIP" H 2950 1250 60  0001 C CNN "Korpuso tipas"
+F 9 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2000 1100
 	1    0    0    -1  
 $EndComp
@@ -1435,6 +1465,7 @@ F 12 "http://www.futureelectronics.com/en/technologies/electromechanical/timing-
 F 13 "SMD" H 5400 2350 60  0001 C CNN "Korpuso tipas"
 F 14 "32.768khz" H 5800 2350 60  0001 C CNN "Parametras"
 F 15 "-" H 7000 2250 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    4850 2350
 	0    1    1    0   
 $EndComp
@@ -1512,6 +1543,7 @@ F 12 "LM340MP-5.0" H 2750 1050 60  0001 C CNN "Marke"
 F 13 "-" H 4250 850 60  0001 C CNN "Nuoroda"
 F 14 "-" H 4150 750 60  0001 C CNN "Parametras"
 F 15 "-" H 4250 850 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2500 850 
 	1    0    0    -1  
 $EndComp
@@ -1539,6 +1571,7 @@ F 10 "Rezitoriu Matrica" H 2250 7150 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 6950 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 6950 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 6950 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1450 7100
 	1    0    0    1   
 $EndComp
@@ -1560,6 +1593,7 @@ F 10 "Rezitoriu Matrica" H 3700 7150 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 6950 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 6950 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 6950 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 7100
 	-1   0    0    1   
 $EndComp
@@ -1581,6 +1615,7 @@ F 10 "Rezitoriu Matrica" H 2250 7050 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 6850 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 6850 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 6850 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1450 7000
 	1    0    0    1   
 $EndComp
@@ -1602,6 +1637,7 @@ F 10 "Rezitoriu Matrica" H 3700 7050 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 6850 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 6850 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 6850 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 7000
 	-1   0    0    1   
 $EndComp
@@ -1623,6 +1659,7 @@ F 10 "Rezitoriu Matrica" H 2250 6950 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 6750 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 6750 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 6750 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1450 6900
 	1    0    0    1   
 $EndComp
@@ -1644,6 +1681,7 @@ F 10 "Rezitoriu Matrica" H 3700 6950 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 6750 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 6750 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 6750 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 6900
 	-1   0    0    1   
 $EndComp
@@ -1665,6 +1703,7 @@ F 10 "Rezitoriu Matrica" H 2250 6850 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2100 6650 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2200 6650 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 3000 6650 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1450 6800
 	1    0    0    1   
 $EndComp
@@ -1686,6 +1725,7 @@ F 10 "Rezitoriu Matrica" H 3700 6850 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 6650 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 6650 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 6650 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 6800
 	-1   0    0    1   
 $EndComp
@@ -1707,6 +1747,7 @@ F 10 "Rezitoriu Matrica" H 2200 5450 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5250 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5250 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5250 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    1400 5400
 	1    0    0    1   
 $EndComp
@@ -1728,6 +1769,7 @@ F 10 "Rezitoriu Matrica" H 3700 5450 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5250 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5250 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5250 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    2900 5400
 	-1   0    0    1   
 $EndComp
@@ -1749,6 +1791,7 @@ F 10 "Rezitoriu Matrica" H 2200 5550 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2050 5350 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 2150 5350 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2950 5350 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    1400 5500
 	1    0    0    1   
 $EndComp
@@ -1770,6 +1813,7 @@ F 10 "Rezitoriu Matrica" H 3700 5550 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 3550 5350 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3650 5350 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 4450 5350 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2900 5500
 	-1   0    0    1   
 $EndComp
@@ -1811,6 +1855,7 @@ F 12 "-" H 7100 7550 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7250 7550 60  0001 C CNN "Korpuso tipas"
 F 14 "red" H 7300 7350 60  0001 C CNN "Parametras"
 F 15 "-" H 7250 7250 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    6000 7500
 	-1   0    0    1   
 $EndComp
@@ -1836,6 +1881,7 @@ F 12 "-" H 7100 6600 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7250 6600 60  0001 C CNN "Korpuso tipas"
 F 14 "red" H 7300 6400 60  0001 C CNN "Parametras"
 F 15 "-" H 7250 6300 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    6000 6550
 	-1   0    0    1   
 $EndComp
@@ -1861,6 +1907,7 @@ F 12 "-" H 7100 6900 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7250 6900 60  0001 C CNN "Korpuso tipas"
 F 14 "red" H 7300 6700 60  0001 C CNN "Parametras"
 F 15 "-" H 7250 6600 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    6000 6850
 	-1   0    0    1   
 $EndComp
@@ -1884,6 +1931,7 @@ F 10 "Rezitoriu Matrica" H 6250 6600 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 6100 6400 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 6200 6400 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7000 6400 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    5450 6550
 	1    0    0    1   
 $EndComp
@@ -1905,6 +1953,7 @@ F 10 "Rezitoriu Matrica" H 6250 6900 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 6100 6700 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 6200 6700 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7000 6700 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	2    5450 6850
 	1    0    0    1   
 $EndComp
@@ -1926,6 +1975,7 @@ F 10 "Rezitoriu Matrica" H 6250 7250 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 6100 7050 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 6200 7050 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7000 7050 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	3    5450 7200
 	1    0    0    1   
 $EndComp
@@ -1947,6 +1997,7 @@ F 10 "Rezitoriu Matrica" H 6250 7550 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 6100 7350 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 6200 7350 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7000 7350 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	4    5450 7500
 	1    0    0    1   
 $EndComp
@@ -1968,6 +2019,7 @@ F 10 "Rezistorius" H 2650 1000 60  0001 C CNN "Pavadinimas"
 F 11 "-" H 2950 1000 60  0001 C CNN "Gamintojo Kodas"
 F 12 "-" H 3050 1000 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 2400 700 60  0001 C CNN "Korpuso tipas"
+F 14 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    1750 800 
 	1    0    0    -1  
 $EndComp
@@ -2580,6 +2632,7 @@ F 12 "-" H 7100 6300 60  0001 C CNN "Nuoroda"
 F 13 "SMD" H 7250 6300 60  0001 C CNN "Korpuso tipas"
 F 14 "red" H 7300 6100 60  0001 C CNN "Parametras"
 F 15 "-" H 7250 6000 60  0001 C CNN "Komentaras"
+F 16 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    6000 6250
 	-1   0    0    1   
 $EndComp
@@ -2653,6 +2706,7 @@ F 0 "J3" H 2150 6300 50  0000 C CNN
 F 1 "SIDE A" H 2150 5200 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 2100 5800 50  0001 C CNN
 F 3 "" H 2100 5800 50  0001 C CNN
+F 4 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2100 5800
 	1    0    0    -1  
 $EndComp
@@ -2664,6 +2718,7 @@ F 0 "J4" H 2150 7500 50  0000 C CNN
 F 1 "SIDE B" H 2150 6400 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 2100 7000 50  0001 C CNN
 F 3 "" H 2100 7000 50  0001 C CNN
+F 4 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2100 7000
 	1    0    0    -1  
 $EndComp
@@ -2675,6 +2730,7 @@ F 0 "J2" H 2150 5050 50  0000 C CNN
 F 1 "PWR" H 2150 4650 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2100 4850 50  0001 C CNN
 F 3 "" H 2100 4850 50  0001 C CNN
+F 4 "mcu" H 0   0   50  0001 C CNN "Sheet"
 	1    2100 4850
 	1    0    0    -1  
 $EndComp
